@@ -1,0 +1,25 @@
+# Toda linha começada com # é uma linha de comentário
+
+# --->ParteI : Definição de variáveis
+ARQUIVOS=List-36-1-hello.cpp
+OBJETOS=List-36-1-hello.o
+DIRINCLUDE = -I/usr/include/g++
+COMPILADOR = g++
+INSTDIR = /usr/local/bin
+
+# --->Parte II: definição dos alvos
+
+all : List-36-1-hello.o List-36-1-hello 
+
+List-36-1-hello.o : $(ARQUIVOS)
+	$(COMPILADOR) -c $(ARQUIVOS) $(DIRINCLUDE) -o List-36-1-hello.o
+
+List-36-1-hello:
+	$(COMPILADOR) List-36-1-hello.cpp $(DIRINCLUDE) -o List-36-1-hello
+
+install : List-36-1-hello
+	cp List-36-1-hello $(INSTDIR)
+	chmod a+x $(INSTDIR)/List-36-1-hello
+
+clean :
+	rm -f *.o *. obj

@@ -1,0 +1,44 @@
+[andre@mercurio Parte-IV]$ cp List-41-1-bug.cpp bug.cpp
+[andre@mercurio Parte-IV]$ g++ -g bug.cpp
+[andre@mercurio Parte-IV]$ gdb a.out
+GNU gdb Red Hat Linux (5.2.1-4)...
+(gdb) break 8
+Breakpoint 1 at 0x804863e: file bug.cpp, line 8.
+(gdb) run
+Starting program: a.out
+Oi tudo bem
+Breakpoint 1, main () at bug.cpp:8
+8         for ( int i = 0; i <= 1000; i++ )
+(gdb) ptype array
+type = int [10]
+(gdb) next
+9           array[i]=i;
+(gdb) next
+8         for ( int i = 0; i <= 1000; i++ )
+(gdb) next
+9           array[i]=i;
+(gdb) print i
+$1 = 1
+(gdb) whatis i
+type = int
+(gdb) list 1,12
+1       #include <iostream>
+2
+3       int main()
+4       {
+5         std::cout << "Oi tudo bem " << std::endl;
+6
+7         int array[10];
+8         for ( int i = 0; i <= 1000; i++ )
+9           array[i]=i;
+10
+11        return 0;
+12      }
+(gdb) c
+Continuing.
+Program received signal SIGSEGV, Segmentation fault.
+0x08048656 in main () at bug.cpp:9
+9           array[i]=i;
+(gdb) quit
+The program is running.  Exit anyway? (y or n) y
+

@@ -1,0 +1,30 @@
+/*
+  Novidades:
+  Uso sobrecarga do operador << para mostrar dados do vetor.
+  Uso dos métodos  insert, erase, push_back, empty, e clear.
+  
+  Saída:
+  -----
+  [andre@mercurio Cap4-STL]$ g++ ex-vector-2.cpp
+  [andre@mercurio Cap4-STL]$ ./a.out 
+  No DOS   um ctrl+z encerra a entrada de dados.
+  No Mac   um ctrl+d encerra a entrada de dados.
+  No Linux um ctrl+d encerra a entrada de dados.
+  Entre com o dado (  0):0
+  Entre com o dado (  1):-1
+  Entre com o dado (  2):-2
+  Entre com o dado (  3):-3
+  Entre com o dado (  4):
+  
+  v[  0]=    0 v[  1]=   -1 v[  2]=   -2 v[  3]=   -3 
+  
+  Após v[ 0 ] = 23427; e v.insert( v.begin() + 2, 5463 );
+  v[  0]=23427 v[  1]=   -1 v[  2]= 5463 v[  3]=   -2 v[  4]=   -3 
+  
+  Após v.erase( v.begin() );
+  v[  0]=   -1 v[  1]= 5463 v[  2]=   -2 v[  3]=   -3 
+  
+  Após v.erase( v.begin(), v.end() );
+  o vetor esta vazio
+  o vetor esta vazio
+*/

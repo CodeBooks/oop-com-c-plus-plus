@@ -1,0 +1,11 @@
+getObjetoTPonto.lo getObjetoTPonto.o: getObjetoTPonto.cpp \
+  getObjetoTPonto.h List-11-5-TPonto.h List-15-1-TCirculo.h \
+  List-16-2-TElipse.h
+
+getObjetoTPonto.h:
+
+List-11-5-TPonto.h:
+
+List-15-1-TCirculo.h:
+
+List-16-2-TElipse.h:

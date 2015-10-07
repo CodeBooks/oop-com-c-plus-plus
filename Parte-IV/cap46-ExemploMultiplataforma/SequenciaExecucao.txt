@@ -1,0 +1,162 @@
+Exemplo completo com uso do sistema multiplataforma da GNU.
+Versões: (GNU automake) 1.7.4 e (GNU Autoconf) 2.57
+
+Nota: para executar uma versão especifica do automake usar
+automake-versão
+
+Nota: Os arquivos (teste1-Zerado.tar.gz, teste2-InclueMakefiles_am.tar.gz,teste3-Completo.tar.gz) contém o presente exemplo em 3 estágios.
+
+1) Você deve criar um diretório teste com os seguintes arquivos e subdiretórios.
+
+teste
+|-- AUTHORS
+|-- COPYING
+|-- ChangeLog
+|-- INSTALL
+|-- README
+`-- teste
+    |-- Base
+    |   |-- TClassea.cpp
+    |   `-- TClassea.h
+    |-- docs
+    |   `-- en
+    |       |-- index-1.html
+    |       |-- index-2.html
+    |       |-- index-3.html
+    |       |-- index-4.html
+    |       |-- index-5.html
+    |       |-- index-6.html
+    |       |-- index.html
+    |       `-- index.sgml
+    `-- main.cpp
+
+2) A seguir deve ir para o diretório teste e criar os arquivos Makefile
+
+cd teste
+emacs teste/Makefile.am
+      SUBDIRS = teste
+      EXTRA_DIST =  AUTHORS COPYING ChangeLog INSTALL README TODO
+      AUTOMAKE_OPTIONS = foreign
+
+emacs teste/teste/Makefile.am
+      bin_PROGRAMS = teste
+      teste_SOURCES = main.cpp
+      teste_LDADD   = ./Base/libBase.a
+      SUBDIRS = Base docs
+      EXTRA_DIST = main.cpp
+
+emacs teste/teste/Base/Makefile.am
+      noinst_LIBRARIES = libBase.a
+      libBase_a_SOURCES = TClassea.cpp
+      EXTRA_DIST = TClassea.cpp TClassea.h
+
+emacs teste/teste/Base/docs/Makefile.am
+      SUBDIRS = en
+
+emacs teste/teste/Base/docs/en/Makefile.am
+      EXTRA_DIST = index.html index-1.html index-2.html index-3.html \
+		   index-4.html index-5.html index-6.html
+
+3) Execute o autoscan
+autoscan --help
+autoscan -v
+
+
+4) Faça correções no configure.scan 
+emacs configure.scan
+--> Definir nomes solicitados
+mv configure.scan configure.ac
+
+5) Execute o aclocal
+aclocal --verbose
+--> sem efeito
+
+6) Use o autoheader para gerar o config.h.in
+autoheader --help
+autoheader -v
+--> Cria arquivo config.h.in
+--> Cria subdiretório autom4te.cache
+
+7) 
+automake-1.7 --help
+automake-1.7 
+--> mensagens de erro
+    configure.ac: no proper invocation of AM_INIT_AUTOMAKE was found.
+    teste/Base/Makefile.am:1: library used but `RANLIB' is undefined
+    teste/Base/Makefile.am:1: The usual way to define `RANLIB' is to add `AC_PROG_RANLIB'
+    teste/Base/Makefile.am:1: to `configure.ac' and run `autoconf' again.
+    configure.ac: required file `./install-sh' not found
+
+Observe que o automake informa que a linha  AM_INIT_AUTOMAKE esta faltando.
+Também pediu a RANLIB e informou que não tem o arquivo install-sh.
+
+8) Corrija o configure.ac adicionando as linhas
+emacs configure.ac 
+      AM_INIT_AUTOMAKE()
+      AC_PROG_RANLIB      
+
+9)
+aclocal --verbose
+--> Agora cria aclocal.m4
+
+10) Execute o automake com a opção --add-missing, para adicionar as macros que estão faltando.
+automake-1.7 --add-missing
+-->  Adiciona ./install-sh, ./mkinstalldirs,./missing.
+
+11) Veja como esta agora a estrutura de diretório
+tree
+
+12)
+autoconf
+--> Cria arquivo configure
+
+13)
+./configure --help
+./configure
+--> Cria arquivos Makefile específicos para sua máquina.
+
+14)
+make
+--> compila o programa
+
+15) Antes de instalar, testar o programa
+cd teste
+./teste
+
+16) Para instalar (como root):
+make install
+
+Veja a seguir o arquivo configure.ac final:
+===============================================================================
+#                                               -*- Autoconf -*-
+# Process this file with autoconf to produce a configure script.
+
+AC_PREREQ(2.57)
+AC_INIT([[teste sistema multiplataforma gnu]], [0.1], [[andre@lmpt.ufsc.br]],[[teste]])
+AM_INIT_AUTOMAKE			dnl 2 edicao
+AC_CONFIG_SRCDIR([teste/main.cpp])
+AC_CONFIG_HEADER([config.h])
+
+# Checks for programs.
+AC_PROG_CXX
+AC_PROG_CC
+
+# Checks for libraries.
+
+# Checks for header files.
+AC_HEADER_STDC
+AC_CHECK_HEADERS([stdlib.h])
+
+# Checks for typedefs, structures, and compiler characteristics.
+AC_C_CONST
+
+# Checks for library functions.
+AC_PROG_RANLIB			dnl 2 edicao
+
+AC_CONFIG_FILES([Makefile
+                 teste/Base/Makefile
+                 teste/Makefile
+                 teste/docs/Makefile
+                 teste/docs/en/Makefile])
+
+AC_OUTPUT

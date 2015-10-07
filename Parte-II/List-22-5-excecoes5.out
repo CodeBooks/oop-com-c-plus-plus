@@ -1,0 +1,15 @@
+/*
+  Novidade:
+  Uso de excessões para new.
+  O programa cria uma estrutura. A seguir, dentro de main, cria um vetor.
+  No bloco do for infinito, aloca uma estrutura dinamicamente e acrescenta ao vetor.
+  Quando a memória de seu micro terminar, ocorre uma excessão do tipo bad_alloc,
+  e o bloco catch (bad_alloc) é executado.
+
+  Saída:
+  ------
+  v[8190] alocada
+  
+  v[8191] alocada
+Exceção St9bad_alloc 
+*/

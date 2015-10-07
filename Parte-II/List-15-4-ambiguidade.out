@@ -1,0 +1,13 @@
+/*
+Saída gerada pelo compilador:
+-----------------------------
+[andre@mercurio Cap3-POOUsandoC++]$ g++ e101-ambiguidade.cpp 
+e101-ambiguidade.cpp: In function `int main (...)':
+e101-ambiguidade.cpp:22: call of overloaded `X()' is ambiguous
+e101-ambiguidade.cpp:9: candidates are: X::X ()
+e101-ambiguidade.cpp:13:                 X::X (int = 0)
+
+Observe a mensagem 
+e101-ambiguidade.cpp:22: call of overloaded `X()' is ambiguous
+o compilador não consegue identificar qual construtor deve ser executado.
+*/

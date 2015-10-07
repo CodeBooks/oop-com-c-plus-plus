@@ -1,0 +1,14 @@
+Na parte IV/
+estão incluídos os seguintes subdiretórios:
+
+biblioteca
+	Inclue um conjunto de arquivos e makefile para compilar estes arquivos.
+	O makefile possibilita a criação do executável, 
+	de bibliotecas estáticas, e de biblioteca estática e dinâmica
+	usando o libtool.
+
+biblioteca-Multiplataforma
+cap46-ExemploMultiplataforma
+cap47-cvs
+doc
+rdl-exemplo

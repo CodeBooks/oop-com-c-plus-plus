@@ -1,0 +1,13 @@
+/*
+Mensagens do compilador:
+[andre@mercurio Parte-II]$ g++ e97-especificador-heranca.cpp
+e97-especificador-heranca.cpp: In member function `int B::Z()':
+e97-especificador-heranca.cpp:11: `int A::z' is private
+e97-especificador-heranca.cpp:18: within this context
+e97-especificador-heranca.cpp: At global scope:
+e97-especificador-heranca.cpp:22: warning: all member functions in class `C'
+   are private
+e97-especificador-heranca.cpp: In member function `int C::Z()':
+e97-especificador-heranca.cpp:11: `int A::z' is private
+e97-especificador-heranca.cpp:25: within this context
+*/

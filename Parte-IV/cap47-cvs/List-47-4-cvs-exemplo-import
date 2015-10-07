@@ -1,0 +1,26 @@
+[andre@mercurio biblioteca]$ cvs import -m "Exemplo de biblioteca usando ferramentas gnu" exemplo-biblioteca-gnu R1 start
+N exemplo-biblioteca-gnu/List-40-1-libtool--help.txt
+N exemplo-biblioteca-gnu/makefile
+N exemplo-biblioteca-gnu/List-19-2-TPonto.cpp
+N exemplo-biblioteca-gnu/List-15-1-TCirculo.h
+N exemplo-biblioteca-gnu/List-15-2-TCirculo.cpp
+N exemplo-biblioteca-gnu/List-17-1-Polimorfismo.cpp
+N exemplo-biblioteca-gnu/List-16-2-TElipse.h
+N exemplo-biblioteca-gnu/List-16-3-TElipse.cpp
+N exemplo-biblioteca-gnu/List-11-5-TPonto.h
+N exemplo-biblioteca-gnu/List-11-6-TPonto.cpp
+N exemplo-biblioteca-gnu/uso-makefile
+N exemplo-biblioteca-gnu/doxygem.config
+I exemplo-biblioteca-gnu/List-15-2-TCirculo.o
+N exemplo-biblioteca-gnu/List-19-1-TPonto.h
+N exemplo-biblioteca-gnu/List-39-4-makefile
+I exemplo-biblioteca-gnu/List-16-3-TElipse.o
+I exemplo-biblioteca-gnu/List-11-6-TPonto.o
+N exemplo-biblioteca-gnu/List-17-1-Polimorfismo
+I exemplo-biblioteca-gnu/List-17-1-Polimorfismo.cpp~
+N exemplo-biblioteca-gnu/List-40-2-makefile-libtool
+N exemplo-biblioteca-gnu/List-40-3-makefile-libtool.uso
+N exemplo-biblioteca-gnu/List-39-5-makefile.uso
+N exemplo-biblioteca-gnu/List-40-4-temposprocessamento
+ 
+No conflicts created by this import

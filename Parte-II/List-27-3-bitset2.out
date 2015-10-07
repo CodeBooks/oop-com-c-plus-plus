@@ -1,0 +1,11 @@
+/*
+  Saída:
+  ------
+  [andre@mercurio Cap4-STL]$ ./a.out 
+  0000000000
+  1111111111
+  O bitset tem a dimensao:10
+  Entre com a posição do bit que quer inverter (0->9):5
+  1111011111
+  
+*/

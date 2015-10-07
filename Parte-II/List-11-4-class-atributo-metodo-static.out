@@ -1,0 +1,38 @@
+/*Revisão:
+Os atributos que compoem a classe podem ser de diferentes tipos.
+No exemplo usa duas strings, um float e um static int.
+Uma função de Entrada e outra de Saída.
+
+Novidade:---->
+-Uso de atributos e métodos estáticos
+
+Saída:
+-----
+[andre@mercurio Cap3-POOUsandoC++]$ ./a.out 
+Entre com o número de alunos da disciplina (ex =3):2
+Entre com o nome do professor: J.A.Bellini
+Entre com a matricula do professor: 1
+Aluno 0
+Entre com o nome do aluno: Joao da Silva
+Entre com a matricula do aluno: 2
+Entre com o IAA do aluno: 123
+Aluno 1
+Entre com o nome do aluno: Pedro
+Entre com a matricula do aluno: 2
+Entre com o IAA do aluno: 32
+--------------------------------------------------------------
+RELAÇÃO DE PROFESSORES E ALUNOS: 
+--------------------------------------------------------------
+Nome do professor: J.A.Bellini
+Matricula : 1
+--------------------------------------------------------------
+Aluno 0
+Nome do aluno: Joao da Silva
+Matricula : 2
+iaa : 123
+--------------------------------------------------------------
+Aluno 1
+Nome do aluno: Pedro
+Matricula : 2
+iaa : 32
+*/

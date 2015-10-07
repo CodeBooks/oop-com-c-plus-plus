@@ -1,0 +1,27 @@
+/*
+  lembre-se, para criar um vetor de 50 inteiros
+  vector<int> v(50); 
+  
+  cria vetor de 50 objetos do tipo bitset<dimensao>
+  vector< bitset<dimensao> > v(50);
+  
+  com v[i]    acessa objeto bitset
+  com v[i][j] acessa objeto bitset i, bit j.
+  
+  Novidade:
+  --------
+  Uso de vector e bitset
+  
+  Saída:
+  -----
+  [andre@mercurio Cap4-STL]# ./a.out 
+  Entre com o numero de celulas : 3
+  
+  000000000000000000000000
+  010101010101010101010101
+  000000000000000000000000
+  Entre com a celula que quer alterar 0->2: 1
+  Entre com o bit que quer alterar de 0->23: 2
+  Entre com o novo valor do bit(0 ou 1),>1 encerra programa: 1
+  celula 1 bit 2 valor =1
+*/

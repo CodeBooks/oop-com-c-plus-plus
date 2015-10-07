@@ -1,0 +1,642 @@
+.
+|-- #converter_unix2dos#
+|-- AUTHORS
+|-- COPYING
+|-- ChangeLog
+|-- INSTALL -> /usr/share/automake-1.6/INSTALL
+|-- Leiame.txt
+|-- Leiame.txt~
+|-- List-11-6-TPonto.loT
+|-- Makefile
+|-- Makefile.am
+|-- Makefile.am~
+|-- Makefile.in
+|-- NEWS
+|-- Parte-I
+|   |-- List-1-ExemploDeListing.cpp
+|   |-- List-1-ExemploDeListing.out
+|   |-- Makefile
+|   |-- Makefile.am
+|   |-- Makefile.am~
+|   `-- Makefile.in
+|-- Parte-II
+|   |-- #List-14-1-class-construtor-copia.cpp#
+|   |-- #makefile#
+|   |-- List-11-1-funcao-por-valor-referencia-ponteiro.cpp
+|   |-- List-11-1-funcao-por-valor-referencia-ponteiro.cpp~
+|   |-- List-11-1-funcao-por-valor-referencia-ponteiro.out
+|   |-- List-11-2-class-atributo-metodo-normal.cpp
+|   |-- List-11-2-class-atributo-metodo-normal.out
+|   |-- List-11-3-class-atributo-metodo-const.cpp
+|   |-- List-11-3-class-atributo-metodo-const.cpp~
+|   |-- List-11-3-class-atributo-metodo-const.out
+|   |-- List-11-4-class-atributo-metodo-static.cpp
+|   |-- List-11-4-class-atributo-metodo-static.cpp~
+|   |-- List-11-4-class-atributo-metodo-static.out
+|   |-- List-11-5-TPonto.h
+|   |-- List-11-5-TPonto.h~
+|   |-- List-11-6-TPonto.cpp
+|   |-- List-11-7-ProgTPonto.cpp
+|   |-- List-11-7-ProgTPonto.out
+|   |-- List-13-1-ProgTPontoDinamico.cpp
+|   |-- List-13-1-ProgTPontoDinamico.cpp~
+|   |-- List-13-1-ProgTPontoDinamico.out
+|   |-- List-13-2-auto-ptr.cpp
+|   |-- List-13-2-auto-ptr.cpp~
+|   |-- List-13-2-auto-ptr.out
+|   |-- List-13-3-referencia.cpp
+|   |-- List-13-3-referencia.out
+|   |-- List-13-XX-FuncaoReferencia.cpp
+|   |-- List-13-XX-VerificandoEstouroEmVetorEstatico.cpp
+|   |-- List-14-1-class-construtor-copia.cpp
+|   |-- List-14-1-class-construtor-copia.cpp~
+|   |-- List-14-1-class-construtor-copia.out
+|   |-- List-14-1-class-construtor-copia.out~
+|   |-- List-14-2-ObjDinamico.cpp
+|   |-- List-14-2-ObjDinamico.cpp~
+|   |-- List-14-2-ObjDinamico.out
+|   |-- List-14-XX-NecessidadeDoConstrutorDeCopia.cpp
+|   |-- List-15-1-TCirculo.h
+|   |-- List-15-2-TCirculo.cpp
+|   |-- List-15-2-TCirculo.cpp~
+|   |-- List-15-3-especificador-heranca.cpp
+|   |-- List-15-3-especificador-heranca.cpp~
+|   |-- List-15-3-especificador-heranca.out
+|   |-- List-15-4-ambiguidade.cpp
+|   |-- List-15-4-ambiguidade.out
+|   |-- List-16-1-herancaMultiplaVirtual.cpp
+|   |-- List-16-1-herancaMultiplaVirtual.out
+|   |-- List-16-2-TElipse.h
+|   |-- List-16-3-TElipse.cpp
+|   |-- List-16-3-TElipse.cpp~
+|   |-- List-16-4-UsandoTPontoTCirculoTElipse.cpp
+|   |-- List-16-4-UsandoTPontoTCirculoTElipse.cpp~
+|   |-- List-16-5-TCirculoElipse.h
+|   |-- List-16-6-TCirculoElipse.cpp
+|   |-- List-16-7-TCirculoElipse.out
+|   |-- List-17-1-Polimorfismo.cpp
+|   |-- List-17-1-Polimorfismo.out
+|   |-- List-17-10-class-Heranca-Multipla.cpp
+|   |-- List-17-10-class-Heranca-Multipla.cpp~
+|   |-- List-17-10-class-Heranca-Multipla.out
+|   |-- List-17-11-makefile
+|   |-- List-17-12-makefile.out
+|   |-- List-17-2-TPessoa.h
+|   |-- List-17-3-TPessoa.cpp
+|   |-- List-17-3-TPessoa.cpp~
+|   |-- List-17-4-TAluno.h
+|   |-- List-17-5-TAluno.cpp
+|   |-- List-17-5-TAluno.cpp~
+|   |-- List-17-6-TFuncionario.h
+|   |-- List-17-7-TFuncionario.cpp
+|   |-- List-17-8-TAlunoFuncionario.h
+|   |-- List-17-9-TAlunoFuncionario.cpp
+|   |-- List-18-1-friend-classe.cpp
+|   |-- List-18-1-friend-classe.cpp~
+|   |-- List-18-1-friend-classe.out
+|   |-- List-18-2-friend-metodo.cpp
+|   |-- List-19-1-TPontoComSobrecarga.h
+|   |-- List-19-2-TPontoComSobrecarga.cpp
+|   |-- List-19-3-TesteTPontoComSobrecarga.cpp
+|   |-- List-19-3-TesteTPontoComSobrecarga.out
+|   |-- List-20-1-associacoes.cpp
+|   |-- List-20-1-associacoes.cpp~
+|   |-- List-21-1-explicit.cpp
+|   |-- List-21-1-explicit.out
+|   |-- List-21-2-dynamic-cast.cpp
+|   |-- List-21-2-dynamic-cast.cpp~
+|   |-- List-21-2-dynamic-cast.out
+|   |-- List-21-3-typeid.cpp
+|   |-- List-21-3-typeid.out
+|   |-- List-22-1-excecoes1.cpp
+|   |-- List-22-1-excecoes1.out
+|   |-- List-22-2-excecoes2.cpp
+|   |-- List-22-2-excecoes2.out
+|   |-- List-22-3-excecoes3.cpp
+|   |-- List-22-3-excecoes3.out
+|   |-- List-22-4-excecoes4.cpp
+|   |-- List-22-4-excecoes4.cpp~
+|   |-- List-22-4-excecoes4.out
+|   |-- List-22-5-excecoes5.cpp
+|   |-- List-22-5-excecoes5.out
+|   |-- List-23-1-Templates.cpp
+|   |-- List-23-1-Templates.out
+|   |-- List-23-2-Templates.cpp
+|   |-- List-23-2-Templates.cpp~
+|   |-- List-23-2-Templates.out
+|   |-- List-24-0-locale.cpp
+|   |-- List-24-0-locale.cpp~
+|   |-- List-24-0-locale.out
+|   |-- List-24-0-locale.out~
+|   |-- List-24-1-Entrada-Saida1.cpp
+|   |-- List-24-1-Entrada-Saida1.out
+|   |-- List-24-2-Entrada-Saida-iomanip.cpp
+|   |-- List-24-2-Entrada-Saida-iomanip.out
+|   |-- List-24-3-Entrada-Saida3.cpp
+|   |-- List-24-3-Entrada-Saida3.out
+|   |-- List-24-4-Entrada-Saida-sstrean.cpp
+|   |-- List-24-4-Entrada-Saida-sstrean.cpp~
+|   |-- List-24-4-Entrada-Saida-sstrean.out
+|   |-- List-24-5-wostream.cpp
+|   |-- List-25-1-Entrada-Saida-fstream.cpp
+|   |-- List-25-1-Entrada-Saida-fstream.cpp~
+|   |-- List-25-1-Entrada-Saida-fstream.out
+|   |-- List-25-2-fstream-com-comentario.cpp
+|   |-- List-25-2-fstream-com-comentario.cpp~
+|   |-- List-25-2-fstream-com-comentario.out
+|   |-- List-25-3-Entrada-Saida-fstream-LeituraGravacaoDeObjetos.cpp
+|   |-- List-25-3-Entrada-Saida-fstream-LeituraGravacaoDeObjetos.cpp~
+|   |-- List-25-3-Entrada-Saida-fstream-LeituraGravacaoDeObjetos.out
+|   |-- List-25-4-seekg-seekp.cpp
+|   |-- List-25-4-seekg-seekp.cpp~
+|   |-- List-25-4-seekg-seekp.out
+|   |-- List-25-5-pfstream.cpp
+|   |-- List-25-5-pfstream.cpp~
+|   |-- List-25-5-pfstream.out
+|   |-- List-25-6-Entrada-Saida-Redirecionamento.cpp
+|   |-- List-25-6-Entrada-Saida-Redirecionamento.out
+|   |-- List-26-1-string-old.cpp
+|   |-- List-26-1-string-old.out
+|   |-- List-26-1-string-rh8.cpp
+|   |-- List-26-1-string.cpp
+|   |-- List-26-1-string.cpp~
+|   |-- List-26-1-string.out
+|   |-- List-26-2-interfaceShell.cpp
+|   |-- List-26-2-interfaceShell.out
+|   |-- List-27-1-complex.cpp
+|   |-- List-27-1-complex.out
+|   |-- List-27-2-bitset1.cpp
+|   |-- List-27-2-bitset1.out
+|   |-- List-27-3-bitset2.cpp
+|   |-- List-27-3-bitset2.out
+|   |-- List-27-4-bitset3.cpp
+|   |-- List-27-4-bitset3.out
+|   |-- List-27-5-bitset4.cpp
+|   |-- List-27-5-funcao-math.cpp
+|   |-- List-27-5-funcao-math.out
+|   |-- List-29-3-deque.cpp
+|   |-- List-32-1-list2.cpp
+|   |-- List-5-1-TAplicacao.h
+|   |-- List-5-2-TAplicacao.cpp
+|   |-- List-5-3-programa.cpp
+|   |-- List-5-3-programa.out
+|   |-- List-6-1-novaLinha-tab-beep.cpp
+|   |-- List-6-1-novaLinha-tab-beep.out
+|   |-- List-6-2-cout-cin.cpp
+|   |-- List-6-2-cout-cin.cpp~
+|   |-- List-6-2-cout-cin.out
+|   |-- List-7-1-tipos.cpp
+|   |-- List-7-1-tipos.cpp~
+|   |-- List-7-1-tipos.out
+|   |-- List-7-2-signed-unsigned.cpp
+|   |-- List-7-2-signed-unsigned.cpp~
+|   |-- List-7-2-signed-unsigned.out
+|   |-- List-7-3-complex.cpp
+|   |-- List-7-3-complex.cpp~
+|   |-- List-7-3-complex.out
+|   |-- List-7-4-vector-1.cpp
+|   |-- List-7-4-vector-1.cpp~
+|   |-- List-7-4-vector-1.out
+|   |-- List-8-1-namespace.cpp
+|   |-- List-8-1-namespace.out
+|   |-- List_13_1.dev
+|   |-- List_16_4.dev
+|   |-- List_17_1.dev
+|   |-- List_17_10.dev
+|   |-- List_19_3.dev
+|   |-- List_5_3.dev
+|   |-- Makefile
+|   |-- Makefile.am
+|   |-- Makefile.am~
+|   |-- Makefile.in
+|   |-- a.out
+|   |-- dados_simulacao.dat
+|   |-- data.dat
+|   |-- data2.dat
+|   |-- lista
+|   |-- locale-old
+|   |-- makefile-List-17-1
+|   |-- makefile-List-17-10
+|   |-- makefile-ok
+|   |-- nomeDoArquivo-0.dat
+|   |-- nomeDoArquivo-1.dat
+|   |-- nomeDoArquivo-2.dat
+|   |-- nomeDoArquivo-3.dat
+|   |-- nomeDoArquivo-4.dat
+|   |-- pfstream.h
+|   |-- readwrite.dat
+|   |-- saida.dat
+|   |-- teste-objetosDisco
+|   |-- teste.doxygen
+|   `-- teste33
+|-- Parte-III
+|   |-- List-29-1-vector-2.cpp
+|   |-- List-29-1-vector-2.cpp~
+|   |-- List-29-1-vector-2.out
+|   |-- List-29-2-list.cpp
+|   |-- List-29-2-list.out
+|   |-- List-29-3-deque.cpp
+|   |-- List-29-3-deque.out
+|   |-- List-30-1-stack-2.cpp
+|   |-- List-30-1-stack-2.out
+|   |-- List-30-2-queue.cpp
+|   |-- List-30-2-queue.cpp~
+|   |-- List-30-2-queue.out
+|   |-- List-31-1-set.cpp
+|   |-- List-31-1-set.out
+|   |-- List-31-2-map2.cpp
+|   |-- List-31-2-map2.cpp~
+|   |-- List-31-2-map2.out
+|   |-- List-32-1-list2.cpp
+|   |-- List-32-1-list2.cpp~
+|   |-- List-32-1-list2.out
+|   |-- List-32-2-vector-3.cpp
+|   |-- List-32-2-vector-3.cpp~
+|   |-- List-32-2-vector-3.out
+|   |-- List-32-2-vector-4.cpp~
+|   |-- List-32-3-generic-switch.cpp
+|   |-- List-32-3-generic-switch.cpp~
+|   |-- List-32-3-generic.cpp
+|   |-- List-32-3-generic.cpp~
+|   |-- List-33-1-functional.cpp
+|   |-- List-33-1-functional.out
+|   |-- Lista_telefones_map.dat
+|   |-- Makefile
+|   |-- Makefile.am
+|   |-- Makefile.am~
+|   |-- Makefile.in
+|   |-- a.out
+|   |-- makefile-ok
+|   |-- readwrite.dat
+|   `-- vector.dat
+|-- Parte-IV
+|   |-- List-11-6-TPonto.loT
+|   |-- List-36-1-hello
+|   |-- List-36-1-hello.cpp
+|   |-- List-36-1-hello.cpp~
+|   |-- List-36-2-hello.cpp
+|   |-- List-36-2-hello.cpp~
+|   |-- List-36-3-diff
+|   |-- List-36-3.diff.cpp
+|   |-- List-36-4-diff-c
+|   |-- List-36-4.diff.cpp
+|   |-- List-36-5-diff-u
+|   |-- List-36-5.diff.cpp
+|   |-- List-36-6-vector-desalinhado.cpp
+|   |-- List-36-6-vector-desalinhado.cpp~
+|   |-- List-36-7-vector-indentado.cpp
+|   |-- List-38-1-makefile-hello
+|   |-- List-38-1-makefile-hello~
+|   |-- List-38-2-makefile-hello.uso
+|   |-- List-39-1-ar--help.txt
+|   |-- List-39-2-nm--help.txt
+|   |-- List-39-3-ldd-lyx.txt
+|   |-- List-41-1-bug.cpp
+|   |-- List-41-2-ExemploUso-gdb
+|   |-- List-41-2-ExemploUso-gdb~
+|   |-- List-42-1-ProgramaProfile.cpp
+|   |-- List-42-1-ProgramaProfile.cpp~
+|   |-- List-42-1-ProgramaProfile.out
+|   |-- Lista_telefones_map.dat
+|   |-- a.out
+|   |-- biblioteca
+|   |   |-- List-11-5-TPonto.h
+|   |   |-- List-11-6-TPonto.cpp
+|   |   |-- List-15-1-TCirculo.h
+|   |   |-- List-15-2-TCirculo.cpp
+|   |   |-- List-16-2-TElipse.h
+|   |   |-- List-16-3-TElipse.cpp
+|   |   |-- List-17-1-Polimorfismo.cpp
+|   |   |-- List-19-1-TPonto.h
+|   |   |-- List-19-2-TPonto.cpp
+|   |   |-- List-39-4-makefile
+|   |   |-- List-39-5-makefile.uso
+|   |   |-- List-40-1-libtool--help.txt
+|   |   |-- List-40-2-makefile-libtool
+|   |   |-- List-40-3-makefile-libtool.uso
+|   |   |-- List-40-4-temposprocessamento
+|   |   |-- doxygem.config
+|   |   |-- makefile
+|   |   `-- uso-makefile
+|   |-- biblioteca-Multiplataforma
+|   |   |-- List-40-1-libtool--help.txt~
+|   |   |-- Makefile
+|   |   |-- Makefile.am
+|   |   |-- Makefile.am~
+|   |   |-- Makefile.in
+|   |   |-- aclocal.m4
+|   |   |-- autom4te.cache
+|   |   |   |-- output.0
+|   |   |   |-- requests
+|   |   |   `-- traces.0
+|   |   |-- autoscan.log
+|   |   |-- config.h
+|   |   |-- config.h.in
+|   |   |-- config.h.in~
+|   |   |-- config.log
+|   |   |-- config.status
+|   |   |-- configure
+|   |   |-- configure.ac
+|   |   |-- configure.ac~
+|   |   |-- configure.scan
+|   |   |-- dinamico
+|   |   |   |-- #Makefile.am#
+|   |   |   |-- List-11-5-TPonto.h
+|   |   |   |-- List-11-6-TPonto.cpp
+|   |   |   |-- List-15-1-TCirculo.h
+|   |   |   |-- List-15-2-TCirculo.cpp
+|   |   |   |-- List-16-2-TElipse.h
+|   |   |   |-- List-16-3-TElipse.cpp
+|   |   |   |-- List-17-1-Polimorfismo.cpp
+|   |   |   |-- List-17-1-Polimorfismo.out
+|   |   |   |-- List-19-1-TPonto.h
+|   |   |   |-- List-19-2-TPonto.cpp
+|   |   |   |-- Makefile
+|   |   |   |-- Makefile-old
+|   |   |   |-- Makefile.am
+|   |   |   |-- Makefile.am~
+|   |   |   |-- Makefile.in
+|   |   |   |-- getObjetoTPonto.cpp
+|   |   |   |-- getObjetoTPonto.h
+|   |   |   |-- ldconfig.txt
+|   |   |   |-- makefile-funciona
+|   |   |   `-- makefile-funciona~
+|   |   |-- doxygem.config
+|   |   |-- estatico
+|   |   |   |-- List-11-5-TPonto.h
+|   |   |   |-- List-11-6-TPonto.cpp
+|   |   |   |-- List-15-1-TCirculo.h
+|   |   |   |-- List-15-2-TCirculo.cpp
+|   |   |   |-- List-16-2-TElipse.h
+|   |   |   |-- List-16-3-TElipse.cpp
+|   |   |   |-- List-17-1-Polimorfismo.cpp
+|   |   |   |-- List-19-1-TPonto.h
+|   |   |   |-- List-19-2-TPonto.cpp
+|   |   |   |-- Makefile
+|   |   |   |-- Makefile.am
+|   |   |   |-- Makefile.am~
+|   |   |   |-- Makefile.in
+|   |   |   |-- Makefile~
+|   |   |   `-- libTPonto_static.la
+|   |   |-- libtool
+|   |   |-- normal
+|   |   |   |-- List-11-5-TPonto.h
+|   |   |   |-- List-11-6-TPonto.cpp
+|   |   |   |-- List-15-1-TCirculo.h
+|   |   |   |-- List-15-2-TCirculo.cpp
+|   |   |   |-- List-16-2-TElipse.h
+|   |   |   |-- List-16-3-TElipse.cpp
+|   |   |   |-- List-17-1-Polimorfismo.cpp
+|   |   |   |-- List-19-1-TPonto.h
+|   |   |   |-- List-19-2-TPonto.cpp
+|   |   |   |-- Makefile
+|   |   |   |-- Makefile.am
+|   |   |   |-- Makefile.am~
+|   |   |   `-- Makefile.in
+|   |   `-- stamp-h1
+|   |-- cap46-ExemploMultiplataforma
+|   |   |-- SequenciaExecucao.txt
+|   |   |-- teste1-Zerado.tar.gz
+|   |   |-- teste2-InclueMakefiles_am.tar.gz
+|   |   `-- teste3-Completo.tar.gz
+|   |-- cap47-cvs
+|   |   |-- List-47-1-cvs--help-options
+|   |   |-- List-47-10-cvs-tag
+|   |   |-- List-47-11-cvs-release
+|   |   |-- List-47-12-cvs-diff
+|   |   |-- List-47-13-cvs-log-leiame
+|   |   |-- List-47-14-cvs-status-leiame
+|   |   |-- List-47-15-cvs-remoto
+|   |   |-- List-47-2-cvs--help-commands
+|   |   |-- List-47-3-cvs--help-synonyms
+|   |   |-- List-47-4-cvs-exemplo-import
+|   |   |-- List-47-5-tree-home-REPOSITORY
+|   |   |-- List-47-6-cvs-Hcheckout
+|   |   |-- List-47-7-cvs-Hcommit
+|   |   |-- List-47-8-cvs-modulo
+|   |   `-- List-47-9-cvs-Hupdate
+|   |-- cvs -> cap47-cvs
+|   |-- ddd.txt
+|   |-- doc
+|   |   |-- List-44-1-codigo-documentado.cpp
+|   |   |-- List-44-2-doxygen-exemplo.txt
+|   |   |-- List-44-3-doxygem--help.txt
+|   |   |-- config.h
+|   |   |-- doxygen.config
+|   |   |-- exemplo.cpp
+|   |   |-- formula.lyx
+|   |   |-- formula.tex
+|   |   |-- funcao.cpp
+|   |   |-- funcao.cpp~
+|   |   |-- html
+|   |   |   |-- List-44-1-codigo-documentado_8cpp.html
+|   |   |   |-- annotated.html
+|   |   |   |-- classteste_1_1TExemplo-members.html
+|   |   |   |-- classteste_1_1TExemplo.html
+|   |   |   |-- classteste_1_1TExemplo2-members.html
+|   |   |   |-- classteste_1_1TExemplo2.html
+|   |   |   |-- classteste_1_1TFuncao-members.html
+|   |   |   |-- classteste_1_1TFuncao.html
+|   |   |   |-- classteste_1_1TLista-members.html
+|   |   |   |-- classteste_1_1TLista.html
+|   |   |   |-- classteste_1_1TTeste-members.html
+|   |   |   |-- classteste_1_1TTeste.html
+|   |   |   |-- config_8h-source.html
+|   |   |   |-- config_8h.html
+|   |   |   |-- doxygen.css
+|   |   |   |-- doxygen.png
+|   |   |   |-- exemplo2_8cpp.html
+|   |   |   |-- exemplo_8cpp.html
+|   |   |   |-- files.html
+|   |   |   |-- form_0.png
+|   |   |   |-- form_1.png
+|   |   |   |-- form_2.png
+|   |   |   |-- form_3.png
+|   |   |   |-- form_4.png
+|   |   |   |-- form_5.png
+|   |   |   |-- form_6.png
+|   |   |   |-- formula.repository
+|   |   |   |-- funcao_8cpp.html
+|   |   |   |-- functions.html
+|   |   |   |-- globals.html
+|   |   |   |-- group__funcoes__globais.html
+|   |   |   |-- group__global.html
+|   |   |   |-- group__vari.html
+|   |   |   |-- group__variaveis__globais.html
+|   |   |   |-- index.html
+|   |   |   |-- lista_8cpp.html
+|   |   |   |-- modules.html
+|   |   |   |-- namespaces.html
+|   |   |   `-- namespaceteste.html
+|   |   |-- latex
+|   |   |   |-- List-44-1-codigo-documentado_8cpp.tex
+|   |   |   |-- Makefile
+|   |   |   |-- annotated.tex
+|   |   |   |-- classteste_1_1TExemplo.tex
+|   |   |   |-- classteste_1_1TExemplo2.tex
+|   |   |   |-- classteste_1_1TFuncao.tex
+|   |   |   |-- classteste_1_1TLista.tex
+|   |   |   |-- classteste_1_1TTeste.tex
+|   |   |   |-- config_8h.tex
+|   |   |   |-- doxygen.sty
+|   |   |   |-- exemplo2_8cpp.tex
+|   |   |   |-- exemplo_8cpp.tex
+|   |   |   |-- files.tex
+|   |   |   |-- funcao_8cpp.tex
+|   |   |   |-- group__funcoes__globais.tex
+|   |   |   |-- group__global.tex
+|   |   |   |-- group__vari.tex
+|   |   |   |-- group__variaveis__globais.tex
+|   |   |   |-- lista_8cpp.tex
+|   |   |   |-- modules.tex
+|   |   |   |-- namespaces.tex
+|   |   |   |-- namespaceteste.tex
+|   |   |   `-- refman.tex
+|   |   |-- lista.cpp
+|   |   `-- man
+|   |       `-- man3
+|   |           |-- Funcoes_globais.3
+|   |           |-- List-44-1-codigo-documentado.cpp.3
+|   |           |-- Variaveis_globais.3
+|   |           |-- config.h.3
+|   |           |-- exemplo.cpp.3
+|   |           |-- exemplo2.cpp.3
+|   |           |-- funcao.cpp.3
+|   |           |-- lista.cpp.3
+|   |           |-- teste.3
+|   |           |-- teste_TExemplo.3
+|   |           |-- teste_TExemplo2.3
+|   |           |-- teste_TFuncao.3
+|   |           |-- teste_TLista.3
+|   |           |-- teste_TTeste.3
+|   |           `-- variaveis_globais.3
+|   |-- gmon.out
+|   |-- rdl-exemplo
+|   |   |-- MinhaLib.c
+|   |   |-- MinhaLib.o
+|   |   |-- TestaProc
+|   |   |-- TestaProc.c
+|   |   |-- TestaProc.c~
+|   |   |-- makefile
+|   |   `-- makefile~
+|   |-- saida_gprof
+|   `-- vector.dat
+|-- Parte-V
+|   |-- #Makefile#
+|   |-- #makefile-ok#
+|   |-- HowTo-MOSIX.txt
+|   |-- List-49-1-exemplo.cpp
+|   |-- List-49-1-exemplo.out
+|   |-- List-49-2-processos-exemplo.cpp
+|   |-- List-49-2-processos-exemplo.out
+|   |-- List-49-3-exemplo-processos.cpp
+|   |-- List-49-3-exemplo-processos.out
+|   |-- List-50-1-exemplo-thread.cpp
+|   |-- List-50-1-exemplo-thread.out
+|   |-- List-50-2-thread-commoncpp.h
+|   |-- List-50-3-thread-commoncpp-exemplo.cpp
+|   |-- List-50-4-exemplo-thread-commoncpp.cpp
+|   |-- List-50-4-exemplo-thread-commoncpp.cpp~
+|   |-- List-50-4-exemplo-thread-commoncpp.out
+|   |-- Makefile
+|   |-- Makefile.am
+|   |-- Makefile.am~
+|   |-- Makefile.in
+|   |-- doxfile.cpp
+|   |-- makefile-ok
+|   `-- mpi-pvm
+|       |-- exemplo-mpi1.cpp
+|       |-- exemplo-mpi11.cpp
+|       |-- exemplo-mpi2.cpp
+|       `-- exemplo-pvm.cpp
+|-- Parte-VI
+|   |-- List-B-1-const.cpp
+|   |-- List-B-1-const.out
+|   |-- List-B-2-escopo-a.cpp
+|   |-- List-B-3-escopo-b.cpp
+|   |-- List-C-1-comparacao.cpp
+|   |-- List-C-1-comparacao.out
+|   |-- List-C-2-sizeof2.cpp
+|   |-- List-C-2-sizeof2.out
+|   |-- List-C-3-incremento.cpp
+|   |-- List-C-3-incremento.out
+|   |-- List-C-4-while3.cpp
+|   |-- List-C-4-while3.out
+|   |-- List-D-1-for.cpp
+|   |-- List-D-1-for.out
+|   |-- List-D-2-for-for.cpp
+|   |-- List-D-2-for-for.out
+|   |-- List-D-3-do-while.cpp
+|   |-- List-D-3-do-while.out
+|   |-- List-D-4-switch.cpp
+|   |-- List-D-4-switch.out
+|   |-- List-D-5-while.cpp
+|   |-- List-D-5-while.out
+|   |-- List-D-6-while2.cpp
+|   |-- List-D-6-while2.out
+|   |-- List-D-7-break-e-continue.cpp
+|   |-- List-D-7-break-e-continue.out
+|   |-- List-E-1-entradalinhacomando.cpp
+|   |-- List-E-1-entradalinhacomando.out
+|   |-- List-E-2-funcao-recursiva.cpp
+|   |-- List-E-2-funcao-recursiva.out
+|   |-- List-E-3-funcao.cpp
+|   |-- List-E-3-funcao.out
+|   |-- List-E-4-funcao-retorno-void.cpp
+|   |-- List-E-4-funcao-retorno-void.out
+|   |-- List-E-5-funcao-parametro-const.cpp
+|   |-- List-E-5-funcao-parametro-const.out
+|   |-- List-E-6-funcao-inline.cpp
+|   |-- List-E-6-funcao-inline.out
+|   |-- List-E-7-funcao-randomico.cpp
+|   |-- List-E-7-funcao-randomico.out
+|   |-- List-F-1-endereco-sizeof.cpp
+|   |-- List-F-1-endereco-sizeof.out
+|   |-- List-G-1-struct.cpp
+|   |-- List-G-1-struct.out
+|   |-- List-G-2-union.cpp
+|   |-- List-G-2-union.out
+|   |-- List_B_2.dev
+|   |-- Makefile
+|   |-- Makefile.am
+|   |-- Makefile.am~
+|   `-- Makefile.in
+|-- README
+|-- README~
+|-- TODO
+|-- aclocal.m4
+|-- acrescenta-nome.cpp
+|-- acrescenta-nome.cpp~
+|-- autom4te.cache
+|   |-- output.0
+|   |-- output.1
+|   |-- requests
+|   |-- traces.0
+|   `-- traces.1
+|-- autoscan.log
+|-- bookmarks-prog.html
+|-- config.guess -> /usr/local/share/libtool/config.guess
+|-- config.h
+|-- config.h.in
+|-- config.h.in~
+|-- config.log
+|-- config.status
+|-- config.sub -> /usr/local/share/libtool/config.sub
+|-- configure
+|-- configure.ac
+|-- configure.ac~
+|-- configure.scan
+|-- configure.scan-Inicial
+|-- configure.scan~
+|-- converter-para-DOS-WINDOWS
+|-- converter-para-DOS-WINDOWS~
+|-- depcomp -> /usr/share/automake-1.6/depcomp
+|-- install-sh -> /usr/share/automake-1.6/install-sh
+|-- ltmain.sh -> /usr/local/share/libtool/ltmain.sh
+|-- make-all
+|-- missing -> /usr/share/automake-1.6/missing
+|-- mkinstalldirs -> /usr/share/automake-1.6/mkinstalldirs
+|-- stamp-h1
+`-- tree.txt
+
+23 directories, 616 files

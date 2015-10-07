@@ -1,0 +1,34 @@
+/*
+Novidades:
+----------
+Uso de \a para emitir um beep,
+   std::cout << "to C++!\n\a";
+
+Uso de \t para acrescentar um tab,
+   std::cout << "Bem" << '\t' << "Vindo!";
+
+Observe que usa "Welcome" com aspas duplas para uma palavra ou frase
+e '\t' aspas simples para um único caractere.
+
+
+Saída:
+-----
+Welcome
+ to C++!
+Bem	Vindo!
+B
+e
+m
+
+V
+i
+n
+d
+o
+
+a
+o
+
+C++
+!
+*/

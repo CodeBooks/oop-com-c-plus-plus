@@ -1,0 +1,16 @@
+/*
+Novidade:
+Definição e uso de namespace
+
+Saída:
+-----
+[andre@mercurio Cap3-POOUsandoC++]# ./a.out 
+3
+7
+4
+
+função print do namespace
+7
+3
+4
+*/

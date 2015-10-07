@@ -1,0 +1,108 @@
+===============================================================
+	Programação Orientada a Objeto com C++
+Desenvolvimento de software multiplataforma com software livre
+		Autor: Andre Duarte Bueno
+===============================================================
+
+Demais arquivos:
+================
+INSTALACAO: 	instruções para instalação dos programas (em português).
+ChangeLog:	informações sobre versões antigas e alterações realizadas.
+NEWS:		notícias, informações recentes, novidades.
+README:		informações gerais sobre o livro (conteúdo).
+COPYING:	GNU GENERAL PUBLIC LICENSE.
+INSTALL:	instruções gerais para instalação de programas 
+		usando o formato multiplataforma da GNU.
+
+Conteúdo do livro:
+==================
+O livro esta dividido em 6 partes:
+
+1. Parte I: Filosofia e Modelagem Orientada a Objeto: 
+  Destina-se a transmitir os conceitos básicos de POO 
+  (Programação Orientada a Objeto), a idéia, a 
+  filosofia e a nomenclatura utilizada. Nessa parte 
+  veremos alguns exemplos de objetos, o que a POO 
+  representa em relação ao passado, presente e futuro 
+  da programação. Os mecanismos básicos e os 
+  conceitos-chave da POO. A modelagem orientada a 
+  objeto utilizando a UML (Unified Modelling Language) 
+  e a TMO (Técnica de Modelagem de Objetos). Como 
+  montar os diagramas de uma Análise Orientada a Objeto 
+  (AOO) utilizando a modelagem UML/TMO. Apresenta as 
+  etapas de desenvolvimento de um programa: a 
+  concepção, a elaboração, a análise orientada a 
+  objeto, o projeto do sistema, o projeto orientado a 
+  objeto, a implementação e teste; a manutenção e a 
+  documentação de um software.
+
+2. Parte II: POO Utilizando C++: Apresenta a sintaxe de 
+  C++. Tipos padrão de C++, tipos do usuário e tipos da 
+  STL (Standard Template Library). Como declarar, 
+  definir e utilizar classes, objetos, atributos e 
+  métodos. Como implementar a herança simples, a 
+  herança múltipla, a utilização de polimorfismo, a 
+  sobrecarga de operadores, a conversão de tipos, os 
+  tipos genéricos (templates). Apresenta a entrada e 
+  saída de dados com as classes <ios_base>, <istream>, 
+  <ostream> e <sstream>. Como realizar operações com 
+  arquivos de disco utilizando as classes <fstream>, 
+  <ofstream> e <ifstream>. Apresenta um grupo de 
+  classes-padrão de C++. A classe de strings-padrão de 
+  C++, a <string>, a classe para tratar números 
+  complexos <complex> e a classe <bitset>.
+
+3. Parte III: Introdução à STL: Apresenta a STL, uma 
+  biblioteca de objetos em C++. Descrevem-se os 
+  conceitos básicos de containers e iteradores. Você 
+  vai aprender a utilizar um <vector> para vetores, 
+  <list> para listas duplamente encadeadas, <queue> que 
+  representa uma fila, <stack> que representa uma pilha 
+  (como em uma calculadora HP), uma <deque> que é uma 
+  fila com duas extremidades e classes containers para 
+  tratamento de conjunto de dados com chaves (<set>, 
+  <multi_set>, <map> e <multi_map>).
+
+4. Parte IV: Programação Multiplataforma com Software 
+x  Livre: Descreve conceitos de programação 
+  multiplataformas. Apresenta as ferramentas de 
+  programação com software livre, cobrindo emacs, 
+  gcc/g++, make, automake, autoconf, libtool, 
+  documentação com JAVA_DOC e doxygen, controle de 
+  versões com CVS e programas como diff, patch e indent.
+
+5. Parte V: Cluster de Computadores e Processamento 
+  Paralelo: Apresenta os conceitos e os diferentes 
+  tipos de clusters de computadores. As diferentes 
+  formas de processamento paralelo, incluindo:
+
+  (a) a utilização de máquinas com mais de um 
+    processador (SMP),
+
+  (b) a utilização de processamento distribuído em um 
+    cluster com OpenMosix, e as vantagens e 
+    desvantagens da utilização de bibliotecas, como PVM 
+    (Paralel Virtual Machine) e MPI (Message Passing 
+    Interface). A programação com múltiplos-processos e 
+    com múltiplas-threads é apresentada com exemplos 
+    práticos. Os resultados de tempo de processamento 
+    de um cluster real são apresentados. 
+
+6. Parte VI: Apêndices: Conceitos gerais de programação 
+  em C/C++: Descreve alguns conceitos gerais de 
+  programação em C/C++ como: diretrizes de 
+  pré-processador, classes de armazenamento e 
+  modificadores de acesso, operadores, estruturas de 
+  controle, funções, ponteiros, referências, 
+  estruturas, uniões e enumerações.
+Parte I:   Filosofia de programação orientada a objeto.
+
+Autor:
+=====
+Autor: Eng. André Duarte Bueno.
+email: andre@lmpt.ufsc.br 
+       bueno@lenep.uenf.br
+Site:  http://www.lmpt.ufsc.br/~andre
+       http://www.lenep.uenf.br/~bueno
+===============================================================
+

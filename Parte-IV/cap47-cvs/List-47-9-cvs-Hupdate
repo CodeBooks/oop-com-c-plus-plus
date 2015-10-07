@@ -1,0 +1,17 @@
+[andre@mercurio cvs]$ cvs -H update
+Usage: cvs update [-APCdflRp] [-k kopt] [-r rev] [-D date] [-j rev]
+    [-I ign] [-W spec] [files...]
+	-A	Reset any sticky tags/date/kopts.
+	-P	Prune empty directories.
+	-C	Overwrite locally modified files with clean repository copies.
+	-d	Build directories, like checkout does.
+	-f	Force a head revision match if tag/date not found.
+	-l	Local directory only, no recursion.
+	-R	Process directories recursively.
+	-p	Send updates to standard output (avoids stickiness).
+	-k kopt	Use RCS kopt -k option on checkout. (is sticky)
+	-r rev	Update using specified revision/tag (is sticky).
+	-D date	Set date to update from (is sticky).
+	-j rev	Merge in changes made between current revision and rev.
+	-I ign	More files to ignore (! to reset).
+	-W spec	Wrappers specification line.

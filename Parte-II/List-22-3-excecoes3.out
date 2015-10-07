@@ -1,0 +1,14 @@
+/*
+  Novidade:
+  Uso de tratamento de excessões.
+  Se b=0, lança uma excessão, lança um objeto string que é capturado pelo catch.
+  
+  Saída:
+  -----
+  [andre@mercurio Cap3-POOUsandoC++]$ ./a.out 
+  Entre com b:1
+  c = a / b = 3
+  [andre@mercurio Cap3-POOUsandoC++]$ ./a.out 
+  Entre com b:0
+  Excessão: Divisão por zero
+*/

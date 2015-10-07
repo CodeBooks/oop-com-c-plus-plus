@@ -1,0 +1,17 @@
+/*
+  Novidade:
+  --------
+  Uso de arquivos de disco com comentários.
+  
+  O arquivo de disco que foi gerado: [andre@mercurio]$ cat data.dat 
+  1452 : representa bla..bla..bla..1
+  0.123 : representa bla..bla..bla..2
+  msg : representa bla..bla..bla..3
+  12 # 13 # 14 # 15 # 
+  
+  Saída:
+  -----
+  [andre@mercurio Parte-III]$ ./a.out 
+  x=1452 y=0.123 s=msg
+  a1=12 a2=13 a3=14
+*/

@@ -1,0 +1,75 @@
+[root@mercurio biblioteca]# make exes_libtool
+libtool --mode=compile g++ -c List-11-6-TPonto.cpp
+ g++ -c List-11-6-TPonto.cpp  -fPIC -DPIC -o .libs/List-11-6-TPonto.o
+ g++ -c List-11-6-TPonto.cpp -o List-11-6-TPonto.o >/dev/null 2>&1
+libtool --mode=compile g++ -c List-16-3-TElipse.cpp
+ g++ -c List-16-3-TElipse.cpp  -fPIC -DPIC -o .libs/List-16-3-TElipse.o
+ g++ -c List-16-3-TElipse.cpp -o List-16-3-TElipse.o >/dev/null 2>&1
+libtool --mode=compile g++ -c List-15-2-TCirculo.cpp
+ g++ -c List-15-2-TCirculo.cpp  -fPIC -DPIC -o .libs/List-15-2-TCirculo.o
+ g++ -c List-15-2-TCirculo.cpp -o List-15-2-TCirculo.o >/dev/null 2>&1
+libtool --mode=link    g++ -static -o libTPonto.a   List-15-2-TCirculo.lo    List-16-3-TElipse.lo   List-11-6-TPonto.lo
+ar cru libTPonto.a  List-15-2-TCirculo.o List-16-3-TElipse.o List-11-6-TPonto.o
+ranlib libTPonto.a
+libtool --mode=install install -c  libTPonto.a /usr/local/lib/libTPonto.a
+install -c libTPonto.a /usr/local/lib/libTPonto.a
+ranlib /usr/local/lib/libTPonto.a
+chmod 644 /usr/local/lib/libTPonto.a
+libtool --mode=link g++ -static List-17-1-Polimorfismo.cpp -L/usr/local/lib -lTPonto -o List-17-1-Polimorfismo-static-libtool
+g++ List-17-1-Polimorfismo.cpp -o List-17-1-Polimorfismo-static-libtool  -L/usr/local/lib -lTPonto
+
+
+[root@mercurio biblioteca]# make exed_libtool
+libtool --mode=compile g++ -c List-11-6-TPonto.cpp
+ g++ -c List-11-6-TPonto.cpp  -fPIC -DPIC -o .libs/List-11-6-TPonto.o
+ g++ -c List-11-6-TPonto.cpp -o List-11-6-TPonto.o >/dev/null 2>&1
+libtool --mode=compile g++ -c List-16-3-TElipse.cpp
+ g++ -c List-16-3-TElipse.cpp  -fPIC -DPIC -o .libs/List-16-3-TElipse.o
+ g++ -c List-16-3-TElipse.cpp -o List-16-3-TElipse.o >/dev/null 2>&1
+libtool --mode=compile g++ -c List-15-2-TCirculo.cpp
+ g++ -c List-15-2-TCirculo.cpp  -fPIC -DPIC -o .libs/List-15-2-TCirculo.o
+ g++ -c List-15-2-TCirculo.cpp -o List-15-2-TCirculo.o >/dev/null 2>&1
+libtool --mode=link g++ -shared -o libTPonto.la  List-15-2-TCirculo.lo    List-16-3-TElipse.lo   List-11-6-TPonto.lo  -rpath /usr/local/lib
+rm -fr  .libs/libTPonto.a .libs/libTPonto.la .libs/libTPonto.lai .libs/libTPonto.so .libs/libTPonto.so.0 .libs/libTPonto.so.0.0.0
+g++ -shared -nostdlib /usr/lib/gcc-lib/i386-redhat-linux/3.2.2/../../../crti.o /usr/lib/gcc-lib/i386-redhat-linux/3.2.2/crtbeginS.o  .libs/List-15-2-TCirculo.o .libs/List-16-3-TElipse.o .libs/List-11-6-TPonto.o  -L/usr/lib/gcc-lib/i386-redhat-linux/3.2.2 -L/usr/lib/gcc-lib/i386-redhat-linux/3.2.2/../../.. -lstdc++ -lm -lc -lgcc_s /usr/lib/gcc-lib/i386-redhat-linux/3.2.2/crtendS.o /usr/lib/gcc-lib/i386-redhat-linux/3.2.2/../../../crtn.o  -Wl,-soname -Wl,libTPonto.so.0 -o .libs/libTPonto.so.0.0.0
+(cd .libs && rm -f libTPonto.so.0 && ln -s libTPonto.so.0.0.0 libTPonto.so.0)
+(cd .libs && rm -f libTPonto.so && ln -s libTPonto.so.0.0.0 libTPonto.so)
+ar cru .libs/libTPonto.a  List-15-2-TCirculo.o List-16-3-TElipse.o List-11-6-TPonto.o
+ranlib .libs/libTPonto.a
+creating libTPonto.la
+(cd .libs && rm -f libTPonto.la && ln -s ../libTPonto.la libTPonto.la)
+libtool --mode=install install -c  libTPonto.la /usr/local/lib/libTPonto.la
+install -c .libs/libTPonto.so.0.0.0 /usr/local/lib/libTPonto.so.0.0.0
+(cd /usr/local/lib && rm -f libTPonto.so.0 && ln -s libTPonto.so.0.0.0 libTPonto.so.0)
+(cd /usr/local/lib && rm -f libTPonto.so && ln -s libTPonto.so.0.0.0 libTPonto.so)
+install -c .libs/libTPonto.lai /usr/local/lib/libTPonto.la
+install -c .libs/libTPonto.a /usr/local/lib/libTPonto.a
+ranlib /usr/local/lib/libTPonto.a
+chmod 644 /usr/local/lib/libTPonto.a
+PATH="$PATH:/sbin" ldconfig -n /usr/local/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /usr/local/lib
+ 
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the `-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the `LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the `LD_RUN_PATH' environment variable
+     during linking
+   - use the `-Wl,--rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to `/etc/ld.so.conf'
+ 
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+libtool --mode=link g++  List-17-1-Polimorfismo.cpp -L/usr/local/lib -lTPonto -o List-17-1-Polimorfismo-dinamico-libtool -export-dynamic -dlpreopen libTPonto.la
+rm -f .libs/List-17-1-Polimorfismo-dinamico-libtool.nm .libs/List-17-1-Polimorfismo-dinamico-libtool.nmS .libs/List-17-1-Polimorfismo-dinamico-libtool.nmT
+creating .libs/List-17-1-Polimorfismo-dinamico-libtoolS.c
+extracting global C symbols from `./.libs/libTPonto.a'
+(cd .libs && gcc -c -fno-builtin "List-17-1-Polimorfismo-dinamico-libtoolS.c")
+rm -f .libs/List-17-1-Polimorfismo-dinamico-libtoolS.c .libs/List-17-1-Polimorfismo-dinamico-libtool.nm .libs/List-17-1-Polimorfismo-dinamico-libtool.nmS .libs/List-17-1-Polimorfismo-dinamico-libtool.nmT
+g++ List-17-1-Polimorfismo.cpp -o .libs/List-17-1-Polimorfismo-dinamico-libtool .libs/List-17-1-Polimorfismo-dinamico-libtoolS.o -Wl,--export-dynamic  ./.libs/libTPonto.so -L/usr/local/lib /usr/local/lib/libTPonto.so -Wl,--rpath -Wl,/usr/local/lib
+creating List-17-1-Polimorfismo-dinamico-libtool

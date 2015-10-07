@@ -1,0 +1,15 @@
+/*
+  Novidade:
+  Uso de objeto ostringstream para formatar uma string
+  Uso de stringstream para converter strings em números.
+  Observe que s1 e s2 não tem espaços em branco
+  
+  Saída:
+  -----
+  [andre@mercurio Cap3-POOUsandoC++]$ ./a.out 
+  os.str()=oi_tudo  bem 1.2345 5
+  s3 = oi_tudo
+  s4 = bem
+  d2 = 1.2345
+  i2 = 5
+*/

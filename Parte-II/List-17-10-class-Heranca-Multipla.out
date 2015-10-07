@@ -1,0 +1,162 @@
+/*
+Novidades:
+---------
+-Uso do conceito de polimorfismo
+-Uso de objetos com herança múltipla
+
+Saída: (para herança múltipla normal)
+------
+[andre2@mercurio e91_heranca-e92_polimorfismo-e93_herancamultipla]$ ./e93
+
+Programa e93
+--------------------------------------------------------------
+Seleção do tipo de objeto
+TPessoa....................0
+TAluno.....................1
+TFuncionario...............2
+TAlunoFuncionario..........3:
+--------------------------------------------------------------
+0
+criou objeto TPessoa construtor default
+Entre com o nome: nome da pessoa
+Entre com a matricula:  11111111111
+Nome : nome da pessoa
+Matricula :  11111111111
+destruiu objeto TPessoa
+--------------------------------------------------------------
+Seleção do tipo de objeto
+TPessoa....................0
+TAluno.....................1
+TFuncionario...............2
+TAlunoFuncionario..........3:
+--------------------------------------------------------------
+1
+criou objeto TPessoa construtor default
+criou objeto TAluno (1) construtor default
+Entre com o nome: Aluno fulano de tal
+Entre com a matricula: 2222312
+Entre com o IAA do aluno: 3
+Nome : Aluno fulano de tal
+Matricula : 2222312
+iaa : 3
+destruiu objeto TAluno:1
+destruiu objeto TPessoa
+--------------------------------------------------------------
+Seleção do tipo de objeto
+TPessoa....................0
+TAluno.....................1
+TFuncionario...............2
+TAlunoFuncionario..........3:
+--------------------------------------------------------------
+2
+criou objeto TPessoa construtor default
+criou objeto TFuncionario  construtor default
+Entre com o nome: Funcionario padrao
+Entre com a matricula: 2-5ds-rst
+Entre com o indiceProdutividade do funcionario: 0.78
+Nome : Funcionario padrao
+Matricula : 2-5ds-rst
+indiceProdutividade : 0.78
+destruiu objeto TFuncionario:
+destruiu objeto TPessoa
+--------------------------------------------------------------
+Seleção do tipo de objeto
+TPessoa....................0
+TAluno.....................1
+TFuncionario...............2
+TAlunoFuncionario..........3:
+--------------------------------------------------------------
+3
+criou objeto TPessoa construtor default
+criou objeto TAluno (1) construtor default
+criou objeto TPessoa construtor default
+criou objeto TFuncionario  construtor default
+criou objeto TAlunoFuncionario construtor default
+Entre com o nome: Jose da Silva Funcionario e Aluno
+Entre com a matricula: 4444444444444
+Entre com o IAA do aluno: 4
+Entre com o nome: Jose da Silva Funcionario e Aluno r
+Entre com a matricula: 4545454545
+Entre com o indiceProdutividade do funcionario: .75
+Entre com o indice de pobreza: .99
+Nome : Jose da Silva Funcionario e Aluno
+Matricula : 4444444444444
+iaa : 4
+Nome : Jose da Silva Funcionario e Aluno r
+Matricula : 4545454545
+indiceProdutividade : 0.75
+indice pobreza= : 1073833876
+destruiu objeto TAlunoFuncionario
+destruiu objeto TFuncionario:
+destruiu objeto TPessoa
+destruiu objeto TAluno:1
+destruiu objeto TPessoa
+*/
+
+/*
+Saída 2: (para herança múltipla virtual)
+--------
+Com apenas 2 modificações, a inclusão da palavra chave virtual
+nas heranças de TAluno e TFuncionário o programa só cria o TPessoa uma vez.
+
+As modificações:
+Herança normal : class TAluno :         public TPessoa
+Herança virtual: class TAluno : virtual public TPessoa
+Herança normal : class TFuncionario :         public TPessoa
+Herança virtual: class TFuncionario : virtual public TPessoa
+
+E a nova saída do programa
+
+[andre2@mercurio e91_heranca-e92_polimorfismo-e93_herancamultipla]$ ./e93
+
+Programa e93
+--------------------------------------------------------------
+Seleção do tipo de objeto
+TPessoa....................0
+TAluno.....................1
+TFuncionario...............2
+TAlunoFuncionario..........3:
+--------------------------------------------------------------
+3
+criou objeto TPessoa construtor default
+criou objeto TAluno (1) construtor default
+criou objeto TFuncionario  construtor default
+criou objeto TAlunoFuncionario construtor default
+Entre com o nome: Adirlei Andre Kraemer
+Entre com a matricula: 456654
+Entre com o IAA do aluno: 3.879
+Entre com o nome: Adirlei Andre Kraemer
+Entre com a matricula: 55555
+Entre com o indiceProdutividade do funcionario: 5
+Entre com o indice de pobreza: .9
+Nome : Adirlei Andre Kraemer
+Matricula : 55555
+iaa : 3.879
+Nome : Adirlei Andre Kraemer
+Matricula : 55555
+indiceProdutividade : 5
+indice pobreza= : 0.9
+destruiu objeto TAlunoFuncionario
+destruiu objeto TFuncionario:
+destruiu objeto TAluno:1
+destruiu objeto TPessoa
+--------------------------------------------------------------
+Seleção do tipo de objeto
+TPessoa....................0
+TAluno.....................1
+TFuncionario...............2
+TAlunoFuncionario..........3:
+--------------------------------------------------------------
+-1
+Sair.
+*/
+/*
+Dica:
+-Observe a ordem de criação e destruição.
+-Com a herança múltipla normal  os atributos nome 
+e matricula eram criados 2 vezes
+-Com a herança múltipla virtual os atributos nome 
+e matricula são criados 1 vez
+-Observe que mesmo com herança múltipla, esta pedindo 
+o nome e a matricula 2 vezes.
+*/

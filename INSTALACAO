@@ -1,0 +1,137 @@
+===============================================================
+        Programação Orientada a Objeto com C++
+Desenvolvimento de software multiplataforma com software livre
+                Autor: Andre Duarte Bueno
+===============================================================
+
+Veja a seguir as instruções para instalação dos programas do livro.
+
+1) Download das listagens de programas:
+=======================================
+Os arquivos com as listagens dos programas estão disponíveis para 
+download no link:
+http://www.novateceditora.com.br/downloads.php
+
+2) Para descompactar os arquivos:
+=================================
+No Windows: 
+Use o winzip e descompacte o arquivo Livro_cpp-1.0.zip ou use o unzip:
+Exemplo:
+	copy  Livro_cpp-1.0.zip c:/tmp
+	cd c:/tmp
+	unzip Livro_cpp-1.0.zip
+
+No GNU/Linux: 
+Use o programa tar:
+Exemplo:
+	mv Livro_cpp-1.0.tar.gz /tmp
+	cd /tmp
+	tar -xvzf Livro_cpp-1.0.tar.gz
+
+No SunOS 5.8:
+Use os programas gunzip e tar
+Exemplo:
+	mv Livro_cpp-1.0.tar.gz /tmp
+	cd /tmp
+	gunzip Livro_cpp-1.0.tar.gz
+	tar -xf Livro_cpp-1.0.tar
+
+
+3) Para instalar o pacote de programas:
+=======================================
+No Windows:
+Você precisa usar um compilador para compilar os programas.
+A sugestão é usar o compilador da GNU disponibilizado com o programa
+Dev C++ (disponível no link http://sourceforge.net/projects/dev-cpp/)
+
+No GNU/Linux:
+O procedimento para instalação de um programa multiplataforma distribuído
+com arquivos .tar.gz é o seguinte:
+- Faz o download do arquivo Livro_cpp-1.0.tar.gz
+- Descompacta o arquivo e a seguir executa a sequência 
+./configure && make && make install.
+
+Exemplo:
+	tar -xvzf Livro_cpp-1.0.tar.gz
+	cd Livro_cpp-1.0
+	./configure
+	make -k
+	make install		(como root)
+
+No SunOS 5.8:
+Exemplo:
+	cd /tmp/Livro_cpp-1.0
+	./configure
+	make -k
+	make install		(como root)
+	
+4) Lista dos Arquivos:
+======================
+O arquivo tree.txt contém a lista de todos os arquivos.
+
+5) Nota - Sistemas testados:
+============================
+Os exemplos contidos nos sub-diretórios foram testados e
+rodados nas seguintes plataformas:
+
+- PC com GNU/LINUX,RedHat 7.2, 8.0, 9.0
+- PC com Windows 2000.
+- Estação de trabalho SUN Enterprise E450 com SunOS 5.8.
+- Estação de trabalho Silicon Graphics com ...
+
+PS: Alguns exemplos rodam apenas no GNU/Linux. 
+
+6) Nota - Listagens com bugs:
+=============================
+Algumas listagens incluem bugs (erros), o objetivo de incluir
+listagens com erros é ilustrar o funcionamento do compilador g++ 
+(as mensagens geradas pelo compilador) e do debuger da GNU.
+Desta forma, ao executar:
+
+make
+
+O sistema irá parar quando encontrar um arquivo com bug.
+
+Para compilar todos os exemplos válidos ao mesmo tempo 
+sem que o sistema pare, use:
+make -k
+
+7) Nota - Versões do automake e autoconf:
+=========================================
+Os arquivos de compilação multiplataforma foram gerados usando-se
+o automake-1.7 e o 2.57.
+
+8) Nota - Listagens que requerem elementos adicionais:
+======================================================
+Sobre as listagens da parte V:
+
+- A listagem List-49-2 foi testada no GNU/Linux-RedHat 7x, e não funciona
+no Red Hat 8 e 9. Requer o arquivo de cabeçalho "pfstream.h", inexistente nas versões
+recentes do compilador da GNU.
+
+- As listagens List_50_3 e  List-50-4 requerem a instalação da biblioteca commom C++.
+A mesma é disponível para vários sistemas operacionais, veja 
+http://www.gnu.org/software/commoncpp/.
+PS: As distribuições GNU/Linux costumam incluir a biblioteca commom C++.
+
+
+9) Diagramas UML do livro:
+==========================
+
+	Os diagramas UML apresentados no livro foram incluídos no diretório UML. Os diagramas foram feitos usando-se o programa DIA (disponível no endereço [http://www.gnome.org/gnome-office/dia.shtml], ou [http://www.lysator.liu.se/~alla/dia/]).
+
+
+10) Bookmark:
+=============
+	
+	Voçê encontra no diretório principal desta distribuição o arquivo [bookmarks-prog.html], o mesmo contém um conjunto de links para sites relacionados a software livre, programação orientada a objeto com C++, FAQ, Tutoriais (UML, STL, LinuxProg), OOP-UML, Ambientes Desenvolvimento, STL, Bibliotecas, Documentação, cvs, SoftwareMultiplataforma, Clusters (MPI, PVM, Threads), sites diversos do GNU/Linux.
+
+
+Autor:
+=====
+Autor: Eng. André Duarte Bueno.
+email: andre@lmpt.ufsc.br 
+       bueno@lenep.uenf.br
+Site:  http://www.lmpt.ufsc.br/~andre
+       http://www.lenep.uenf.br/~bueno
+===============================================================

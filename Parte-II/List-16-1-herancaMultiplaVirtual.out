@@ -1,0 +1,17 @@
+/*
+Saída:
+------
+[andre@mercurio Cap3-POOUsandoC++]$ ./a.out 
+Construtor B1
+Construtor B2
+Construtor D2
+Construtor B2
+Construtor D1
+Construtor Top
+Destrutor  Top
+Destrutor  D1
+Destrutor  B2
+Destrutor  D2
+Destrutor  B2
+Destrutor  B1
+*/

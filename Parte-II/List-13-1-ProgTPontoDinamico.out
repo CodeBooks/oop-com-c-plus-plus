@@ -1,0 +1,17 @@
+/*
+Novidade:
+---------
+-Uso de ponteiro e objeto dinâmico
+-Uso do operador new
+
+Observe que com objetos estáticos usa-se nomeobjeto.atributo;
+e com objeto dinâmicos, troca-se o ponto (.) pela seta (->)
+nomeobjeto->atributo;
+
+Saída:
+------
+[andre@mercurio Cap3-POOUsandoC++]$ ./a.out 
+TPonto: Coordenada x=6
+TPonto: Coordenada y=7
+Contador = 1
+*/

@@ -1,0 +1,8 @@
+/*
+  Novidade:
+  ----------
+  -Manipulação de um container usando um stack.
+  -Uso de push para adicionar elementos.
+  -Uso de top para ver elemento no topo da pilha.
+  -Uso de pop para retirar elemento da pilha.
+*/

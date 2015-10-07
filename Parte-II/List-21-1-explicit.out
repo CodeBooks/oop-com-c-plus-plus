@@ -1,0 +1,23 @@
+/*
+  Novidade:
+  --------
+  Uso de explicit em construtor
+  
+  Saída sem uso de explicit:
+  -------------------------
+  [andre@mercurio Cap3-POOUsandoC++]$ ./a.out 
+  Print(data); 5
+  Print(10); 10
+  
+  Agora coloque a palavra chave explicit na frente da declaração do construtor.
+  
+  Saída com uso de explicit:
+  -------------------------
+  [andre@mercurio Cap3-POOUsandoC++]$ g++ e96-explicit.cpp 
+  e96-explicit.cpp: In function `int main ()':
+  e96-explicit.cpp:36: could not convert `10' to `const TData &'
+  e96-explicit.cpp:15: in passing argument 1 of `Print (const TData &)'
+  
+  Ou seja, com explicit o compilador não aceita a chamada
+  Print(10);
+*/

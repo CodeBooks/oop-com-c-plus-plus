@@ -1,0 +1,12 @@
+Sequência de uso do programa ddd
+(interface gafica para o gdb).
+
+1)
+[andre@mercurio Parte-IV]$ g++ -g List-49-1-bug.cpp
+2)
+Executa o ddd
+3) abre o arquivo executável a.out (ctrl+o)
+4) Acrecenta breakpoints.
+5) Manda executar o programa.
+6) Pode-se incluir
+

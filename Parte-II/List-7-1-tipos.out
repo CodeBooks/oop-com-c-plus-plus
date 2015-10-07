@@ -1,0 +1,9 @@
+/*
+Novidades:
+-Uso dos tipos padrões de C++ (bool, char, int, float, double, long double)
+-Criação, atribuição de valores e uso de objetos numéricos.
+
+Saída:
+-----
+Este exemplo não inclue saída de dados.
+*/

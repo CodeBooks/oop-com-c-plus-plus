@@ -1,0 +1,14 @@
+--- List-41-1-hello.cpp	2003-03-12 10:45:31.000000000 -0300
++++ List-41-2-hello.cpp	2003-03-12 10:44:36.000000000 -0300
+@@ -3,5 +3,11 @@
+ int main()
+ {
+   std::cout << "Oi tudo bem " << std::endl;
++  std::cout << "Entre com x " << std::endl;
++  int x;
++  cin >> x;
++  std::cout << "x= " << x << std::endl;
++
+   return 0;
+ }
++

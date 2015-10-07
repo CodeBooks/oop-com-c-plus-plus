@@ -1,0 +1,20 @@
+/*
+  Saída:
+  ------
+  [andre@mercurio Cap3-POOUsandoC++]$ ./a.out 
+  Saída de v1.Mostra()
+  0 1  2  3  4 
+  
+  Saída de v2.Mostra() após v2 = v1
+  0 1 2 3 4
+  
+  Saída de v1.Mostra() após deleção de v2
+  0 1 2 3 4
+  
+  Falha de segmentação  (ou resultados estranhos).
+  
+  Observação:
+  Observe que como v2.ptr_v e v1.ptr_v apontavam
+  para o mesmo bloco de memória, após destruir v2, v1.ptr_v
+  aponta para um monte de lixo e causa uma falha de segmentação.
+*/

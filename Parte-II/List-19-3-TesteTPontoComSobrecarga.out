@@ -1,0 +1,24 @@
+/*
+Para compilar no Linux:
+g++ List-19-3-Programa.cpp List-19-2-TPontoComSobrecarga.cpp
+
+Saída:
+------
+[andre@mercurio Parte-II]$ ./a.out 
+Entre com os valores de p1 [x enter y enter]:2 3
+---p1-->(2,3) ---p2-->(0,0) ---p3-->(0,0)
+Após p2 = p1
+---p1-->(2,3) ---p2-->(2,3) ---p3-->(0,0)
+Testando p1 == p2
+p1==p2
+Após p2++
+---p1-->(2,3) ---p2-->(3,4) ---p3-->(0,0)
+Fazendo p3 = p2++
+---p1-->(2,3) ---p2-->(4,5) ---p3-->(4,5)
+Fazendo p3 = ++p2
+---p1-->(2,3) ---p2-->(5,6) ---p3-->(5,6)
+Testando p2 == p3
+p2==p3
+Após p3 = p1 + p2
+---p1-->(2,3) ---p2-->(5,6) ---p3-->(7,9)
+*/

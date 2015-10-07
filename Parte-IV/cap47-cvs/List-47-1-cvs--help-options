@@ -1,0 +1,19 @@
+[andre@mercurio cvs]$ cvs --help-options
+CVS global options (specified before the command name) are:
+    -H           Displays usage information for command.
+    -Q           Cause CVS to be really quiet.
+    -q           Cause CVS to be somewhat quiet.
+    -r           Make checked-out files read-only.
+    -w           Make checked-out files read-write (default).
+    -l           Turn history logging off.
+    -n           Do not execute anything that will change the disk.
+    -t           Show trace of program execution -- try with -n.
+    -v           CVS version and copyright.
+    -T tmpdir    Use 'tmpdir' for temporary files.
+    -e editor    Use 'editor' for editing log information.
+    -d CVS_root  Overrides $CVSROOT as the root of the CVS tree.
+    -f           Do not use the ~/.cvsrc file.
+    -z #         Use compression level '#' for net traffic.
+    -x           Encrypt all net traffic.
+    -a           Authenticate all net traffic.
+    -s VAR=VAL   Set CVS user variable.

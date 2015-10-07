@@ -1,0 +1,5 @@
+[root@mercurio biblioteca]# make alls
+g++ -c List-15-2-TCirculo.cpp  List-16-3-TElipse.cpp List-11-6-TPonto.cpp   -I/usr/include/g++
+ar -cru libTPonto.a List-15-2-TCirculo.o    List-16-3-TElipse.o   List-11-6-TPonto.o
+install -c libTPonto.a /usr/local/lib/libTPonto.a
+g++ List-17-1-Polimorfismo.cpp -static -L. -lTPonto -o List-17-1-Polimorfismo-static

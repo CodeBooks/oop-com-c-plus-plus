@@ -1,0 +1,8 @@
+/*
+Saída:
+------
+[andre@mercurio Cap3-POOUsandoC++]$ ./a.out 
+Ponto: Coordenada x=5
+Ponto: Coordenada y=4
+Contador = 0
+*/

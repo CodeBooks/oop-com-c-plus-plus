@@ -1,0 +1,120 @@
+Versão 1.0.1: 
+	Incluído arquivo Errata.html
+	Correções na listagem 33.2.
+		
+	
+Versão 1.0: 
+	Revisão geral.
+	Edição: Rubens Prates.
+	Revisão de português: Patricia Zagni.
+	Revisão técnica: Luiz Adolfo Hegele Júnior, Rodrigo Surmas, Carlos Henrique Pico Ortiz.
+	Capa: Camila Mesquita.
+	Editoração eletrônica: Marcelo Ferreira Paiva
+	ISBN: 85-7522-040-3
+
+	Criação de sistema de instalação e compilação dos programas usando
+	o sistema multiplataforma da GNU, isto é,
+	automake, autoconf e libtool.
+	Para instalação dos programas basta executar a sequência:
+	./configure && make -k && make install
+	(veja arquivo INSTALL).
+
+Versão 0.9: 
+	Revisão por terceiros, Rubens Prates, Marcelo Paiva.	
+
+	Inclusão de exemplos úteis. Informações adicionais sobre ambientes de desenvolvimento.
+	A Parte IV - "Programação Multiplataforma com Software Livre" , foi totalmente reescrita.
+	todos os capítulos foram atualizados, considerando as versões mais recentes dos 
+	softwares da GNU.Os capítulos foram ampliados, novos exemplos foram adicionados. 
+
+	A Parte VI - "Apêndices" foi totalmente revisada e ampliada.
+
+	Correções nas figuras.
+	Novos Exemplos.
+
+Versão 0.8: 
+	Unificação da documentação (mais limpa e enxuta).
+ 	Inclusão de novos exemplos.
+
+	Na Parte III - "Introdução a STL", adotou-se um layout mais claro,
+	a mesma também foi  revisada, novos exemplos foram adicionados.
+	Os capítulos de programação genérica e de objetos funções foram ampliados. 
+
+Versão 0.7: 
+	A parte I -"Filosofia e Modelagem Orientada a Objeto",
+	foi totalmente reescrita, foram adicionados novos diagramas e novos exemplos.
+
+	A Parte II - "POO Utilizando C++", foi totalmente reformulada e  ampliada.
+	Foram adicionados novos exemplos. Diversos erros foram corrigidos.
+	Alguns capítulos foram totalmente reescritos, como Tipos, Namespace, Friend, 
+	Sobrecarga de Operador,converções, templates (especializações), 
+	Entrada e saída (a classe locale), a classe String.
+
+Versão 0.6: 
+	Inclusão da Parte V - Cluster de Computadores e Processamento Paralelo, a mesma
+	è composta de 4 capítulos, no primeiro faz-se um apanhado geral de cluster de 
+	computadores e programação paralela.No segundo apresenta-se mais detalhadamente 
+	e com exemplos o uso de programação paralela com múltiplos processos.
+	No terceiro apresenta-se mais detalhadamente e com exemplos o uso de programação 
+	paralela com múltiplas threads. No quarto capítulo apresenta-se um exemplo real, e 
+	um conjunto de links para sites relacionados a clusters de computadores e
+	programação paralela. 
+	
+Versão 0.5: 
+	Centenas de correções, novos exemplos.
+
+Versão 0.4.6	
+	Revisão,  modificação e ampliação dos capítulos:
+	Friend, sobrecarga de operador, sobrecarga de método, templates
+	Centenas de pequenas modificações.
+
+Versão 0.4.5
+	Centenas de pequenas correções. Revisão de exemplos e listagens.
+
+Versão 0.4.1:
+	Centenas de correções feitas sobre a versão enviada para a revista do Linux.
+
+
+Versão 0.4: 
+	Na versão 0.4 a apostila foi revisada e reestruturada. 
+	Foram adicionados exemplos externos (listagens de códigos externos devidamente 
+	testadosTestes realizados no GNU/Linux, RedHat 7x usando o compilador g++ da gnu. 
+	O RedHat pode ser obtido em http://www.redhat.com e os programas da gnu 
+	em http://www.gnu.org. 
+	A programação para GNU/Linux foi ampliada, bem como a parte relativa a STL. 
+	A programação para Windows usando a OWL foi eliminada.
+	Observação importante. Um tempo enorme  usado para aprender a usar a OWL foi 
+	literalmente perdido. Programas pagos como a OWL podem morrer de forma 
+	inesperada e deixar seus usuários órfãos. Este é 
+	mais um motivo para você usar programas livres. 
+	Na versão 0.4 diversos capítulos tiveram sua ordem invertida. Procurei trazer para 
+	o início da apostila os capítulos de programação orientada a objeto usando C++. 
+	Os capítulos de sintaxe, escopo, operadores, controles, ponteiros, funções e os 
+	relativos a programação em C, foram movidos para o apêndice. Isto se justifica, 
+	pois boa parte destes conceitos não se aplicam ao uso de classes, não sendo 
+	fundamentais em C++A versão 0.4.5 inclui diversas correções e foi gerada 
+	utilizando o programa tex2pdf, como conseqüência, o arquivo pdf é menor 
+	e as letras mais legíveis.. 
+	Para gerar a versão (0.4) usei o lyx.
+	Me encantei com a beleza e facilidades do LyX/LaTeX, de 
+	forma que, esta e as próximas versões serão escritas usando LaTeX. Veja 
+	informações sobre tex em http://biquinho.furg.br/tex-br/ e diversos links 
+	em http://biquinho.furg.br/tex-br/links.html. Veja informações sobre 
+	o LyX em http://www.lyx.org/.
+
+Versão 0.3: 
+	Na versão 0.3 acrescentei a biblioteca padrão de C++, a STL (Parte IV) 
+	e a programação para GNU/Linux (Parte V).
+	Para gerar a versão (0.3) usei o StarOfficeVocê pode obter cópias grátis 
+	do StarOffice 5.2 em http://www.staroffice.com/. Atualmente pode-se 
+	obter o Open Office em http://www.openoffice.org/ versão 5.2, é grátis. 
+
+Versão 0.2: 
+	Na versão 0.2 a apostila foi ampliada e mais detalhada. 
+	Foi acrescentada a programação para Windows usando a OWL 
+	(o uso do Borland C++ 5.2) e a modelagem TMO (antiga Parte VI). 
+
+
+Versão 0.1: 
+	A versão 0.1 incluía apenas a programação orientada a objeto (Parte I) 
+	e a sintaxe de C++ (Parte II). Foi desenvolvida usando o editor Word. 

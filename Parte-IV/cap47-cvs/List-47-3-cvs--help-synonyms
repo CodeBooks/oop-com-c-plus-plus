@@ -1,0 +1,23 @@
+[andre@mercurio cvs]$ cvs --help-synonyms
+CVS command synonyms are:
+        add          ad new
+        admin        adm rcs
+        annotate     ann 
+        checkout     co get
+        commit       ci com
+        diff         di dif
+        export       exp ex
+        history      hi his
+        import       im imp
+        log          lo 
+        login        logon lgn
+        rannotate    rann ra
+        rdiff        patch pa
+        release      re rel
+        remove       rm delete
+        rlog         rl 
+        rtag         rt rfreeze
+        status       st stat
+        tag          ta freeze
+        update       up upd
+        version      ve ver

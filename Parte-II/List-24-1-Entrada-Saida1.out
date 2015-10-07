@@ -1,0 +1,45 @@
+/*
+  Novidade:
+  ---------
+  Uso de formatação de saída no C++ (width, fill, precision)
+  
+  Observações:
+  -----------
+  Mostra saída com e sem showpoint.
+  Define o campo em 5 caracteres e imprime o valor i.
+  Veja que o número 1 é impresso na 4 coluna.
+  A seguir entra num for onde define a precisão de saída, e imprime o valor de d.
+  Observe que d é truncado e não arredondado.
+  No final define o caracter de preenchimento  '*' e imprime i,d,c.
+  
+  Saída:
+  ------
+  [andre@mercurio Parte-III]$ ./a.out
+  -->Mostrando números em ponto flutuante
+  Sem shownpoint 3.33000=3.33
+  Com shownpoint 3.33000=3.33000
+  -->Definindo a  largura do campo
+  16
+  -->Definindo a  precisão da saída
+  Precisão = 1 d=1.
+  Precisão = 2 d=1.1
+  Precisão = 3 d=1.12
+  Precisão = 4 d=1.123
+  Precisão = 5 d=1.1235
+  Precisão = 6 d=1.12346
+  Precisão = 7 d=1.123457
+  Precisão = 8 d=1.1234568
+  Precisão = 9 d=1.12345679
+  Precisão =10 d=1.123456789
+  Precisão =11 d=1.1234567890
+  Precisão =12 d=1.12345678901
+  Precisão =13 d=1.123456789012
+  Precisão =14 d=1.1234567890123
+  Precisão =15 d=1.12345678901235
+  Precisão =16 d=1.123456789012346
+  Precisão =17 d=1.123456789012346
+  Precisão =18 d=1.123456789012346
+  Precisão =19 d=1.123456789012346
+  -->Definindo o caracter de preenchimento
+  ********16
+  */

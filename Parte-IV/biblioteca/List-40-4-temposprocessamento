@@ -1,0 +1,19 @@
+[root@mercurio biblioteca]# cat teste
+4
+
+[root@mercurio biblioteca]# ls -lh List-17-1-*
+ 1001.0K Mai 19 10:30 List-17-1-Polimorfismo
+    4.8K Mai 19 10:30 List-17-1-Polimorfismo-dinamico-libtool
+   19.0K Mai 19 10:30 List-17-1-Polimorfismo-static
+   19.0K Mai 19 10:30 List-17-1-Polimorfismo-static-libtool
+
+[root@mercurio biblioteca]# time ./List-17-1-Polimorfismo < teste
+real    0m0.003s	user    0m0.000s	sys     0m0.010s
+
+[root@mercurio biblioteca]# time ./List-17-1-Polimorfismo-static < teste
+real    0m0.006s	user    0m0.010s	sys     0m0.000s
+
+[root@mercurio biblioteca]# time ./List-17-1-Polimorfismo-dinamico-libtool < teste
+real    0m1.246s	user    0m1.140s	sys     0m0.100s
+[root@mercurio biblioteca]# time ./List-17-1-Polimorfismo-dinamico-libtool < teste
+real    0m0.044s	user    0m0.020s	sys     0m0.030s

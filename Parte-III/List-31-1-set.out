@@ -1,0 +1,13 @@
+/*
+  Novidades:
+  -Uso do container set.
+  -Uso de insert.
+  
+  Observe que na saída os dados estão ordenados, mesmo não tendo
+  sido incluídos de forma ordenada.
+  
+  Saída:
+  -----
+  [andre@mercurio Parte-IV]$ ./a.out
+  10 100 1000 10000
+*/

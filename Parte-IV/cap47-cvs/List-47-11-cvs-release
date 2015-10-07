@@ -1,0 +1,18 @@
+[root@mercurio lib-gnu]# cvs commit -r 2
+cvs commit: Examining .
+cvs commit: Examining .libs
+cvs commit: Examining novoDir
+Checking in Makefile;
+/home/REPOSITORY/exemplo-biblioteca-gnu/Makefile,v  <--  Makefile
+new revision: 2.1; previous revision: 1.1
+done
+Checking in arquivo-usuario2.txt;
+/home/REPOSITORY/exemplo-biblioteca-gnu/arquivo-usuario2.txt,v  <--  arquivo-usuario2.txt
+new revision: 2.1; previous revision: 1.1
+done
+....
+....
+Checking in leiame.txt;
+/home/REPOSITORY/exemplo-biblioteca-gnu/leiame.txt,v  <--  leiame.txt
+new revision: 2.1; previous revision: 1.3
+done

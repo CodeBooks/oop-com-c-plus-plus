@@ -1,0 +1,28 @@
+/*
+  Novidades:
+  Uso do container list.
+  Uso dos métodos push_front e push_back para acrescentar elementos no container.
+  Uso dos métodos pop_front e pop_back para retirar elementos do container.
+  Uso dos métodos sort e unique para classificação dos elementos. 
+  Uso de const iterator dentro da sobrecarga do operador  <<.
+  
+  Saída:
+  -----
+  [andre@mercurio Cap4-STL]# ./a.out 
+  --------------------------------------------------
+  Conteúdo do container: 
+  315.1 314.1 313.4 312.1 312.1 313.4 316.7 
+  --------------------------------------------------
+  Conteúdo do container após: container_list.pop_front(); 
+  314.1 313.4 312.1 312.1 313.4 316.7 
+  --------------------------------------------------
+  Conteúdo do container após: container_list.pop_back(); 
+  314.1 313.4 312.1 312.1 313.4 
+  --------------------------------------------------
+  Conteúdo do container após: container_list.sort(); 
+  312.1 312.1 313.4 313.4 314.1 
+  --------------------------------------------------
+  Conteúdo do container após: container_list.unique(); 
+  312.1 313.4 314.1 
+  --------------------------------------------------
+*/

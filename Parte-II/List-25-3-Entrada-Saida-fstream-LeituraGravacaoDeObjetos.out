@@ -1,0 +1,42 @@
+
+/*
+  Novidade:
+  --------
+  Escreve objeto em disco com write e lê com read.
+  
+  Saída:
+  ------
+  [andre@mercurio Cap3-POOUsandoC++]$ g++ LeituraGravacaoDeObjetosSimples.cpp
+  [andre@mercurio Cap3-POOUsandoC++]$ ./a.out 
+  Nome do Arquivo  : Teste.txt
+  Entre com os valores de x e y de cada objeto. Para encerrar ctrl+d
+  
+  x : 1
+  y : 2
+  Objeto=(x = 1,y = 2)
+  
+  x : 3
+  y : 4
+  Objeto=(x = 3,y = 4)
+  
+  x : 5
+  y : 6
+  Objeto=(x = 5,y = 6)
+  
+  x : 
+  y : 
+  Mostrando objetos do vetor d 
+  (x = 1,y = 2)
+  (x = 3,y = 4)
+  (x = 5,y = 6)
+  
+  Vai ler os objetos do disco
+  (x = 1,y = 2)
+  (x = 3,y = 4)
+  (x = 5,y = 6)
+  
+  Mostrando objetos do vetor d2 
+  (x = 1,y = 2)
+  (x = 3,y = 4)
+  (x = 5,y = 6)
+*/

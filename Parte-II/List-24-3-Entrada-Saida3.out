@@ -1,0 +1,44 @@
+/*
+  Novidade:
+  --------
+  Mostra o uso da formatação da saída de dados em C++
+  
+  Saída:
+  -----
+  [andre@mercurio Parte-III]$ ./a.out 
+  -----------------Formato padrão----------------
+  int_i double_d string_nome char_c char*_cstring
+  -----------------------------------------------
+  5 1.23457  Clube Palestra Itália - Palmeiras c STRING_DE_C
+  Alinhamento a esquerda
+  5          
+  Alinhamento a direita
+  5
+  Formato científico
+  5 1.234568e+00
+  Mostra sinal positivo
+  +5 +1.234568e+00
+  Maiúsculas
+  Clube Palestra Itália - Palmeiras   STRING_DE_C
+  
+  Seta precisão numérica em 12
+  +1.234567890000E+00
+  Seta espaço do campo em 20 caracteres, temporário
+  +5
+  Seta o caracter de preenchimento '#'
+  ##################+5
+  Escreve na tela 5 caracteres da cstring
+  STRIN
+  Imprime letra G na tela
+  G
+  Imprime a letra
+  c
+  Imprime código ascii da letra
+  +99
+  Imprime 12 em hexadecimal
+  C
+  Parenteses evita ambiguidade, imprime "9"
+  9
+  Imprime string de C
+  STRING_DE_C
+*/

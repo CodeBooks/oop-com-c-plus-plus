@@ -1,0 +1,16 @@
+/*
+  Novidade:
+  ========
+  Uso de pfstream para executar um programa externo e enviar comandos
+  diretamente para este programa.
+  
+  Neste exemplo, vai executar o programa gnuplot
+  e enviar para o programa gnuplot o comando 
+  "plot 'data.dat' with linespoint\n"
+  
+  Dica: o gnuplot é executado porque opfstream trata a barra |
+  como uma instrução para executar o programa |gnuplot e não abrir um
+  arquivo de disco.
+  Ou seja, você precisa incluir antes do nome do programa a ser executado
+  uma barra (PS; testado na plataforma Linux).
+*/

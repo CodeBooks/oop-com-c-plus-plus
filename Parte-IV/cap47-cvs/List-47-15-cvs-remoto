@@ -1,0 +1,17 @@
+Anonymous CVS login
+
+In order to make anonymous CVS access easier, you should set your CVSROOT environment variable to
+
+:pserver:anoncvs@anoncvs.lyx.org:/usr/local/lyx/cvsroot
+
+(Alternatively, you can use the -d option to the cvs commands.).
+
+Now just do:
+
+cvs login
+
+The password is lyx. Finally,
+
+cvs checkout lyx-devel
+
+This will make a directory lyx-devel and download lots of files into that directory. Of course you can say cvs checkout lyx-1_0_x instead, depending on which module you'd like to download. 

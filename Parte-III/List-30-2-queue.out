@@ -1,0 +1,14 @@
+/*
+  Novidade:
+  ----------
+  Manipulacao de um container usando um queue.
+  Uso de push para adicionar elementos.
+  Uso de front para ver elemento da frente.
+  Uso de pop para retirar elemento do queue.
+  
+  Saída:
+  ------
+  [andre@mercurio Cap4-STL]# ./a.out 
+  Retirando elementos do container_queue_deque: 0 1 2 3 4 5 6 7 8 9 
+  Retirando elementos do container_queue_list: 0 1 4 9 16 25 36 49 64 81 
+*/

@@ -1,0 +1,64 @@
+[andre@mercurio Cap3-POOUsandoC++]$ g++ e92-class-construtor-copia.cpp
+[andre@mercurio Parte-II]$ ./a.out
+criou objeto 1 construtor default
+Entre com o nome do professor: Carlos
+Entre com a matricula do professor: 102324
+Entre com o número de alunos da disciplina (ex =3):3
+criou objeto 2 construtor default
+criou objeto 3 construtor de cópia
+criou objeto 4 construtor de cópia
+criou objeto 5 construtor de cópia
+destruiu objeto 4
+Aluno 0
+Entre com o nome do aluno: João da Silva
+Entre com a matricula do aluno: 932123
+Entre com o IAA do aluno: 3.7
+Aluno 1
+Entre com o nome do aluno: Pedro Santana
+Entre com a matricula do aluno: 987423
+Entre com o IAA do aluno: 3.4
+Aluno 2
+Entre com o nome do aluno: Luiz Henrique Santos
+Entre com a matricula do aluno: 435078
+Entre com o IAA do aluno: 2.9
+-------------------------------------------------------
+RELAÇÃO DE PROFESSORES E ALUNOS:
+-------------------------------------------------------
+Nome do professor: Carlos
+Matricula : 102324
+-------------------------------------------------------
+Aluno 0
+Nome do aluno: João da Silva
+Matricula : 932123
+iaa : 3.7
+-------------------------------------------------------
+Aluno 1
+Nome do aluno: Pedro Santana
+Matricula : 987423
+iaa : 3.4
+-------------------------------------------------------
+Aluno 2
+Nome do aluno: Luiz Henrique Santos
+Matricula : 435078
+iaa : 2.9
+
+Número de alunos = 4
+-------------------------------------------------------
+ executando :TAluno professor2(professor);
+criou objeto 5 construtor de cópia
+Nome do aluno: Carlos
+Matricula : 102324
+iaa : 0
+-------------------------------------------------------
+ executando :TAluno professor3 = professor2;
+criou objeto 6 construtor de cópia
+Nome do aluno: Carlos
+Matricula : 102324
+iaa : 0
+-------------------------------------------------------
+destruiu objeto 5
+destruiu objeto 4
+destruiu objeto 3
+destruiu objeto 2
+destruiu objeto 1
+destruiu objeto 0

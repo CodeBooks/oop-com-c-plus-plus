@@ -1,0 +1,20 @@
+[andre@mercurio cvs]$ cvs -H checkout
+Usage:
+  cvs checkout [-ANPRcflnps] [-r rev] [-D date] [-d dir]
+    [-j rev1] [-j rev2] [-k kopt] modules...
+	-A	Reset any sticky tags/date/kopts.
+	-N	Don't shorten module paths if -d specified.
+	-P	Prune empty directories.
+	-R	Process directories recursively.
+	-c	"cat" the module database.
+	-f	Force a head revision match if tag/date not found.
+	-l	Local directory only, not recursive
+	-n	Do not run module program (if any).
+	-p	Check out files to standard output (avoids stickiness).
+	-s	Like -c, but include module status.
+	-r rev	Check out revision or tag. (implies -P) (is sticky)
+	-D date	Check out revisions as of date. (implies -P) (is sticky)
+	-d dir	Check out into dir instead of module name.
+	-k kopt	Use RCS kopt -k option on checkout. (is sticky)
+	-j rev	Merge in changes made between current revision and rev.
+(Specify the --help global option for a list of other help options)

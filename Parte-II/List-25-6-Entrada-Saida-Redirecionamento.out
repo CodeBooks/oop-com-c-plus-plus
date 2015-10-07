@@ -1,0 +1,34 @@
+/*
+  Novidade:
+  Uso de redirecionamento de entrada.
+  Neste programa você pode entrar os dados via teclado ou
+  usando um arquivo de disco e o redirecionamento:
+  
+  Você precisa:
+  De um arquivo de disco com o nome:  dados_simulacao.dat
+  e o conteúdo:
+  NomeArquivoDisco.dat
+  1
+  0.0001
+
+  Executando o programa sem redirecionamento
+  ------------------------------------------
+  [andre@mercurio Cap3-POOUsandoC++]$ ./a.out 
+  Entre com o nome do arquivo de disco: teste.dat
+  Entre com o número de repetições: 3
+  Entre com a precisão do solver: .01
+  VALORES ENTRADOS / LIDOS
+  nome do arquivo de disco = teste.dat
+  número de repetições = 3
+  precisao = 0.01
+  
+  Executando o programa com redirecionamento
+  ------------------------------------------
+  [andre@mercurio Cap3-POOUsandoC++]$ ./a.out < dados_simulacao.dat 
+  Entre com o nome do arquivo de disco: Entre com o número de repetições: 
+  Entre com a precisão do solver: 
+  VALORES ENTRADOS / LIDOS
+  nome do arquivo de disco = NomeArquivoDisco.dat
+  número de repetições = 1
+  precisao = 0.0001
+*/

@@ -1,0 +1,46 @@
+/*
+  Novidade:
+  --------
+  Uso de bitset.
+  
+  Saída:
+  -----
+[andre@mercurio Parte-II]$ ./a.out
+Cria objeto do tipo bitset com tamanho size e nome b.
+Entre com o bit que deseja modificar n=0
+Seta o bit n=0 para true -->00001
+Seta o bit n=0 para false-->00000
+Seta todos os bits para true-->11111
+Seta todos os bits para false-->00000
+Inverte o bit n=0-->00001
+Inverte todos os bits-->11110
+Usa método teste(n), com n=0 bool t = b.test(n);  t= 0
+Tamanho do bitset--> b.size()=5
+Número bits ativados b.count()=4
+Retorna true se tem pelo menos 1 ativo b.any ()=1
+Retorna true se todos inativos b.none()=0
+Cria bitset b1 e b2 e faz  b1[n] = 1;
+b1 != b2
+Faz b1[n] = 1; e depois  realiza um AND bit a bit e armazena em b1
+Após b1[n] = 1; e  b1 &= b2;
+b1-->00000 b2-->00000
+Realiza um OR bit a bit e armazena em b1
+Após  b1 != b2;
+b1-->00010 b2-->00000
+Realiza um XOR bit a bit e armazena em b1
+Após  b1 ^= b2;
+b1-->00010 b2-->00000
+Rotaciona b1 para direita n posições (todos os bits). Os bits iniciais assumem 0.
+Após  b1[n] = 1; e b1 >>= n;
+b1-->00011 b2-->00000
+Rotaciona b1 para esquerda n posições (todos os bits).Os bits finais assumem 0.
+Após   b1 <<= n;
+b1-->00011
+Retorna um ulong
+b.to_ulong ()= 30
+
+[andre@mercurio Parte-II]$ ./a.out
+Cria objeto do tipo bitset com tamanho size e nome b.
+Entre com o bit que deseja modificar n=12
+Seta o bit n=12 para true -->Abortado
+*/

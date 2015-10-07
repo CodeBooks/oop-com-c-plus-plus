@@ -1,0 +1,52 @@
+## Arquivo de shell que realiza a converção dos arquivos no formato
+## unix para dos, usando o programa unix2dos
+## Para uso do unix2dos veja:
+## man unix2dos
+## Exemplos:
+## unix2dos a.txt b.txt
+## unix2dos a.txt -c iso b.txt
+
+## Outra opção para converção dos arquivos 
+## é usar o programa unix2dos disponibilizado em :
+## http://home.clear.net.nz/pages/niche/unix2dos1.html
+
+## Converte arquivos do unix para dos (procure por "unix2dos" na internet)
+## unix2dos -k *
+for i in *; do unix2dos $i; done
+
+## unix2dos -k Parte-I/*
+for i in Parte-I/*; do unix2dos $i; done
+
+## unix2dos -k Parte-II/*
+for i in Parte-II/*; do unix2dos $i; done
+
+## unix2dos -k Parte-II/extra/*
+for i in Parte-II/extra*; do unix2dos $i; done
+
+## unix2dos -k Parte-III/*
+for i in Parte-III/*; do unix2dos $i; done
+
+## unix2dos -k Parte-IV/* 
+for i in Parte-IV/*; do unix2dos $i; done
+for i in Parte-IV/biblioteca/*; do unix2dos $i; done
+for i in Parte-IV/biblioteca-Multiplataforma/*; do unix2dos $i; done
+for i in Parte-IV/biblioteca-Multiplataforma/dinamico/*; do unix2dos $i; done
+for i in Parte-IV/biblioteca-Multiplataforma/estatico/*; do unix2dos $i; done
+for i in Parte-IV/biblioteca-Multiplataforma/normal/*; do unix2dos $i; done
+
+## unix2dos -k Parte-IV/cvs/*
+for i in Parte-IV/cvs/*; do unix2dos $i; done
+
+## unix2dos -k Parte-IV/doc/*
+for i in Parte-IV/doc/*; do unix2dos $i; done
+
+## unix2dos -k Parte-IV/cap46-ExemploMultiplataforma/*
+for i in Parte-IV/ExemploMultiplataforma/*; do unix2dos $i; done
+
+## unix2dos -k Parte-V/*
+for i in Parte-V/*; do unix2dos $i; done
+
+## unix2dos -k Parte-VI/*
+for i in Parte-VI/*; do unix2dos $i; done
+
+

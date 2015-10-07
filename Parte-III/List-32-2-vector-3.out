@@ -1,0 +1,41 @@
+/*
+  Novidades:
+  Uso de cin.clear para zerar o fluxo da stream.
+  Uso dos métodos  find, find_if,  fill e sort
+  Uso os métodos  size,  capacity e resize
+  
+  Saída:
+  ------
+  [andre@mercurio Parte-III]$ ./a.out
+  Entre com o dado (  0):00
+  Entre com o dado (  1):11
+  Entre com o dado (  2):22
+  Entre com o dado (  3):33
+  Entre com o dado (  4):44
+  Entre com o dado (  5):
+  ----------------------------------------------------------
+  v[  0]=    0 v[  1]=   11 v[  2]=   22 v[  3]=   33 v[  4]=   44
+
+  Entre com o número a ser localizado:33
+  Número localizado :33
+  Número maior que 5 localizado, valor =11
+  Vetor após ordenação com sort(v.begin(),v.end())
+  ----------------------------------------------------------
+  v[  0]=    0 v[  1]=   11 v[  2]=   22 v[  3]=   33 v[  4]=   44
+  
+  Vetor após fill( v.begin(), v.end(), '45' );
+  ----------------------------------------------------------
+  v[  0]=   45 v[  1]=   45 v[  2]=   45 v[  3]=   45 v[  4]=   45
+  v.size()=5
+  v.capacity()=8
+
+  Vetor após resize(20):
+  ----------------------------------------------------------
+  v[  0]=   45 v[  1]=   45 v[  2]=   45 v[  3]=   45 v[  4]=   45 
+  v[  5]=    0 v[  6]=    0 v[  7]=    0 v[  8]=    0 v[  9]=    0 
+  v[ 10]=    0 v[ 11]=    0 v[ 12]=    0 v[ 13]=    0 v[ 14]=    0 
+  v[ 15]=    0 v[ 16]=    0 v[ 17]=    0 v[ 18]=    0 v[ 19]=    0
+  v.size()=20
+  v.capacity()=20
+----------------------------------------------------------
+*/

@@ -1,0 +1,18 @@
+Sa í da
+do
+  comando make
+    == == == == == == == == == == == =
+    Quando executo
+    [andre @ mercurio Parte - II] $ make - f List - 17 - 11 - makefile
+    O make verifica as dependencias para gerar o programa, compila os arquivos
+    que s ã o necess á rios e ent ã o usa o linker para gerar o programa
+    final.Observe na sa í da abaixo que o make vai compilar List - 17 - 5 -
+    TAluno.cpp List - 17 - 9 - TAlunoFuncionario.cpp List - 17 - 7 -
+    TFuncionario.cpp List - 17 - 3 - TPessoa.cpp e depois List - 17 - 10 -
+    class - Heranca - Multipla.cpp gerando o programa List - 17 -
+    10.[andre @ mercurio Parte - II] $ make - f List - 17 - 11 -
+    makefile g++ - c List - 17 - 5 - TAluno.cpp List - 17 - 9 -
+    TAlunoFuncionario.cpp List - 17 - 7 - TFuncionario.cpp List - 17 - 3 -
+    TPessoa.cpp g++ List - 17 - 10 - class - Heranca - Multipla.cpp List -
+    17 - 9 - TAlunoFuncionario.o List - 17 - 7 - TFuncionario.o List - 17 -
+    3 - TPessoa.o List - 17 - 5 - TAluno.o - o List - 17 - 10

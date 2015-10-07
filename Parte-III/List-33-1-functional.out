@@ -1,0 +1,24 @@
+/*
+  Novidade:
+  --------
+  Uso de classe função.
+  
+  Saída:
+  -----
+  [andre@mercurio Parte-IV]$ ./a.out 
+  Números: 
+  0 1 2 3 4 5 6 7 8 9 
+  
+  e fatoriais: 
+  1 1 2 6 24 120 720 5040 40320 362880 
+  
+  Entre com um número (int):5
+  Número = 5 fatorial = 120
+  Continuar  (s/n)?s
+  Entre com um número (int):1
+  Número = 1 fatorial = 1
+  Continuar  (s/n)?s
+  Entre com um número (int):-5
+  Número = -5 fatorial = 1
+  Continuar  (s/n)?n
+*/

@@ -1,0 +1,9 @@
+[andre@mercurio workdir]$ cvs commit -m "adicionado o módulo exemplo-biblioteca-gnu -> lib-gnu"
+cvs commit: Examining CVSROOT
+cvs commit: Examining exemplo-biblioteca-gnu
+cvs commit: Examining exemplo-biblioteca-gnu/.libs
+Checking in CVSROOT/modules;
+/home/REPOSITORY/CVSROOT/modules,v  <--  modules
+new revision: 1.2; previous revision: 1.1
+done
+cvs commit: Rebuilding administrative file database

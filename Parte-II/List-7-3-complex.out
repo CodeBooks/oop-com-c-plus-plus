@@ -1,0 +1,11 @@
+/*
+Novidades:
+-Declaração de classe do usuário, a classe Complexo.
+-Criação de objetos do tipo Complexo com nome a, b, c. 
+-Uso dos objetos criados c = a + b
+
+Saída:
+------
+[andre@mercurio Parte-II]$ ./a.out 
+c(7,7) = a(5,4) + b(2,3) 
+*/

@@ -1,0 +1,16 @@
+/*
+Novidades:--> 
+-Declaração de objetos -Entrada de dados
+-Saída de dados -Realização de conta
+
+O objeto cin, declarado no arquivo <iostream> é usado para armazenar
+dados digitados no teclado em um objeto do usuário. cin é usada na linha:
+   std::cin >> a;
+
+Saída:
+------
+[andre@mercurio Cap2-Sintaxe]$ ./a.out 
+Entre com a:5
+Entre com b:6
+Soma =11
+*/

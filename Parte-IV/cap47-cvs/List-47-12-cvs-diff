@@ -1,0 +1,15 @@
+[andre@mercurio exemplo-biblioteca-gnu]$ cvs diff
+cvs diff: Diffing .
+Index: leiame.txt
+===================================================================
+RCS file: /home/REPOSITORY/exemplo-biblioteca-gnu/leiame.txt,v
+retrieving revision 2.2
+diff -r2.2 leiame.txt
+7,11d6
+< Alteração realizada depois de criado o tag1.
+< 
+< 
+< Modificações realizadas depois do release. 
+< Pelo usuário 2.
+cvs diff: Diffing .libs
+cvs diff: Diffing novoDir

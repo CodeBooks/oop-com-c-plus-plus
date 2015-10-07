@@ -1,0 +1,30 @@
+/*
+  Novidade:
+  Uso do container map.
+  Observe na saída que os dados estão ordenados pela chave.
+  
+  Saída:
+  -----
+  [andre@mercurio Parte-IV]$ ./a.out 
+  Entre com o nome da pessoa/empresa:
+  Volvo
+  Entre com o telefone (prefixo numero) (ctrl+d para encerrar entrada):
+  045 6514215
+  Entre com o nome da pessoa/empresa:
+  Scania
+  Entre com o telefone (prefixo numero) (ctrl+d para encerrar entrada):
+  051 6594812
+  Entre com o nome da pessoa/empresa:
+  Fiat        
+  Entre com o telefone (prefixo numero) (ctrl+d para encerrar entrada):
+  551 6251849
+  Entre com o nome da pessoa/empresa:
+  Entre com o telefone (prefixo numero) (ctrl+d para encerrar entrada):
+  ----------------------------------------------------
+  Conteúdo do container:
+  ----------------------------------------------------
+  chave     valor
+  Fiat  (551)-6251849
+  Scania(51)-6594812
+  Volvo (45)-6514215
+*/

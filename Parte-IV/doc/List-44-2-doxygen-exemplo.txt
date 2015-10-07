@@ -1,0 +1,83 @@
+..# Doxyfile 0.1
+#---------------------------------------------------------------------------
+# General configuration options
+#---------------------------------------------------------------------------
+PROJECT_NAME           = "Biblioteca de objetos - LIB_LMPT" (nome projeto)"
+PROJECT_NUMBER         = 0.4 (versão)
+OUTPUT_DIRECTORY       = /home/andre/Andre/Desenvolvimento/LIB_LMPT-api/ (diretório de saída)
+OUTPUT_LANGUAGE        = English (linguagem)
+EXTRACT_ALL            = YES (extrair todas as informações)
+EXTRACT_PRIVATE        = YES (incluir atributos/funções privados)
+EXTRACT_STATIC         = YES (incluir atributos/funções estáticas)
+HIDE_UNDOC_MEMBERS     = NO
+HIDE_UNDOC_CLASSES     = NO
+JAVADOC_AUTOBRIEF      = YES (usar breve comentários)
+TAB_SIZE               = 8   (número de espaços do tab)
+#---------------------------------------------------------------------------
+# configuration options related to the LaTeX output
+#---------------------------------------------------------------------------
+GENERATE_LATEX         = YES
+LATEX_OUTPUT           = (diretório opcional, por default cria diretório latex)
+COMPACT_LATEX          = NO
+PAPER_TYPE             = a4wide (formato da folha)
+EXTRA_PACKAGES         = 
+LATEX_HEADER           = (link para header)
+PDF_HYPERLINKS         = YES (gerar links para pdf)
+USE_PDFLATEX           = YES (gerar arquivo pdf)
+LATEX_BATCHMODE        = NO
+
+#---------------------------------------------------------------------------
+# configuration options related to the RTF output
+#---------------------------------------------------------------------------
+GENERATE_RTF           = NO	(gerar saída rtf?)
+RTF_HYPERLINKS         = NO...
+
+#---------------------------------------------------------------------------
+# configuration options related to the man page output
+#---------------------------------------------------------------------------
+GENERATE_MAN           = NO	(gerar saída man page?)
+MAN_LINKS              = NO...
+
+#---------------------------------------------------------------------------
+# configuration options related to the XML output
+#---------------------------------------------------------------------------
+GENERATE_XML           = NO...
+
+#---------------------------------------------------------------------------
+# Configuration options related to the preprocessor   
+#---------------------------------------------------------------------------
+ENABLE_PREPROCESSING   = YES
+MACRO_EXPANSION        = NO
+EXPAND_ONLY_PREDEF     = NO
+SEARCH_INCLUDES        = YES
+INCLUDE_PATH           = 
+INCLUDE_FILE_PATTERNS  = 
+PREDEFINED             = 
+EXPAND_AS_DEFINED      = 
+
+#---------------------------------------------------------------------------
+# Configuration::addtions related to external references   
+#---------------------------------------------------------------------------
+TAGFILES               = 
+GENERATE_TAGFILE       = 
+ALLEXTERNALS           = NO
+
+#---------------------------------------------------------------------------
+# Configuration options related to the dot tool   
+#---------------------------------------------------------------------------
+HAVE_DOT               = YES
+CLASS_GRAPH            = NO (se true, desabilita geração do grafico das heranças e gera gráfico das heranças e relações)
+COLLABORATION_GRAPH    = YES (grafico da hierarquia e relacionamentos)
+INCLUDE_GRAPH          = YES (grafico dos arquivos include)
+INCLUDED_BY_GRAPH      = YES
+GRAPHICAL_HIERARCHY    = YES (gera diagrama de heranças)
+DOT_PATH               = /home/SYSTEM/gv1.7c/bin 
+MAX_DOT_GRAPH_WIDTH    = 1024
+MAX_DOT_GRAPH_HEIGHT   = 1024
+GENERATE_LEGEND        = YES
+DOT_CLEANUP            = YES (deleta arquivos temporários)
+
+#---------------------------------------------------------------------------
+# Configuration::addtions related to the search engine   
+#---------------------------------------------------------------------------
+SEARCHENGINE           = NO

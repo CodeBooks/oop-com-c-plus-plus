@@ -1,0 +1,30 @@
+/*
+  Novidade:
+  ---------
+  -A instrução #include <iostream> é usada para incluir o acesso 
+  a biblioteca padrão de entrada e saída de dados do C++. 
+  
+  -A instrução #include ""List-5-2-TAplicacao.cpp"" é usada para incluir um arquivo, 
+  procurando primeiro no diretório corrente e depois na path  do ambiente de desenvolvimento.
+  
+  -Definição da função main.
+  A função main é a primeira função que é executada pelo programa, é aí que 
+  o programa inicia. A mesma retorna um número inteiro que informa se a execução 
+  do programa foi um sucesso (return 0;) ou deu algum problema (return 1;).
+  Observe que nossa função main não recebe nenhum parâmetro.
+  
+  -Dentro da função main é criado o objeto TAplicacao e a seguir executado o método Run.
+  
+  -O retorno da função main
+  return 0;
+  
+  Dica: Para compilar o programa no GNU/Linux
+  g++ List-5-3-programa.cpp List-5-2-TAplicacao.cpp
+  
+  Para executar o programa no GNU/Linux
+  ./a.out
+  
+  Saída:
+  ------
+  Bem vindo ao C++!
+*/

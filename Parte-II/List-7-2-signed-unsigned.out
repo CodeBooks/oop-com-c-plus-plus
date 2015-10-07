@@ -1,0 +1,62 @@
+/*
+Novidades:
+-Uso de objeto do tipo int, com sinal (signed) e  sem sinal (unsigned).
+-Uso do operador de controle if...else
+
+O operador if é usado para controlar a sequência de execução
+do programa. O if avalia uma expressão, se a mesma for verdadeira
+executa a linha abaixo, se a expressão for falsa, pula a linha abaixo.
+	if( expressão)
+	  ação1 ;
+
+Fora o if, você também tem o if...else
+	if(expressão)
+	  ação1 ;
+	else
+	  ação2;
+
+No if...else, se a expressão for verdadeira executa a ação 1,
+se for falsa executa a ação  2.
+
+Saída:
+------
+[andre@mercurio lyx]$ ./a.out 
+---------->Testando uso de  int
+Entre com int x (ex: 300):300
+Entre com int y (ex: 500):500
+int z = x + y =800
+int z = x - y =-200
+---------->Testando uso de  unsigned int
+Entre com unsigned int x (ex: 300):300
+Entre com unsigned int y (ex: 500):500
+unsigned int z = x + y = 800
+unsigned int z = x - y = 4294967096
+z=| x - y |=200
+sinal de x - y =-1
+int resultado_correto = sinal * z = - 200
+
+unsigned int t = -1 --> t =  4294967295
+
+Análise da saída:
+=================
+Observe que a saída de 
+z = x - y = 4294967096
+apresenta um valor esquisito:  4294967096
+isto ocorre porque z é um inteiro sem sinal
+que vai de 0-> 4294967295
+como x = 300 y = 500, x - y = -200
+
+como z não pode armazenar valor negativo,
+z fica com o valor  4294967096
+que significa: 
+4294967295 - 200 +1 (o zero)= 4294967096
+
+Compilação:
+===========
+[andre@mercurio Parte-II]$ g++ List-7-2-signed-unsigned.cpp
+List-7-2-signed-unsigned.cpp: In function `int main()':
+List-7-2-signed-unsigned.cpp:47: warning: initialization of negative value `-1'
+   to `unsigned int'
+List-7-2-signed-unsigned.cpp:47: warning: argument of negative value `-1' to `
+   unsigned int'
+*/

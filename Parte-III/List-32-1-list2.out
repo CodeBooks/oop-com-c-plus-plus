@@ -1,0 +1,26 @@
+
+Conteúdo do container:
+312.1 312.1 313.4 316.7 
+Conteúdo do container após sort: 
+312.1 312.1 313.4 316.7 
+Conteúdo do container 2:
+ 2222 22 
+Conteúdo do container após splice: 312.1 312.1 313.4 316.7 2222 22 
+Conteúdo do container após container_list.merge( container_list2 ):
+312.1 312.1 313.4 316.7 2222 22 
+Conteúdo do container 2: 
+
+Container depois de unique: 
+312.1 313.4 316.7 2222 22 
+Container depois de pop_front e pop_back: 
+313.4 316.7 2222 
+Container depois de swap entre as duas listas:
+
+Container_list2 contém:
+313.4 316.7 2222 
+Container depois de container_list.assign: ( container_list2.begin(),container_list2.end());
+ 313.4 316.7 2222 
+Container depois de novo merge:
+313.4 313.4 316.7 316.7 2222 2222 
+Container após remove( 2 ) container_list contem:
+313.4 313.4 316.7 316.7 2222 2222 

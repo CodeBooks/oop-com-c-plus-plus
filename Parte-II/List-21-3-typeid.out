@@ -1,0 +1,19 @@
+/*
+  Novidade:
+  ---------
+  Uso de typeid para verificar se dois objetos são do mesmo tipo
+  E para obter o nome de identificação da classe do objeto.
+
+  Saída:
+  ------
+  [andre@mercurio Cap3-POOUsandoC++]$ ./a.out 
+  (typeid(a)==typeid(a))    ->1
+  (typeid(a)==typeid(b))    ->0
+  (typeid(a)==typeid(k))    ->0
+  (typeid(b)==typeid(k))    ->0
+  typeid(a).name()         ->1A
+  typeid(b).name()         ->1B
+  typeid(k).name()         ->1K
+  nomeintObject             ->i
+  nomedoubleObject          ->d
+*/

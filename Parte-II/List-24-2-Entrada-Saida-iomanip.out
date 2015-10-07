@@ -1,0 +1,38 @@
+/*
+  Novidade:
+  ---------
+  Uso de formatação de saída no C++ usando iomanip
+  
+  Saída:
+  ------
+  [andre@mercurio Parte-III]$ ./a.out
+  -->Definindo a  largura do campo
+  16
+  -->Definindo a  precisão da saída
+  Precisão = 1 d=1
+  Precisão = 2 d=1.1
+  Precisão = 3 d=1.12
+  Precisão = 4 d=1.123
+  Precisão = 5 d=1.1235
+  Precisão = 6 d=1.12346
+  Precisão = 7 d=1.123457
+  Precisão = 8 d=1.1234568
+  Precisão = 9 d=1.12345679
+  Precisão =10 d=1.123456789
+  Precisão =11 d=1.123456789
+  Precisão =12 d=1.12345678901
+  Precisão =13 d=1.123456789012
+  Precisão =14 d=1.1234567890123
+  Precisão =15 d=1.12345678901235
+  Precisão =16 d=1.123456789012346
+  Precisão =17 d=1.123456789012346
+  Precisão =18 d=1.123456789012346
+  Precisão =19 d=1.123456789012346
+  -->Definindo o caracter de preenchimento
+  ********16
+  -->Definindo formato do número
+  hex 15 =f
+  oct 15 =17
+  dec 15 =15
+  15
+*/

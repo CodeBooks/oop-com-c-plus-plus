@@ -1,0 +1,20 @@
+/*
+Novidade:
+---------
+Uso de Referência.
+Uma referencia é um outro nome para um objeto.
+No exemplo acima, ref é um outro nome para x.
+As referências são usadas principalmente como argumentos de uma função.
+
+Saída:
+------
+[andre@mercurio Cap2-Sintaxe]$ ./a.out 
+Valor de x = 3
+Valor da ref = 3
+Mudou ref 
+Valor de x = 156
+Valor da ref = 156
+Mudou x 
+Valor de x = 6
+Valor da ref = 6
+*/

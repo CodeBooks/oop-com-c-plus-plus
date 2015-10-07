@@ -1,0 +1,13 @@
+/*
+  Novidade:
+  Programa com controle simples
+  
+  Saída:
+  -----
+  [andre@mercurio Cap3-POOUsandoC++]$ ./a.out 
+  Entre com b:6
+  c = a / b=0.5
+  [andre@mercurio Cap3-POOUsandoC++]$ ./a.out 
+  Entre com b:0
+  Erro b = 0
+*/

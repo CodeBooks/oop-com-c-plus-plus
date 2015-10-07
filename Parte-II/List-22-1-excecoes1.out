@@ -1,0 +1,10 @@
+/*
+  Novidade:
+  Programa com bug, divisão por zero.
+  No Linux/GNU/g++ aparece c = inf (de infinito)
+  
+  Saída:
+  -----
+  [andre@mercurio Cap3-POOUsandoC++]$ ./a.out 
+  a=3 b=0 c=a/b=inf d=inf
+*/

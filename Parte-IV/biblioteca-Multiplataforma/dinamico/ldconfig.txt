@@ -1,0 +1,34 @@
+/lib:
+	libtermcap.so.2 -> libtermcap.so.2.0.8
+	ld-linux.so.2 -> ld-2.3.2.so
+	libBrokenLocale.so.1 -> libBrokenLocale-2.3.2.so
+/usr/lib:
+	libtixsam8.1.8.3.so -> libtixsam8.1.8.3.so
+	libbz2.so.1 -> libbz2.so.1.0.2
+/usr/kerberos/lib:
+	libgssapi_krb5.so.2 -> libgssapi_krb5.so.2.2
+/usr/X11R6/lib:
+	libXv.so.1 -> libXv.so.1.0
+	libICE.so.6 -> libICE.so.6.3
+/usr/lib/qt-3.0.5/lib:
+/usr/local/lib:
+	libTPonto.so.0 -> libTPonto.so.0.0.0 **************************************
+
+/usr/lib/sane:
+	libsane.so.1 -> libsane-v4l.so.1.0.9
+/usr/lib/qt-3.1/lib:
+	libqmotif.so.0 -> libqmotif.so.0.0.0
+	libqui.so.1 -> libqui.so.1.0.0
+/usr/lib/mysql:
+	libmysqlclient_r.so.10 -> libmysqlclient_r.so.10.0.0
+	libmysqlclient.so.10 -> libmysqlclient.so.10.0.0
+/usr/lib/qt2/lib:
+	libqxt.so.0 -> libqxt.so.0.3.0
+	libqt-mt.so.2 -> libqt-mt.so.2.3.1
+/lib/i686: (hwcap: 0x8000000000000)
+	libm.so.6 -> libm-2.3.2.so
+	libpthread.so.0 -> libpthread-0.10.so
+/lib/tls: (hwcap: 0x8000000000000000)
+	libthread_db.so.1 -> libthread_db-1.0.so
+	libc.so.6 -> libc-2.3.2.so
+	libpthread.so.0 -> libpthread-0.29.so

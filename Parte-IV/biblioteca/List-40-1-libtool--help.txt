@@ -1,0 +1,25 @@
+Uso: libtool [OPTION]... [MODE-ARG]...
+
+Provê serviços de suporte a construção de bibliotecas
+
+    --mode=MODE       Define modo de operação [obrigatório] 
+    --config          Mostra variáveis de configuração
+    --debug           Ativa 'shell tracing' em modo verbose
+-n, --dry-run         Mostra os comandos mas não os executa
+    --features        Mostra configurações basicas e sai
+    --help            Mostra um help
+    --silent          Não imprimir mensagens informativas 
+    --tag=TAG         Usa variável de configuração a partir do tag TAG
+    --version         Mostra versão do libttol
+
+Os modos de operação do libtool são:
+      clean           Remove arquivos do diretório de construção 
+      compile         Compila arquivo gerando objeto do libtool
+      link            Cria uma biblioteca ou um programa executável
+      execute         Seta path da biblioteca e executa o programa
+      install         Instala bibliotecas ou executáveis
+      finish          Completa a instalação das bibliotecas do libtool
+      uninstall       Remove bibliotecas instaladas 
+
+A opção MODE-ARGS varia de acordo com o parâmetro  MODE. 
+Execute `libtool --help --mode=MODE' para uma descrição detalhada.

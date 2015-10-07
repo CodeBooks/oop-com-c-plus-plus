@@ -1,0 +1,43 @@
+-----vetor estático de C:
+Construtor do objeto, cont = 1
+Construtor do objeto, cont = 2
+Destrutor do objeto, cont = 2
+Destrutor do objeto, cont = 1
+-----vetor dinâmico em C++ sem STL:
+Construtor do objeto, cont = 1
+Construtor do objeto, cont = 2
+Construtor do objeto, cont = 3
+Destrutor do objeto, cont = 3
+Destrutor do objeto, cont = 2
+Destrutor do objeto, cont = 1
+-----Objeto dinâmico em C++ com auto_ptr:
+Construtor do objeto, cont = 1
+t = 77
+Destrutor do objeto, cont = 1
+-----vetor dinâmico em C++ com STL:
+Construtor do objeto, cont = 1
+Destrutor do objeto, cont = 1
+0 = 0
+1 = 1
+2 = 2
+3 = 3
+Destrutor do objeto, cont = 0
+Destrutor do objeto, cont = -1
+Destrutor do objeto, cont = -2
+Destrutor do objeto, cont = -3
+-----vetor de ponteiros em C++ com STL:
+Construtor do objeto, cont = 1
+i = 0  t = 0
+Construtor do objeto, cont = 2
+i = 1  t = 1
+Construtor do objeto, cont = 3
+i = 2  t = 2
+Construtor do objeto, cont = 4
+i = 3  t = 3
+Construtor do objeto, cont = 5
+i = 4  t = 4
+Destrutor do objeto, cont = 5
+Destrutor do objeto, cont = 4
+Destrutor do objeto, cont = 3
+Destrutor do objeto, cont = 2
+Destrutor do objeto, cont = 1

@@ -1,0 +1,824 @@
+#LyX 1.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 221
+\textclass linuxdoc
+\language brazil
+\inputencoding auto
+\fontscheme default
+\graphics default
+\paperfontsize default
+\spacing single 
+\papersize Default
+\paperpackage a4
+\use_geometry 0
+\use_amsmath 0
+\use_natbib 0
+\use_numerical_citations 0
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\quotes_times 2
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+
+\layout Title
+\added_space_top vfill 
+Programação Orientada a Objeto com C++
+\newline 
+- Desenvolvimento de Software Multiplataforma com Software Livre
+\layout Author
+
+Andre Duarte Bueno - Editora Novatec
+\layout Date
+
+25 de agosto de 2003
+\layout Section
+
+
+\begin_inset LatexCommand \tableofcontents{}
+
+\end_inset 
+
+
+\layout Section
+
+Conteúdo do livro
+\layout Standard
+
+O livro de programação orientada a objeto com C++ esta dividido nas seguintes
+ partes:
+\layout Enumerate
+
+
+\series bold 
+\emph on 
+Parte I: Filosofia e Modelagem Orientada a Objeto
+\series default 
+\emph default 
+: Destina-se a transmitir os conceitos básicos de POO (Programação Orientada
+ a Objeto), a idéia, a filosofia e a nomenclatura utilizada.
+ Nessa parte veremos alguns exemplos de objetos, o que a POO representa
+ em relação ao passado, presente e futuro da programação.
+ Os mecanismos básicos e os conceitos-chave da POO.
+ A modelagem orientada a objeto utilizando a UML (Unified Modelling Language)
+ e a TMO (Técnica de Modelagem de Objetos).
+ Como montar os diagramas de uma Análise Orientada a Objeto (AOO) utilizando
+ a modelagem UML/TMO.
+ Apresenta as etapas de desenvolvimento de um programa: a concepção, a elaboraçã
+o, a análise orientada a objeto, o projeto do sistema, o projeto orientado
+ a objeto, a implementação e teste; a manutenção e a documentação de um
+ software.
+\layout Enumerate
+
+
+\series bold 
+\emph on 
+Parte II: POO Utilizando C++
+\series default 
+\emph default 
+: Apresenta a sintaxe de C++.
+ Tipos padrão de C++, tipos do usuário e tipos da STL (Standard Template
+ Library).
+ Como declarar, definir e utilizar classes, objetos, atributos e métodos.
+ Como implementar a herança simples, a herança múltipla, a utilização de
+ polimorfismo, a sobrecarga de operadores, a conversão de tipos, os tipos
+ genéricos (templates).
+ Apresenta a entrada e saída de dados com as classes <ios_base>, <istream>,
+ <ostream> e <sstream>.
+ Como realizar operações com arquivos de disco utilizando as classes <fstream>,
+ <ofstream> e <ifstream>.
+ Apresenta um grupo de classes-padrão de C++.
+ A classe de strings-padrão de C++, a <string>, a classe para tratar números
+ complexos <complex> e a classe <bitset>.
+\layout Enumerate
+
+
+\series bold 
+\emph on 
+Parte III: Introdução à STL
+\series default 
+\emph default 
+: Apresenta a STL, uma biblioteca de objetos em C++.
+ Descrevem-se os conceitos básicos de containers e iteradores.
+ Você vai aprender a utilizar um <vector> para vetores, <list> para listas
+ duplamente encadeadas, <queue> que representa uma fila, <stack> que representa
+ uma pilha (como em uma calculadora HP), uma <deque> que é uma fila com
+ duas extremidades e classes containers para tratamento de conjunto de dados
+ com chaves (<set>, <multi_set>, <map> e <multi_map>).
+\layout Enumerate
+
+
+\series bold 
+\emph on 
+Parte IV: Programação Multiplataforma com Software Livre
+\series default 
+\emph default 
+: Descreve conceitos de programação multiplataformas.
+ Apresenta as ferramentas de programação com software livre, cobrindo emacs,
+ gcc/g++, make, automake, autoconf, libtool, documentação com JAVA_DOC e
+ doxygen, controle de versões com CVS e programas como diff, patch e indent.
+\layout Enumerate
+
+
+\series bold 
+\emph on 
+Parte V: Cluster de Computadores e Processamento Paralelo
+\series default 
+\emph default 
+: Apresenta os conceitos e os diferentes tipos de clusters de computadores.
+ As diferentes formas de processamento paralelo, incluindo:
+\begin_deeper 
+\layout Enumerate
+
+a utilização de máquinas com mais de um processador (SMP),
+\layout Enumerate
+
+a utilização de processamento distribuído em um cluster com OpenMosix, e
+ as vantagens e desvantagens da utilização de bibliotecas, como PVM (Paralel
+ Virtual Machine) e MPI (Message Passing Interface).
+ A programação com múltiplos-processos e com múltiplas-threads é apresentada
+ com exemplos práticos.
+ Os resultados de tempo de processamento de um cluster real são apresentados.
+ 
+\end_deeper 
+\layout Enumerate
+
+
+\series bold 
+\emph on 
+Parte VI: Apêndices
+\series default 
+\emph default 
+: Conceitos gerais de programação em C/C++: Descreve alguns conceitos gerais
+ de programação em C/C++ como: diretrizes de pré-processador, classes de
+ armazenamento e modificadores de acesso, operadores, estruturas de controle,
+ funções, ponteiros, referências, estruturas, uniões e enumerações.
+\layout Section
+
+INSTALAÇÃO
+\layout Subsection
+
+Download das listagens de programas:
+\layout Standard
+
+Os arquivos com as listagens dos programas estão disponíveis para 
+\layout Standard
+
+download no link: 
+\begin_inset LatexCommand \htmlurl[http://www.novateceditora.com.br/downloads.php]{http://www.novateceditora.com.br/downloads.php}
+
+\end_inset 
+
+.
+\layout Subsection
+
+Para descompactar os arquivos:
+\layout Subsubsection
+
+Em um PC com Windows: 
+\layout Standard
+
+Use o winzip e descompacte o arquivo Livro_cpp-1.0.zip ou use o unzip:
+\layout Standard
+
+Exemplo:
+\layout Verbatim
+
+copy Livro_cpp-1.0.zip c:/tmp
+\layout Verbatim
+
+cd c:/tmp
+\layout Verbatim
+
+unzip Livro_cpp-1.0.zip
+\layout Subsubsection
+
+Em um PC com GNU/Linux: 
+\layout Standard
+
+Use o programa tar:
+\layout Standard
+
+Exemplo:
+\layout Verbatim
+
+mv Livro_cpp-1.0.tar.gz /tmp
+\layout Verbatim
+
+cd /tmp
+\layout Verbatim
+
+tar -xvzf Livro_cpp-1.0.tar.gz
+\layout Subsubsection
+
+Em uma estação de trabalho com Unix (SunOS 5.8 ou Irix64):
+\layout Standard
+
+Exemplo:
+\layout Verbatim
+
+mv Livro_cpp-1.0.tar.gz /tmp
+\layout Verbatim
+
+cd /tmp
+\layout Verbatim
+
+gunzip Livro_cpp-1.0.tar.gz
+\layout Verbatim
+
+tar -xf Livro_cpp-1.0.tar
+\layout Subsection
+
+Para instalar o pacote de programas:
+\layout Subsubsection
+
+Em um PC com Windows: 
+\layout Standard
+
+Você precisa usar um compilador, a sugestão é usar o compilador da GNU disponibi
+lizado com o ambiente de desenvolvimento Dev C++ (disponível no link 
+\begin_inset LatexCommand \htmlurl[http://sourceforge.net/projects/dev-cpp/]{http://sourceforge.net/projects/dev-cpp/}
+
+\end_inset 
+
+).
+\layout Subsubsection
+
+Em um PC com GNU/Linux:
+\layout Standard
+
+O procedimento para instalação de um programa multiplataforma distribuído
+ com arquivos .tar.gz é o seguinte:
+\layout Standard
+
+- Faz o download do arquivo Livro_cpp-1.0.tar.gz (no site da editora novatec).
+\layout Standard
+
+- Descompacta o arquivo e a seguir executa a sequência ./configure && make
+ && make install.
+\layout Standard
+
+Exemplo:
+\layout Verbatim
+
+cd /tmp/Livro_cpp-1.0
+\layout Verbatim
+
+./configure
+\layout Verbatim
+
+make -k
+\layout Verbatim
+
+make install (como root)
+\layout Subsubsection
+
+Em uma estação de trabalho com Unix (SunOS 5.8 ou Irix64):
+\layout Standard
+
+Use os programas gunzip e tar.
+\layout Standard
+
+Exemplo:
+\layout Verbatim
+
+cd /tmp/Livro_cpp-1.0
+\layout Verbatim
+
+./configure
+\layout Verbatim
+
+make -k
+\layout Verbatim
+
+make install (como root)
+\layout Section
+
+Notas
+\layout Standard
+
+Apresenta-se a seguir algumas notas sobre os sistemas testados, as listagens
+ com bugs, listagens que requerem a instalação de outros pacotes e informações
+ sobre as versões do automake e autoconf.
+\layout Subsection
+
+Sistemas testados:
+\layout Standard
+
+Os exemplos contidos nos sub-diretórios foram testados e rodados nas seguintes
+ plataformas:
+\layout Standard
+
+- PC com GNU/LINUX, RedHat 9.0
+\layout Standard
+
+- PC com Windows 2000.
+\layout Standard
+
+- Estação de trabalho SUN Enterprise E450 com SunOS 5.8.
+\layout Standard
+
+- Estação de trabalho Silicon Graphics Onyx3 InfiniteReality 3200 com IRIX64
+ 6.5r17.
+\layout Subsection
+
+Listagens com bugs:
+\layout Standard
+
+Algumas listagens incluem bugs (erros), o objetivo de incluir listagens
+ com erros é ilustrar o funcionamento do compilador g++ (as mensagens geradas
+ pelo compilador) e o funcionamento do debuger da GNU.
+ Desta forma, ao executar:
+\layout Verbatim
+
+make
+\layout Standard
+
+o sistema irá parar quando encontrar um arquivo com bug.
+ 
+\layout Standard
+
+Para compilar todos os exemplos válidos ao mesmo tempo sem que o sistema
+ pare, use:
+\layout Verbatim
+
+make -k
+\layout Subsection
+
+Versões do automake e autoconf:
+\layout Standard
+
+Os arquivos de compilação multiplataforma foram gerados usando-se o automake-1.7
+ e o autoconf 2.57.
+\layout Subsection
+
+Listagens que requerem elementos adicionais:
+\layout Standard
+
+Sobre as listagens da parte V:
+\layout Standard
+
+- A listagem List-49-2 foi testada no GNU/Linux-RedHat 7x, e não funciona
+ no Red Hat 8 e 9.
+ Requer o arquivo de cabeçalho "pfstream.h", inexistente nas versões recentes
+ do compilador da GNU.
+\layout Standard
+
+- As listagens List_50_3 e List-50-4 requerem a instalação da biblioteca
+ commom C++.
+ A mesma é disponível para vários sistemas operacionais, veja 
+\begin_inset LatexCommand \htmlurl[http://www.gnu.org/software/commomcpp/]{http://www.gnu.org/software/commomcpp/}
+
+\end_inset 
+
+.
+\layout Standard
+
+PS: As distribuições GNU/Linux costumam incluir a biblioteca commom C++.
+\layout Subsection
+
+Diagramas UML do livro
+\layout Standard
+
+Os diagramas UML apresentados no livro foram incluídos no diretório UML.
+ Os diagramas foram feitos usando-se o programa DIA (disponível no endereço
+ 
+\begin_inset LatexCommand \htmlurl[http://www.gnome.org/gnome-office/dia.shtml]{http://www.gnome.org/gnome-office/dia.shtml}
+
+\end_inset 
+
+, ou 
+\begin_inset LatexCommand \htmlurl[http://www.lysator.liu.se/~alla/dia/]{http://www.lysator.liu.se/~alla/dia/}
+
+\end_inset 
+
+).
+\layout Subsection
+
+Bookmark
+\layout Standard
+
+Voçê encontra no diretório principal desta distribuição o arquivo 
+\begin_inset LatexCommand \htmlurl[bookmarks-prog.html]{bookmarks-prog.html}
+
+\end_inset 
+
+, o mesmo contém um conjunto de links para sites relacionados a software
+ livre, programação orientada a objeto com C++, FAQ, Tutoriais (UML, STL,
+ LinuxProg), OOP-UML, Ambientes Desenvolvimento, STL, Bibliotecas, Documentação,
+ cvs, SoftwareMultiplataforma, Clusters (MPI, PVM, Threads), sites diversos
+ do GNU/Linux.
+\layout Section
+\pagebreak_top 
+Lista dos Arquivos:
+\layout Standard
+
+O comando 
+\series bold 
+tree
+\series default 
+ mostra a lista de arquivos, o comando 
+\series bold 
+tree -d
+\series default 
+ mostra a lista de diretórios.
+ O arquivo tree.txt contém a lista de todos os arquivos.
+\layout Standard
+
+Veja a seguir a lista de diretórios (comando tree -d):
+\layout Verbatim
+
+|-- Parte-I
+\layout Verbatim
+
+|-- Parte-II
+\layout Verbatim
+
+|-- Parte-III
+\layout Verbatim
+
+|-- Parte-IV
+\layout Verbatim
+
+| |-- biblioteca
+\layout Verbatim
+
+| |-- biblioteca-Multiplataforma
+\layout Verbatim
+
+| | |-- autom4te.cache
+\layout Verbatim
+
+| | |-- dinamico
+\layout Verbatim
+
+| | |-- estatico
+\layout Verbatim
+
+| | `-- normal
+\layout Verbatim
+
+| |-- cap46-ExemploMultiplataforma
+\layout Verbatim
+
+| |-- cap47-cvs
+\layout Verbatim
+
+| |-- cvs -> cap47-cvs
+\layout Verbatim
+
+| |-- doc
+\layout Verbatim
+
+| | |-- html
+\layout Verbatim
+
+| | |-- latex
+\layout Verbatim
+
+| | `-- man
+\layout Verbatim
+
+| | `-- man3
+\layout Verbatim
+
+| `-- rdl-exemplo
+\layout Verbatim
+
+|-- Parte-V
+\layout Verbatim
+
+| `-- mpi-pvm
+\layout Verbatim
+
+|-- Parte-VI
+\layout Verbatim
+
+`-- uml
+\layout Section
+\pagebreak_top 
+ChangeLog
+\layout Subsection
+
+Versão 1.0: 
+\layout Itemize
+
+Revisão geral.
+\layout Itemize
+
+Edição: Rubens Prates.
+\layout Itemize
+
+Revisão de português: Patricia Zagni.
+\layout Itemize
+
+Revisão técnica: Luiz Adolfo Hegele Júnior, Rodrigo Surmas, Carlos Henrique
+ Pico Ortiz.
+\layout Itemize
+
+Capa: Camila Mesquita.
+\layout Itemize
+
+Editoração eletrônica: Marcelo Ferreira Paiva
+\layout Itemize
+
+Criação de sistema de instalação e compilação dos programas usando o sistema
+ multiplataforma da GNU, isto é, automake, autoconf e libtool.
+\layout Itemize
+
+Para instalação dos programas basta executar a sequência: ./configure &&
+ make -k && make install , veja instruções detalhadas no arquivo INSTALACAO.
+\layout Subsection
+
+Versão 0.9: 
+\layout Itemize
+
+Revisão por terceiros, Rubens Prates, Marcelo Paiva.
+ 
+\layout Itemize
+
+Inclusão de exemplos úteis.
+ Informações adicionais sobre ambientes de desenvolvimento.
+\layout Itemize
+
+A Parte IV - "Programação Multiplataforma com Software Livre" , foi totalmente
+ reescrita.
+ 
+\layout Itemize
+
+Todos os capítulos foram atualizados, considerando as versões mais recentes
+ dos softwares da GNU.
+ Os capítulos foram ampliados, novos exemplos foram adicionados.
+ 
+\layout Itemize
+
+A Parte VI - "Apêndices" foi totalmente revisada e ampliada.
+\layout Itemize
+
+Correções nas figuras.
+\layout Itemize
+
+Novos Exemplos.
+\layout Subsection
+
+Versão 0.8: 
+\layout Itemize
+
+Unificação da documentação (mais limpa e enxuta).
+\layout Itemize
+
+Inclusão de novos exemplos.
+\layout Itemize
+
+Na Parte III - "Introdução a STL", adotou-se um layout mais claro, a mesma
+ também foi revisada, novos exemplos foram adicionados.
+\layout Itemize
+
+Os capítulos de programação genérica e de objetos funções foram ampliados.
+ 
+\layout Subsection
+
+Versão 0.7: 
+\layout Itemize
+
+A parte I -"Filosofia e Modelagem Orientada a Objeto", foi totalmente reescrita,
+ foram adicionados novos diagramas e novos exemplos.
+\layout Itemize
+
+A Parte II - "POO Utilizando C++", foi totalmente reformulada e ampliada.
+\layout Itemize
+
+Foram adicionados novos exemplos.
+ Diversos erros foram corrigidos.
+\layout Itemize
+
+Alguns capítulos foram totalmente reescritos, como Tipos, Namespace, Friend,
+ Sobrecarga de Operador,converções, templates (especializações), Entrada
+ e saída (a classe locale), a classe String.
+\layout Subsection
+
+Versão 0.6: 
+\layout Itemize
+
+Inclusão da Parte V - Cluster de Computadores e Processamento Paralelo,
+ a mesma è composta de 4 capítulos, no primeiro faz-se um apanhado geral
+ de cluster de computadores e programação paralela.No segundo apresenta-se
+ mais detalhadamente e com exemplos o uso de programação paralela com múltiplos
+ processos.
+\layout Itemize
+
+No terceiro apresenta-se mais detalhadamente e com exemplos o uso de programação
+ paralela com múltiplas threads.
+ No quarto capítulo apresenta-se um exemplo real, e um conjunto de links
+ para sites relacionados a clusters de computadores e programação paralela.
+ 
+\layout Subsection
+
+Versão 0.5: 
+\layout Itemize
+
+Centenas de correções, novos exemplos.
+\layout Subsection
+
+Versão 0.4.6 
+\layout Itemize
+
+Revisão, modificação e ampliação dos capítulos:
+\layout Itemize
+
+Friend, sobrecarga de operador, sobrecarga de método, templates Centenas
+ de pequenas modificações.
+\layout Subsection
+
+Versão 0.4.5
+\layout Itemize
+
+Centenas de pequenas correções.
+ Revisão de exemplos e listagens.
+\layout Subsection
+
+Versão 0.4.1:
+\layout Itemize
+
+Centenas de correções feitas sobre a versão enviada para a revista do Linux.
+\layout Subsection
+
+Versão 0.4: 
+\layout Itemize
+
+Na versão 0.4 a apostila foi revisada e reestruturada.
+ 
+\layout Itemize
+
+Foram adicionados exemplos externos (listagens de códigos externos devidamente
+ testadosTestes realizados no GNU/Linux, RedHat 7x usando o compilador g++
+ da gnu.
+ 
+\layout Itemize
+
+O RedHat pode ser obtido em 
+\begin_inset LatexCommand \htmlurl[http://www.redhat.com]{http://www.redhat.com}
+
+\end_inset 
+
+ e os programas da gnu em 
+\begin_inset LatexCommand \htmlurl[http://www.gnu.org]{http://www.gnu.org}
+
+\end_inset 
+
+.
+ 
+\layout Itemize
+
+A programação para GNU/Linux foi ampliada, bem como a parte relativa a STL.
+ 
+\layout Itemize
+
+A programação para Windows usando a OWL foi eliminada
+\begin_inset Foot
+collapsed true
+
+\layout Standard
+
+Observação importante.
+ Um tempo enorme usado para aprender a usar a OWL foi literalmente perdido.
+ Programas pagos como a OWL podem morrer de forma inesperada e deixar seus
+ usuários órfãos.
+ Este é mais um motivo para você usar programas livres.
+ 
+\end_inset 
+
+.
+ 
+\layout Itemize
+
+Na versão 0.4 diversos capítulos tiveram sua ordem invertida.
+ Procurei trazer para o início da apostila os capítulos de programação orientada
+ a objeto usando C++.
+ 
+\layout Itemize
+
+Os capítulos de sintaxe, escopo, operadores, controles, ponteiros, funções
+ e os relativos a programação em C, foram movidos para o apêndice.
+ Isto se justifica, pois boa parte destes conceitos não se aplicam ao uso
+ de classes, não sendo fundamentais em C++A versão 0.4.5 inclui diversas correções
+ e foi gerada utilizando o programa tex2pdf, como conseqüência, o arquivo
+ pdf é menor e as letras mais legíveis.
+ 
+\layout Itemize
+
+Para gerar a versão (0.4) usei o lyx.
+ Me encantei com a beleza e facilidades do LyX/LaTeX, de forma que, esta
+ e as próximas versões serão escritas usando LaTeX.
+ Veja informações sobre tex em http://biquinho.furg.br/tex-br/ e diversos
+ links em http://biquinho.furg.br/tex-br/links.html.
+ Veja informações sobre o LyX em http://www.lyx.org/.
+\layout Subsection
+
+Versão 0.3: 
+\layout Itemize
+
+Na versão 0.3 acrescentei a biblioteca padrão de C++, a STL (Parte IV) e
+ a programação para GNU/Linux (Parte V).
+ Para gerar a versão (0.3) usei o StarOfficeVocê pode obter cópias grátis
+ do StarOffice 5.2 em http://www.staroffice.com/.
+ Atualmente pode-se obter o Open Office em http://www.openoffice.org/ versão
+ 5.2, é grátis.
+ 
+\layout Subsection
+
+Versão 0.2: 
+\layout Itemize
+
+Na versão 0.2 a apostila foi ampliada e mais detalhada.
+ 
+\layout Itemize
+
+Foi acrescentada a programação para Windows usando a OWL (o uso do Borland
+ C++ 5.2) e a modelagem TMO (antiga Parte VI).
+ 
+\layout Subsection
+
+Versão 0.1: 
+\layout Itemize
+
+A versão 0.1 incluía apenas a programação orientada a objeto (Parte I) e
+ a sintaxe de C++ (Parte II).
+ Foi desenvolvida usando o editor Word.
+ 
+\layout Section
+
+AUTHORS - Contatando o autor:
+\layout Standard
+
+Embora tenha sido realizado um esforço enorme no sentido de se fazer um
+ bom livro de programação orientada a objeto com C++, a extensão do livro
+ e a sua abrangência, tornam difícel a sua manutenção (inclusão de novos
+ conceitos) e a eliminação de todos os erros.
+ Neste sentido, se você encontrar erros, omissões, ou mesmo tiver dicas,
+ sugestões, e exemplos para melhoria deste livro, favor enviar e-mail para
+ o endereço bueno@lenep.uenf.br.
+ Antes entretanto, aconselha-se dar uma olhada na seção errata (veja arquivo
+ 
+\begin_inset LatexCommand \htmlurl[Errata.html]{Errata.html}
+
+\end_inset 
+
+).
+\layout Description
+
+Autor: Eng.
+ André Duarte Bueno.
+\layout Description
+
+email: 
+\begin_inset LatexCommand \htmlurl[andre@lmpt.ufsc.br]{mailto:andre@lmpt.ufsc.br}
+
+\end_inset 
+
+ , 
+\begin_inset LatexCommand \htmlurl[bueno@lenep.uenf.br]{mailto:bueno@lenep.uenf.br}
+
+\end_inset 
+
+.
+\layout Description
+
+Site\SpecialChar ~
+do\SpecialChar ~
+autor: 
+\begin_inset LatexCommand \htmlurl[http://www.lmpt.ufsc.br/~andre]{http://www.lmpt.ufsc.br/~andre}
+
+\end_inset 
+
+ e 
+\begin_inset LatexCommand \htmlurl[http://www.lenep.uenf.br/~bueno]{http://www.lenep.uenf.br/~bueno}
+
+\end_inset 
+
+
+\layout Description
+
+Site\SpecialChar ~
+do\SpecialChar ~
+LENEP: Laboratório de Engenharia e Exploração de Petróleo, 
+\begin_inset LatexCommand \htmlurl[http://www.lenep.uenf.br]{http://www.lenep.uenf.br}
+
+\end_inset 
+
+.
+\layout Section
+
+Errata
+\layout Standard
+
+Veja arquivo 
+\begin_inset LatexCommand \htmlurl[Errata.html]{Errata.html}
+
+\end_inset 
+
+.
+\the_end

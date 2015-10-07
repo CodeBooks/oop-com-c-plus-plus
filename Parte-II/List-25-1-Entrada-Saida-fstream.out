@@ -1,0 +1,43 @@
+/*
+  Novidade:
+  --------
+  Uso de arquivos de disco.
+  Como abrir um arquivo de disco.
+  Como escrever em um arquivo de disco.
+  Como ler de um arquivo de disco.
+  Como  usar ostringstream para formatação do nome de arquivos sequenciais.
+  
+  Saída:
+  -----
+  [andre@mercurio Cap3-POOUsandoC++]$ ./a.out 
+  Lido o arquivo:Isto vai para o arquivo data.dat
+  no arquivo de disco: nomeDoArquivo-0.dat
+  no arquivo de disco: nomeDoArquivo-1.dat
+  no arquivo de disco: nomeDoArquivo-2.dat
+  no arquivo de disco: nomeDoArquivo-3.dat
+  no arquivo de disco: nomeDoArquivo-4.dat
+  
+  Apresenta-se a seguir o conteúdo dos arquivos gerados:
+  PS: o comando cat do GNU/Linux, mostra o conteúdo de um arquivo.
+  
+  [andre@mercurio Cap3-POOUsandoC++]$ cat data.dat 
+  Isto vai para o arquivo data.dat
+  
+  [andre@mercurio Cap3-POOUsandoC++]$ cat data2.dat 
+  Isto vai para o arquivo data2.dat
+  
+  [andre@mercurio Cap3-POOUsandoC++]$ cat nomeDoArquivo-0.dat 
+  no arquivo de disco: nomeDoArquivo-0.dat
+  
+  [andre@mercurio Cap3-POOUsandoC++]$ cat nomeDoArquivo-1.dat 
+  no arquivo de disco: nomeDoArquivo-1.dat
+  
+  [andre@mercurio Cap3-POOUsandoC++]$ cat nomeDoArquivo-2.dat 
+  no arquivo de disco: nomeDoArquivo-2.dat
+  
+  [andre@mercurio Cap3-POOUsandoC++]$ cat nomeDoArquivo-3.dat 
+  no arquivo de disco: nomeDoArquivo-3.dat
+  
+  [andre@mercurio Cap3-POOUsandoC++]$ cat nomeDoArquivo-4.dat 
+  no arquivo de disco: nomeDoArquivo-4.dat
+*/

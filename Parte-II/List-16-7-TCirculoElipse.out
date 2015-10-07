@@ -1,0 +1,26 @@
+[andre @ mercurio Cap3 - POOUsandoC++]
+$ g++ - c e87 - TCirculoElipse.cpp
+       In file included from e87 - TCirculoElipse.cpp:2:e87 - TCirculoElipse.h:30:warning:direct base ` TCirculo ' inaccessible 
+in `TCirculoElipse' due to ambiguity
+       e87 - TCirculoElipse.cpp:In method ` TCirculoElipse::TCirculoElipse (int, int, int, int, int) ':
+e87-TCirculoElipse.cpp:6: no matching function for call to 
+`TCirculo::TCirculo ()' e87 - TCirculo.h:18:candidates are:TCirculo::TCirculo (int, int, int) e87 - TCirculo.h:35:TCirculo::TCirculo (const TCirculo &) e87 - TCirculoElipse.cpp:6:no matching function for call to
+  ` TElipse::TElipse ()
+       '
+e87-TElipse.h:14: candidates are: TElipse::TElipse (int, int, int, int)
+e87-TElipse.h:21:                 TElipse::TElipse (const TElipse &)
+e87-TCirculoElipse.cpp:8: cannot convert a pointer of type 
+`TCirculoElipse' to a pointer of type ` TCirculo '
+e87-TCirculoElipse.cpp:8: because `TCirculo' is an ambiguous base class e87 - TCirculoElipse.cpp:In method ` void TCirculoElipse::Set (int, int, int, int, int) ':
+e87-TCirculoElipse.cpp:14: cannot convert a pointer of type 
+`TCirculoElipse' to a pointer of type ` TCirculo '
+e87-TCirculoElipse.cpp:14: because `TCirculo' is an ambiguous base class e87 - TCirculoElipse.cpp:At top level:e87 - TCirculoElipse.cpp:21:parse error before ` &'
+e87-TCirculoElipse.cpp:24: `circulo' was not declared in this scope e87 - TCirculoElipse.cpp:24:`circulo ' was not declared in this scope
+e87-TCirculoElipse.cpp:24: `circulo' was not declared in this scope e87 - TCirculoElipse.cpp:24:`circulo ' was not declared in this scope
+e87-TCirculoElipse.cpp:24: ISO C++ forbids declaration of `Set' with no type e87 - TCirculoElipse.cpp:24:`int TElipse::Set ' is not a static member of 
+`class TElipse' e87 - TCirculoElipse.cpp:24:initializer list being treated as compound expression e87 - TCirculoElipse.cpp:25:parse error before `} '
+e87-TCirculoElipse.cpp:30: syntax error before `::' e87 - TCirculoElipse.cpp:36:ISO C++ forbids declaration of ` Desenha ' 
+with no type
+e87-TCirculoElipse.cpp:36: new declaration `int TCirculo::Desenha ()' e87 - TCirculo.h:34:ambiguates old declaration ` void TCirculo::Desenha () '
+e87-TCirculoElipse.cpp:36: declaration of `int TCirculo::Desenha ()' outside of class is not definition e87 - TCirculoElipse.cpp:37:parse error before `} '
+

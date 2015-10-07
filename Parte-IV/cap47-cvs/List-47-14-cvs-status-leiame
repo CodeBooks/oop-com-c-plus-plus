@@ -1,0 +1,9 @@
+[andre@mercurio exemplo-biblioteca-gnu]$ cvs status leiame.txt 
+===================================================================
+File: leiame.txt       	Status: Locally Modified
+
+   Working revision:	2.2	Result of merge
+   Repository revision:	2.2	/home/REPOSITORY/exemplo-biblioteca-gnu/leiame.txt,v
+   Sticky Tag:		(none)
+   Sticky Date:		(none)
+   Sticky Options:	(none)

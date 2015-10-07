@@ -1,0 +1,21 @@
+/*
+  Novidade:
+  ---------
+  -Uso de funções da biblioteca <cmath>
+  -Uso de funções de formatação de saída para tela
+  
+  Saída:
+  ------
+  [andre@mercurio Parte-VI]$ ./a.out 
+  Raiz quadrada sqrt(700.0) = 26.5
+  Exponencial neperiana (e^x)  exp(1.0) = 2.718282
+  logaritmo neperiano log(2.718282) = 1.0
+  Logaritmo na base 10 log10(1.0) = 0.0, log10(10.0) = 1.0, log10(100.0) = 2.0
+  Função valor absoluto, módulo fabs(13.5) = 13.5
+  , fabs(0.0) = 0.0, fabs(-13.5) = 13.5
+  Truncamento ceil(9.2) = 10.0, ceil(-9.8) = -9.0
+  Arredondamento floor(9.2) = 9.0, floor(-9.8) = -10.0
+  Potenciação x^y pow(2.0,7.0) = 128.0 fmod(13.675, 2.333) = 2.0
+  Funções trigonométricas, sin,cos,tan
+  sin(0.0)= 0.0, cos(0.0)= 1.0, tan(0.0)= 0.0[andre@mercurio Parte-VI]$ 
+*/

@@ -1,0 +1,23 @@
+/*
+  Novidade:
+  --------
+  Uso de arquivos binários (ios::binary).
+  Gravação e leitura de objetos inteiros do disco.
+  Uso de seekg para posicionar ponteiro de leitura.
+  
+  Saída:
+  ------
+  andre@mercurio Parte-III]$ ./a.out
+  sizeof(A)=8
+  Entre com x e y (x espaço y):1 2
+  obja.x= 1 obja.y= 2
+  Entre com x e y (x espaço y):3 4
+  obja.x= 3 obja.y= 4
+  Entre com x e y (x espaço y):5 6
+  obja.x= 5 obja.y= 6
+  Entre com x e y (x espaço y):7 8
+  obja.x= 7 obja.y= 8
+  Entre com x e y (x espaço y):
+  Qual objeto quer ler? 0
+  obja.x= 1 obja.y= 2
+*/

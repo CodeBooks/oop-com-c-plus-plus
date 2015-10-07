@@ -1,0 +1,703 @@
+\documentclass[letterpaper]{article}
+\newif\ifpdf
+\ifx\pdfoutput\undefined
+  \pdffalse % we do not use PDFLaTeX
+\else
+  \pdfoutput=1 % we use PDFLaTeX
+  \pdftrue
+\fi
+\usepackage{linuxdoc-sgml}
+\usepackage{qwertz}
+\usepackage{url}
+\usepackage[latin1]{inputenc}
+\ifpdf
+  \usepackage[pdftex,colorlinks=true,urlcolor=blue,linkcolor=blue]{hyperref}
+  \pdfcompresslevel=9
+\else
+  \usepackage{t1enc}
+%%  \usepackage[dvips]{hyperref}
+\fi
+\usepackage[english]{babel}
+\usepackage{epsfig}
+\usepackage{null}
+\def\addbibtoc{
+\addcontentsline{toc}{section}{\numberline{\mbox{}}\relax\bibname}
+}%end-preamble
+\setcounter{page}{1}
+\title{Programação Orientada a Objeto com C++
+- Desenvolvimento de Software
+ Multiplataforma com Software Livre}
+\author{Andre Duarte Bueno - Editora Novatec}
+\date{25 de agosto de 2003}
+
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\section{Conteúdo do livro}
+
+O livro de programação orientada a objeto com C++ esta dividido
+nas seguintes partes:
+
+
+
+\begin{enumerate}
+\item {\bfseries {\itshape Parte I: Filosofia e Modelagem Orientada a Objeto\/}}: Destina-se
+a transmitir os conceitos básicos de POO (Programação Orientada a
+Objeto), a idéia, a filosofia e a nomenclatura utilizada. Nessa parte
+veremos alguns exemplos de objetos, o que a POO representa em relação
+ao passado, presente e futuro da programação. Os mecanismos básicos
+e os conceitos-chave da POO. A modelagem orientada a objeto utilizando
+a UML (Unified Modelling Language) e a TMO (Técnica de Modelagem
+de Objetos). Como montar os diagramas de uma Análise Orientada a
+Objeto (AOO) utilizando a modelagem UML/TMO. Apresenta as etapas
+de desenvolvimento de um programa: a concepção, a elaboração, a análise
+orientada a objeto, o projeto do sistema, o projeto orientado a objeto,
+a implementação e teste; a manutenção e a documentação de um software.
+\item {\bfseries {\itshape Parte II: POO Utilizando C++\/}}: Apresenta a sintaxe de C++. Tipos
+padrão de C++, tipos do usuário e tipos da STL (Standard Template
+Library). Como declarar, definir e utilizar classes, objetos, atributos
+e métodos. Como implementar a herança simples, a herança múltipla,
+a utilização de polimorfismo, a sobrecarga de operadores, a conversão
+de tipos, os tipos genéricos (templates). Apresenta a entrada e saída
+de dados com as classes $<$ios\_base$>$, $<$istream$>$, $<$ostream$>$
+e $<$sstream$>$. Como realizar operações com arquivos de disco
+utilizando as classes $<$fstream$>$, $<$ofstream$>$ e $<$ifstream$>$.
+Apresenta um grupo de classes-padrão de C++. A classe de strings-padrão
+de C++, a $<$string$>$, a classe para tratar números complexos
+$<$complex$>$ e a classe $<$bitset$>$.
+\item {\bfseries {\itshape Parte III: Introdução à STL\/}}: Apresenta a STL, uma biblioteca
+de objetos em C++. Descrevem-se os conceitos básicos de containers
+e iteradores. Você vai aprender a utilizar um $<$vector$>$ para
+vetores, $<$list$>$ para listas duplamente encadeadas, $<$queue$>$
+que representa uma fila, $<$stack$>$ que representa uma pilha (como
+em uma calculadora HP), uma $<$deque$>$ que é uma fila com duas
+extremidades e classes containers para tratamento de conjunto de
+dados com chaves ($<$set$>$, $<$multi\_set$>$, $<$map$>$ e $<$multi\_map$>$).
+\item {\bfseries {\itshape Parte IV: Programação Multiplataforma com Software Livre\/}}: Descreve
+conceitos de programação multiplataformas. Apresenta as ferramentas
+de programação com software livre, cobrindo emacs, gcc/g++, make,
+automake, autoconf, libtool, documentação com JAVA\_DOC e doxygen,
+controle de versões com CVS e programas como diff, patch e indent.
+\item {\bfseries {\itshape Parte V: Cluster de Computadores e Processamento Paralelo\/}}: Apresenta
+os conceitos e os diferentes tipos de clusters de computadores. As
+diferentes formas de processamento paralelo, incluindo:
+\begin{enumerate}
+\item a utilização de máquinas com mais de um processador (SMP),
+\item a utilização de processamento distribuído em um cluster com OpenMosix,
+e as vantagens e desvantagens da utilização de bibliotecas, como
+PVM (Paralel Virtual Machine) e MPI (Message Passing Interface).
+A programação com múltiplos-processos e com múltiplas-threads é apresentada
+com exemplos práticos. Os resultados de tempo de processamento de
+um cluster real são apresentados. 
+\end{enumerate}
+\item {\bfseries {\itshape Parte VI: Apêndices\/}}: Conceitos gerais de programação em C/C++:
+Descreve alguns conceitos gerais de programação em C/C++ como: diretrizes
+de pré-processador, classes de armazenamento e modificadores de acesso,
+operadores, estruturas de controle, funções, ponteiros, referências,
+estruturas, uniões e enumerações.
+\end{enumerate}
+
+
+
+\section{INSTALAÇÃO}
+
+
+\subsection{Download das listagens de programas:}
+
+Os arquivos com as listagens dos programas estão disponíveis
+para 
+
+
+
+download no link: 
+\ifpdf
+\href{http://www.novateceditora.com.br/downloads.php}{http://www.novateceditora.com.br/downloads.php}
+\else
+\onlynameurl{http://www.novateceditora.com.br/downloads.php}
+\fi
+.
+
+
+
+
+\subsection{Para descompactar os arquivos:}
+
+
+\subsubsection{Em um PC com Windows: }
+
+Use o winzip e descompacte o arquivo Livro\_cpp-1.0.zip ou use
+o unzip:
+
+
+
+Exemplo:
+
+
+
+\begin{verbatim}
+copy Livro_cpp-1.0.zip c:/tmp
+cd c:/tmp
+unzip Livro_cpp-1.0.zip
+\end{verbatim}
+
+
+
+\subsubsection{Em um PC com GNU/Linux: }
+
+Use o programa tar:
+
+
+
+Exemplo:
+
+
+
+\begin{verbatim}
+mv Livro_cpp-1.0.tar.gz /tmp
+cd /tmp
+tar -xvzf Livro_cpp-1.0.tar.gz
+\end{verbatim}
+
+
+
+\subsubsection{Em uma estação de trabalho com Unix (SunOS 5.8 ou Irix64):}
+
+Exemplo:
+
+
+
+\begin{verbatim}
+mv Livro_cpp-1.0.tar.gz /tmp
+cd /tmp
+gunzip Livro_cpp-1.0.tar.gz
+tar -xf Livro_cpp-1.0.tar
+\end{verbatim}
+
+
+
+\subsection{Para instalar o pacote de programas:}
+
+
+\subsubsection{Em um PC com Windows: }
+
+Você precisa usar um compilador, a sugestão é usar o compilador
+da GNU disponibilizado com o ambiente de desenvolvimento Dev C++
+(disponível no link 
+\ifpdf
+\href{http://sourceforge.net/projects/dev-cpp/}{http://sourceforge.net/projects/dev-cpp/}
+\else
+\onlynameurl{http://sourceforge.net/projects/dev-cpp/}
+\fi
+).
+
+
+
+
+\subsubsection{Em um PC com GNU/Linux:}
+
+O procedimento para instalação de um programa multiplataforma
+distribuído com arquivos .tar.gz é o seguinte:
+
+
+
+- Faz o download do arquivo Livro\_cpp-1.0.tar.gz (no site da
+editora novatec).
+
+
+
+- Descompacta o arquivo e a seguir executa a sequência ./configure
+\&\& make \&\& make install.
+
+
+
+Exemplo:
+
+
+
+\begin{verbatim}
+cd /tmp/Livro_cpp-1.0
+./configure
+make -k
+make install (como root)
+\end{verbatim}
+
+
+
+\subsubsection{Em uma estação de trabalho com Unix (SunOS 5.8 ou Irix64):}
+
+Use os programas gunzip e tar.
+
+
+
+Exemplo:
+
+
+
+\begin{verbatim}
+cd /tmp/Livro_cpp-1.0
+./configure
+make -k
+make install (como root)
+\end{verbatim}
+
+
+
+\section{Notas}
+
+Apresenta-se a seguir algumas notas sobre os sistemas testados,
+as listagens com bugs, listagens que requerem a instalação de outros
+pacotes e informações sobre as versões do automake e autoconf.
+
+
+
+
+\subsection{Sistemas testados:}
+
+Os exemplos contidos nos sub-diretórios foram testados e rodados
+nas seguintes plataformas:
+
+
+
+- PC com GNU/LINUX, RedHat 9.0
+
+
+
+- PC com Windows 2000.
+
+
+
+- Estação de trabalho SUN Enterprise E450 com SunOS 5.8.
+
+
+
+- Estação de trabalho Silicon Graphics Onyx3 InfiniteReality
+3200 com IRIX64 6.5r17.
+
+
+
+
+\subsection{Listagens com bugs:}
+
+Algumas listagens incluem bugs (erros), o objetivo de incluir
+listagens com erros é ilustrar o funcionamento do compilador g++
+(as mensagens geradas pelo compilador) e o funcionamento do debuger
+da GNU. Desta forma, ao executar:
+
+
+
+\begin{verbatim}
+make
+\end{verbatim}
+
+
+o sistema irá parar quando encontrar um arquivo com bug. 
+
+
+
+Para compilar todos os exemplos válidos ao mesmo tempo sem que
+o sistema pare, use:
+
+
+
+\begin{verbatim}
+make -k
+\end{verbatim}
+
+
+
+\subsection{Versões do automake e autoconf:}
+
+Os arquivos de compilação multiplataforma foram gerados usando-se
+o automake-1.7 e o autoconf 2.57.
+
+
+
+
+\subsection{Listagens que requerem elementos adicionais:}
+
+Sobre as listagens da parte V:
+
+
+
+- A listagem List-49-2 foi testada no GNU/Linux-RedHat 7x, e
+não funciona no Red Hat 8 e 9. Requer o arquivo de cabeçalho {\tt\char`\"}pfstream.h{\tt\char`\"},
+inexistente nas versões recentes do compilador da GNU.
+
+
+
+- As listagens List\_50\_3 e List-50-4 requerem a instalação da
+biblioteca commom C++. A mesma é disponível para vários sistemas
+operacionais, veja 
+\ifpdf
+\href{http://www.gnu.org/software/commomcpp/}{http://www.gnu.org/software/commomcpp/}
+\else
+\onlynameurl{http://www.gnu.org/software/commomcpp/}
+\fi
+.
+
+
+
+PS: As distribuições GNU/Linux costumam incluir a biblioteca
+commom C++.
+
+
+
+
+\subsection{Diagramas UML do livro}
+
+Os diagramas UML apresentados no livro foram incluídos no diretório
+UML. Os diagramas foram feitos usando-se o programa DIA (disponível
+no endereço 
+\ifpdf
+\href{http://www.gnome.org/gnome-office/dia.shtml}{http://www.gnome.org/gnome-office/dia.shtml}
+\else
+\onlynameurl{http://www.gnome.org/gnome-office/dia.shtml}
+\fi
+, ou 
+\ifpdf
+\href{http://www.lysator.liu.se/~alla/dia/}{http://www.lysator.liu.se/\~{}alla/dia/}
+\else
+\onlynameurl{http://www.lysator.liu.se/\~{}alla/dia/}
+\fi
+).
+
+
+
+
+\subsection{Bookmark}
+
+Voçê encontra no diretório principal desta distribuição o arquivo
+\ifpdf
+\href{bookmarks-prog.html}{bookmarks-prog.html}
+\else
+\onlynameurl{bookmarks-prog.html}
+\fi
+, o mesmo contém um conjunto de links para sites relacionados a software
+livre, programação orientada a objeto com C++, FAQ, Tutoriais (UML,
+STL, LinuxProg), OOP-UML, Ambientes Desenvolvimento, STL, Bibliotecas,
+Documentação, cvs, SoftwareMultiplataforma, Clusters (MPI, PVM, Threads),
+sites diversos do GNU/Linux.
+
+
+
+
+\section{Lista dos Arquivos:}
+
+O comando {\bfseries tree} mostra a lista de arquivos, o comando {\bfseries tree -d}
+mostra a lista de diretórios. O arquivo tree.txt contém a lista de
+todos os arquivos.
+
+
+
+Veja a seguir a lista de diretórios (comando tree -d):
+
+
+
+\begin{verbatim}
+|-- Parte-I
+|-- Parte-II
+|-- Parte-III
+|-- Parte-IV
+| |-- biblioteca
+| |-- biblioteca-Multiplataforma
+| | |-- autom4te.cache
+| | |-- dinamico
+| | |-- estatico
+| | `-- normal
+| |-- cap46-ExemploMultiplataforma
+| |-- cap47-cvs
+| |-- cvs -> cap47-cvs
+| |-- doc
+| | |-- html
+| | |-- latex
+| | `-- man
+| | `-- man3
+| `-- rdl-exemplo
+|-- Parte-V
+| `-- mpi-pvm
+|-- Parte-VI
+`-- uml
+\end{verbatim}
+
+
+
+\section{ChangeLog}
+
+
+\subsection{Versão 1.0: }
+
+\begin{itemize}
+\item Revisão geral.
+\item Edição: Rubens Prates.
+\item Revisão de português: Patricia Zagni.
+\item Revisão técnica: Luiz Adolfo Hegele Júnior, Rodrigo Surmas, Carlos
+Henrique Pico Ortiz.
+\item Capa: Camila Mesquita.
+\item Editoração eletrônica: Marcelo Ferreira Paiva
+\item Criação de sistema de instalação e compilação dos programas usando
+o sistema multiplataforma da GNU, isto é, automake, autoconf e libtool.
+\item Para instalação dos programas basta executar a sequência: ./configure
+\&\& make -k \&\& make install , veja instruções detalhadas
+no arquivo INSTALACAO.
+\end{itemize}
+
+
+
+\subsection{Versão 0.9: }
+
+\begin{itemize}
+\item Revisão por terceiros, Rubens Prates, Marcelo Paiva. 
+\item Inclusão de exemplos úteis. Informações adicionais sobre ambientes
+de desenvolvimento.
+\item A Parte IV - {\tt\char`\"}Programação Multiplataforma com Software Livre{\tt\char`\"}
+, foi totalmente reescrita. 
+\item Todos os capítulos foram atualizados, considerando as versões
+mais recentes dos softwares da GNU. Os capítulos foram ampliados,
+novos exemplos foram adicionados. 
+\item A Parte VI - {\tt\char`\"}Apêndices{\tt\char`\"} foi totalmente revisada e
+ampliada.
+\item Correções nas figuras.
+\item Novos Exemplos.
+\end{itemize}
+
+
+
+\subsection{Versão 0.8: }
+
+\begin{itemize}
+\item Unificação da documentação (mais limpa e enxuta).
+\item Inclusão de novos exemplos.
+\item Na Parte III - {\tt\char`\"}Introdução a STL{\tt\char`\"}, adotou-se um layout
+mais claro, a mesma também foi revisada, novos exemplos foram adicionados.
+\item Os capítulos de programação genérica e de objetos funções foram
+ampliados. 
+\end{itemize}
+
+
+
+\subsection{Versão 0.7: }
+
+\begin{itemize}
+\item A parte I -{\tt\char`\"}Filosofia e Modelagem Orientada a Objeto{\tt\char`\"},
+foi totalmente reescrita, foram adicionados novos diagramas e novos
+exemplos.
+\item A Parte II - {\tt\char`\"}POO Utilizando C++{\tt\char`\"}, foi totalmente reformulada
+e ampliada.
+\item Foram adicionados novos exemplos. Diversos erros foram corrigidos.
+\item Alguns capítulos foram totalmente reescritos, como Tipos, Namespace,
+Friend, Sobrecarga de Operador,converções, templates (especializações),
+Entrada e saída (a classe locale), a classe String.
+\end{itemize}
+
+
+
+\subsection{Versão 0.6: }
+
+\begin{itemize}
+\item Inclusão da Parte V - Cluster de Computadores e Processamento
+Paralelo, a mesma è composta de 4 capítulos, no primeiro faz-se um
+apanhado geral de cluster de computadores e programação paralela.No
+segundo apresenta-se mais detalhadamente e com exemplos o uso de
+programação paralela com múltiplos processos.
+\item No terceiro apresenta-se mais detalhadamente e com exemplos o
+uso de programação paralela com múltiplas threads. No quarto capítulo
+apresenta-se um exemplo real, e um conjunto de links para sites relacionados
+a clusters de computadores e programação paralela. 
+\end{itemize}
+
+
+
+\subsection{Versão 0.5: }
+
+\begin{itemize}
+\item Centenas de correções, novos exemplos.
+\end{itemize}
+
+
+
+\subsection{Versão 0.4.6 }
+
+\begin{itemize}
+\item Revisão, modificação e ampliação dos capítulos:
+\item Friend, sobrecarga de operador, sobrecarga de método, templates
+Centenas de pequenas modificações.
+\end{itemize}
+
+
+
+\subsection{Versão 0.4.5}
+
+\begin{itemize}
+\item Centenas de pequenas correções. Revisão de exemplos e listagens.
+\end{itemize}
+
+
+
+\subsection{Versão 0.4.1:}
+
+\begin{itemize}
+\item Centenas de correções feitas sobre a versão enviada para a revista
+do Linux.
+\end{itemize}
+
+
+
+\subsection{Versão 0.4: }
+
+\begin{itemize}
+\item Na versão 0.4 a apostila foi revisada e reestruturada. 
+\item Foram adicionados exemplos externos (listagens de códigos externos
+devidamente testadosTestes realizados no GNU/Linux, RedHat 7x usando
+o compilador g++ da gnu. 
+\item O RedHat pode ser obtido em 
+\ifpdf
+\href{http://www.redhat.com}{http://www.redhat.com}
+\else
+\onlynameurl{http://www.redhat.com}
+\fi
+ e os programas da gnu em 
+\ifpdf
+\href{http://www.gnu.org}{http://www.gnu.org}
+\else
+\onlynameurl{http://www.gnu.org}
+\fi
+. 
+\item A programação para GNU/Linux foi ampliada, bem como a parte relativa
+a STL. 
+\item A programação para Windows usando a OWL foi eliminada. 
+\item Na versão 0.4 diversos capítulos tiveram sua ordem invertida.
+Procurei trazer para o início da apostila os capítulos de programação
+orientada a objeto usando C++. 
+\item Os capítulos de sintaxe, escopo, operadores, controles, ponteiros,
+funções e os relativos a programação em C, foram movidos para o apêndice.
+Isto se justifica, pois boa parte destes conceitos não se aplicam
+ao uso de classes, não sendo fundamentais em C++A versão 0.4.5 inclui
+diversas correções e foi gerada utilizando o programa tex2pdf, como
+conseqüência, o arquivo pdf é menor e as letras mais legíveis. 
+\item Para gerar a versão (0.4) usei o lyx. Me encantei com a beleza
+e facilidades do LyX/LaTeX, de forma que, esta e as próximas versões
+serão escritas usando LaTeX. Veja informações sobre tex em http://biquinho.furg.br/tex-br/
+e diversos links em http://biquinho.furg.br/tex-br/links.html. Veja
+informações sobre o LyX em http://www.lyx.org/.
+\end{itemize}
+
+
+
+\subsection{Versão 0.3: }
+
+\begin{itemize}
+\item Na versão 0.3 acrescentei a biblioteca padrão de C++, a STL (Parte
+IV) e a programação para GNU/Linux (Parte V). Para gerar a versão
+(0.3) usei o StarOfficeVocê pode obter cópias grátis do StarOffice
+5.2 em http://www.staroffice.com/. Atualmente pode-se obter o Open
+Office em http://www.openoffice.org/ versão 5.2, é grátis. 
+\end{itemize}
+
+
+
+\subsection{Versão 0.2: }
+
+\begin{itemize}
+\item Na versão 0.2 a apostila foi ampliada e mais detalhada. 
+\item Foi acrescentada a programação para Windows usando a OWL (o uso
+do Borland C++ 5.2) e a modelagem TMO (antiga Parte VI). 
+\end{itemize}
+
+
+
+\subsection{Versão 0.1: }
+
+\begin{itemize}
+\item A versão 0.1 incluía apenas a programação orientada a objeto
+(Parte I) e a sintaxe de C++ (Parte II). Foi desenvolvida usando
+o editor Word. 
+\end{itemize}
+
+
+
+\section{AUTHORS - Contatando o autor:}
+
+Embora tenha sido realizado um esforço enorme no sentido de se
+fazer um bom livro de programação orientada a objeto com C++, a extensão
+do livro e a sua abrangência, tornam difícel a sua manutenção (inclusão
+de novos conceitos) e a eliminação de todos os erros. Neste sentido,
+se você encontrar erros, omissões, ou mesmo tiver dicas, sugestões,
+e exemplos para melhoria deste livro, favor enviar e-mail para o
+endereço bueno@lenep.uenf.br. Antes entretanto, aconselha-se dar
+uma olhada na seção errata (veja arquivo 
+\ifpdf
+\href{Errata.html}{Errata.html}
+\else
+\onlynameurl{Errata.html}
+\fi
+).
+
+
+
+\begin{description}
+\item[Autor:] \mbox{}
+
+Eng. André Duarte Bueno.
+
+\item[email:] \mbox{}
+
+\ifpdf
+\href{mailto:andre@lmpt.ufsc.br}{andre@lmpt.ufsc.br}
+\else
+\onlynameurl{andre@lmpt.ufsc.br}
+\fi
+ , 
+\ifpdf
+\href{mailto:bueno@lenep.uenf.br}{bueno@lenep.uenf.br}
+\else
+\onlynameurl{bueno@lenep.uenf.br}
+\fi
+.
+
+\item[Site~do~autor:] \mbox{}
+
+\ifpdf
+\href{http://www.lmpt.ufsc.br/~andre}{http://www.lmpt.ufsc.br/\~{}andre}
+\else
+\onlynameurl{http://www.lmpt.ufsc.br/\~{}andre}
+\fi
+ e 
+\ifpdf
+\href{http://www.lenep.uenf.br/~bueno}{http://www.lenep.uenf.br/\~{}bueno}
+\else
+\onlynameurl{http://www.lenep.uenf.br/\~{}bueno}
+\fi
+
+
+\item[Site~do~LENEP:] \mbox{}
+
+Laboratório de Engenharia e Exploração de
+Petróleo, 
+\ifpdf
+\href{http://www.lenep.uenf.br}{http://www.lenep.uenf.br}
+\else
+\onlynameurl{http://www.lenep.uenf.br}
+\fi
+.
+
+
+
+\end{description}
+
+
+
+\section{Errata}
+
+Veja arquivo 
+\ifpdf
+\href{Errata.html}{Errata.html}
+\else
+\onlynameurl{Errata.html}
+\fi
+.
+
+
+
+\end{document}

@@ -1,0 +1,8 @@
+libqt-mt.so.3 = > /usr/lib/qt-3.1/lib/libqt-mt.so.3(0x4002d000)
+libX11.so.6 = > /usr/X11R6/lib/libX11.so.6(0x406b5000)
+libstdc++.so.5 = > /usr/lib/libstdc++.so.5(0x40794000)
+libc.so.6 = > /lib/tls/libc.so.6(0x42000000)
+libpthread.so.0 = > /lib/tls/libpthread.so.0(0x40872000)
+libpng12.so.0 = > / usr/lib/libpng12.so.0(0x408e2000)
+libGL.so.1 = > / usr/lib/libGL.so.1(0x40913000)
+

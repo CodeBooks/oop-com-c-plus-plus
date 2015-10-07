@@ -1,0 +1,7 @@
+[andre@mercurio Parte-III]$ ./List_29_3
+Conteúdo do container deque:
+Florianópolis Cidade de sol e mar.
+Após atribuição direta:
+Florianópolis Cidade de sol e mar com belezas sem par.
+Após um pop_front:
+Cidade de sol e mar com belezas sem par.

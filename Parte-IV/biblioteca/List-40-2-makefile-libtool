@@ -1,0 +1,37 @@
+#Para incluir no makefile anteriormente apresentando
+#instruções manuais para uso do libtool
+#==============================USANDO LIBTOOL==========================
+#Para ficar portável, todas as etapas devem ser realizadas com o libtool
+#obj_libtool : $(ARQUIVOS) 
+
+#---------------Criando biblioteca estatica usando o libtool
+libs_libtool: $(ARQUIVOS) 
+	libtool --mode=compile $(COMPILADOR) -c List-11-6-TPonto.cpp   
+	libtool --mode=compile $(COMPILADOR) -c List-16-3-TElipse.cpp  
+	libtool --mode=compile $(COMPILADOR) -c List-15-2-TCirculo.cpp 
+	libtool --mode=link    $(COMPILADOR) -static -o libTPonto.a   List-15-2-TCirculo.lo    List-16-3-TElipse.lo   List-11-6-TPonto.lo
+	libtool --mode=install install -c  libTPonto.a /usr/local/lib/libTPonto.a
+
+# Criando executável usando libtool com biblioteca estatica
+exes_libtool:    libs_libtool List-17-1-Polimorfismo.cpp
+	libtool --mode=link $(COMPILADOR) -static List-17-1-Polimorfismo.cpp -L$(DIRLIB) -l$(NOMELIB) -o List-17-1-Polimorfismo-static-libtool
+
+#---------------Criando biblioteca dinâmica usando o libtool
+# O libtool parece não estar executando corretamente o ar. Faltam parâmetros
+libd_libtool: $(ARQUIVOS) 
+	libtool --mode=compile $(COMPILADOR) -c List-11-6-TPonto.cpp 
+	libtool --mode=compile $(COMPILADOR) -c List-16-3-TElipse.cpp
+	libtool --mode=compile $(COMPILADOR) -c List-15-2-TCirculo.cpp
+	libtool --mode=link $(COMPILADOR) -shared -o libTPonto.la  $(OBJETOSD)  -rpath /usr/local/lib
+	libtool --mode=install install -c  libTPonto.la /usr/local/lib/libTPonto.la
+
+# Criando executável usando libtool com biblioteca dinâmica (demora um pouco para abrir na primeira execução)
+exed_libtool: $(PROG)  libd_libtool		
+	libtool --mode=link $(COMPILADOR)  $(PROG) -L$(DIRLIB) -l$(NOMELIB) -o List-17-1-Polimorfismo-dinamico-libtool -export-dynamic -dlpreopen libTPonto.la
+
+#---------------Criando documentação com doxygem
+init_doc: 
+	doxygen -g doxygem.config
+
+doc : $(ARQUIVOS)
+	doxygen doxygem.config

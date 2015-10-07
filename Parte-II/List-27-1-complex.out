@@ -1,0 +1,14 @@
+/*
+  Novidade:
+  ---------
+  Uso da classe complex
+  
+  Saída:
+  ------
+  [andre@mercurio Cap4-STL]$ ./a.out 
+  a = (1.2,3.4), b = (-9.8,-7.6)
+  a = (-8.6,-4.2), b = (7.77139e-05,-0.000364079)
+  a = (-8.6,-4.2), b = (3.37075e+23,-1.75436e+23)
+  Entre com o complexo a(real,imag): (23,123)
+  Conteúdo de a=(23,123)
+*/

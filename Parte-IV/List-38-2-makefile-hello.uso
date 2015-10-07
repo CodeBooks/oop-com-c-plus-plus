@@ -1,0 +1,5 @@
+[andre@mercurio Parte -IV]$ make -f List-38-1-makefile-hello clean
+rm -f *.o *. obj
+
+[andre@mercurio Parte -IV]$ make -f List-38-1-makefile-hello List-36-1-hello
+g++ List-36-1-hello.cpp -I/usr/include/g++ -o List-36-1-hello

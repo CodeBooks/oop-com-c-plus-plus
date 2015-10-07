@@ -1,0 +1,24 @@
+[andre@mercurio exemplo-biblioteca-gnu]$ cvs tag tag1 *
+cvs tag: warning: directory CVS specified in argument
+cvs tag: but CVS uses CVS for its own purposes; skipping CVS directory
+T doxygem.config
+T List-11-5-TPonto.h
+T List-11-6-TPonto.cpp
+T List-15-1-TCirculo.h
+T List-15-2-TCirculo.cpp
+T List-16-2-TElipse.h
+T List-16-3-TElipse.cpp
+T List-17-1-Polimorfismo
+T List-17-1-Polimorfismo.cpp
+T List-19-1-TPonto.h
+T List-19-2-TPonto.cpp
+T List-39-4-makefile
+T List-39-5-makefile.uso
+T List-40-1-libtool--help.txt
+T List-40-2-makefile-libtool
+T List-40-3-makefile-libtool.uso
+T List-40-4-temposprocessamento
+T makefile
+T uso-makefile
+cvs tag: Tagging CVSROOT
+T CVSROOT/modules

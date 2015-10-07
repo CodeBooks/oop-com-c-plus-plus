@@ -1,0 +1,65 @@
+/*
+  Novidade:
+  --------
+  -Uso do container vector.
+  -Uso dos métodos: push_back,  size, empty, clear, 
+  -Uso de std::cin.good() para verificar se a entrada foi correta.
+  -Uso dos operadores  do..while e de for
+  
+  O Operador de controle do ...while();
+  -------------------------------------
+  O operador de controle do..while executa a sequência de comandos
+  dentro do bloco pelo menos 1 vez.
+  A seguir, verifica a expressão dentro do while.
+  
+  do
+  {
+  comandos_a_executar
+  } 
+  while (expressão);
+  
+  enquanto a expressão for verdadeira vai executar a sequência
+  de comandos dentro do do{}while;.
+  Observe a presença de ponto e vírgula após o while.
+  
+  O operador de controle for:
+  ---------------------------
+  Um comando for é utilizado para realizar um looping,
+  uma repetição de determinada ação diversas vezes.
+  
+  O protocolo de um comando for é da forma:
+  for (inicializacao; teste; incremento)
+  {..ação ou comandos a executar..}
+  
+  Exemplo:
+  for ( int i = 0; i < 10; i++ )
+  std::cout << " i = " << i << std::endl;
+  
+  No passo 1, inicializa a variável i, do tipo int com o valor 0. 
+  No passo 2, verifica se i < 10. 
+  No passo 3, se i < 10 executa a linha
+  std::cout << " i = " i << std::endl;
+  
+  No passo 4, incrementa i (i++).
+  Daí em frente,repete os passos 2,3,4. 
+  Quando a expressão (i < 10)
+  for falsa, encerra o for.
+  
+  Saída:
+  ------
+  [andre@mercurio Parte-II]$ ./a.out 
+  No DOS   um ctrl+z encerra a entrada de dados.
+  No Mac   um ctrl+d encerra a entrada de dados.
+  No Linux um ctrl+d encerra a entrada de dados.
+  
+  Entre com o dado (0):1
+  Entre com o dado (1):2
+  Entre com o dado (2):3
+  
+  Entre com o dado (3):
+  Primeiro elemento do vetor= 1
+  Último   elemento do vetor= 3
+  v[0]=1 v[1]=2 v[2]=3 
+  O vetor não esta vazio
+  O vetor esta vazio
+*/

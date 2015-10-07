@@ -1,0 +1,10 @@
+[andre@mercurio cvs]$ cvs -H commit
+Usage: cvs commit [-nRlf] [-m msg | -F logfile] [-r rev] files...
+    -n          Do not run the module program (if any).
+    -R          Process directories recursively.
+    -l          Local directory only (not recursive).
+    -f          Force the file to be committed; disables recursion.
+    -F logfile  Read the log message from file.
+    -m msg      Log message.
+    -r rev      Commit to this branch or trunk revision.
+(Specify the --help global option for a list of other help options)

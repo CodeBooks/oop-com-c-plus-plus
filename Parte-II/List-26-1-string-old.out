@@ -1,0 +1,35 @@
+ oi, tudo bem
+a classe string
+ é legal
+ é legal
+eu tenho espaço para 100 caracteres
+s5.size()=100
+s5.capacity()=100
+s5.max_size()=1073741820
+s7.size()=10 s7= aaaaaaaaaa
+depois de s7.resize(15, 't');  s7.size()=15 s7.length()=15
+Após s1 = s2, s1=a classe string s2=a classe string
+s2=um dois três          s3=q
+s2=um dois três          s3=quatro
+Após s4.append (s5, 2, 3); s4= é legal te
+(s2 + s3)=um dois três quatro
+s1=a classe string
+s5=eu tenho espaço para 100 caracteres
+Após  s5.swap (s1);
+s1=eu tenho espaço para 100 caracteres
+s5=a classe string
+s4.lenght()=11
+s4[2]=
+ Após s4[2]= _ , s4[2]=_
+s4.at (2)=_
+cstring = é_legal te
+s2=umquatpqr dois três
+s3=quatpqr
+s2=umqquatpqrpqr dois três
+s3=quaabctpqr
+s4.substr (3)=legal te
+s4.substr (3, 2)=le
+cascavel/parana
+s1.find ("ca")= 0       s1.find ("ca", 3)= 3
+s1.rfind ("ca")=  3     s1.rfind ("ca", 2)= 0
+

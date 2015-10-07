@@ -1,0 +1,30 @@
+# DEFINIÇÕES 
+ARQUIVOS=List-15-2-TCirculo.cpp List-16-3-TElipse.cpp List-11-6-TPonto.cpp
+OBJETOS=List-15-2-TCirculo.o List-16-3-TElipse.o List-11-6-TPonto.o
+OBJETOSD=List-15-2-TCirculo.lo List-16-3-TElipse.lo List-11-6-TPonto.lo
+PROG = List-17-1-Polimorfismo.cpp
+DIRINCLUDE = /usr/include/g++
+DIRLIB = /usr/local/lib
+COMPILADOR = g++
+NOMELIB = TPonto
+# ALVOS
+# Compilação padrão
+all : obj exe
+obj : $(ARQUIVOS)
+	$(COMPILADOR) -c $(ARQUIVOS) -I$(DIRINCLUDE)
+
+exe : $(PROG) $(OBJETOS)
+  $(COMPILADOR) -static $(PROG) $(OBJETOS) -I$(DIRINCLUDE) -o List-17-1-Polimorfismo
+# Criando biblioteca estática
+alls : libs exes
+libs : obj
+	ar -cru libTPonto.a $(OBJETOS)
+	install -c libTPonto.a /usr/local/lib/libTPonto.a
+
+# Criando executável usando a biblioteca estática
+exes : libs
+	$(COMPILADOR) $(PROG) -static -L. -l$(NOMELIB) -o List-17-1-Polimorfismo-static
+# Limpeza.
+clean :
+	rm -fr *.o *.obj *.so* a.out List-17-1-Polimorfismo -* *~ libTPonto.* *.lo 
+	rm -fr /usr/local/lib/libTPonto * / usr/lib/libTPonto*

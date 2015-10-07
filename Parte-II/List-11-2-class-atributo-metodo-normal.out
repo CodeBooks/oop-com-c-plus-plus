@@ -1,0 +1,35 @@
+/*Novidades:
+Uso de tipos padrões de C++, de tipos do usuário e de tipos da STL 
+Uso de métodos normais. Método Entrada();
+
+Uso de strings de C++:
+---------------------
+Neste exemplo utiliza-se a classe string de C++, definida em <string>.
+É uma classe padrão de C++, utilizada para manipular conjuntos de caracteres
+(mensagens). 
+Para usar uma string você deve incluir o cabeçalho
+#include <string>
+
+Observe que a declaração de uma string é simples.
+string nome_string;
+
+Para armazenar algo na string faça:
+nome_string = "conteúdo da string";
+
+Para ler uma string do teclado :
+cin >> nome_string;
+
+Para ler do teclado toda uma linha e armazenar na string, use getline:
+getline(cin,nome_string);
+
+Este é seu primeiro programa orientado a objeto.
+Simples ?
+Você declarou uma classe.
+	class TPessoa...
+Definiu os métodos da classe
+	void TPessoa::Entrada()...
+Criou objetos da sua classe
+	TPessoa professor;...
+Usou o objeto
+	cout << "Nome do professor: "    << professor.nome << "\n";
+*/

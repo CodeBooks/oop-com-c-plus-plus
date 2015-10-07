@@ -1,0 +1,27 @@
+
+/*
+  Novidade:
+  --------
+  Uso de excessões.
+  Verificação do desempilhamento das chamadas dos métodos em um bloco
+  try que sofreu a chamada a throw.
+  
+  Saída:
+  ======
+  [andre@mercurio Cap3-POOUsandoC++]$ ./a.out 
+  
+  Deseja executar sem excessão (0) ou com excessão (1):0
+  Início f1.
+  Início f2.
+  Início f3.
+  Fim f3.
+  Fim f2.
+  Fim f1.
+  
+  [andre@mercurio Cap3-POOUsandoC++]$ ./a.out 
+  Deseja executar sem excessão (0) ou com excessão (1):1
+  Início f1.
+  Início f2.
+  Início f3.
+  Ocorreu Excessao  na função :Funcao 3
+*/

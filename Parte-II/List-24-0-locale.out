@@ -1,0 +1,18 @@
+[andre@mercurio Parte-II]$ ./a.out
+localidade_inicial = C
+localidade_padrao_C = C
+localidade_padrao_POSIX = C
+localidade_usuario = LC_CTYPE=pt_BR;LC_NUMERIC=pt_BR;LC_COLLATE=pt_BR.UTF-8;
+LC_TIME=pt_BR;LC_MONETARY=pt_BR;LC_MESSAGES=pt_BR;LC_PAPER=pt_BR.UTF-8;
+LC_NAME=pt_BR.UTF-8;LC_ADDRESS=pt_BR.UTF-8;LC_TELEPHONE=pt_BR.UTF-8;
+LC_MEASUREMENT=pt_BR.UTF-8;LC_IDENTIFICATION=pt_BR.UTF-8
+Entre com o novo locale (ex: pt_BR, en_US, pt, fr, C): pt_BR
+Entre com x (ex:1,234):1234,567
+x=1234,567
+                                                                                                                                                  
+Testar novo locale (1) ou sair (0) ?:1
+Entre com o novo locale (ex: pt_BR, en_US, pt, fr, C): C
+Entre com x (ex:1.234):1234.567
+x=1234.567
+                                                                                                                                                  
+Testar novo locale (1) ou sair (0) ?:0

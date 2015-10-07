@@ -1,0 +1,34 @@
+/*
+Novidade:
+---------
+- Mostra o uso na classe de atributo e método  constante.
+- Mostra o  uso do método construtor para inicializar  atributos do objeto.
+TNumeroRandomico::TNumeroRandomico( const int _semente_const = 1 )
+   :semente_const(_semente_const)   
+
+- Neste exemplo, duas funções da biblioteca de C, 
+a  srand(semente_const); e  a  rand();
+e dois atributos, semente_const e random, são encapsulados
+(agrupados) para formar um objeto gerador de números aleatórios.
+
+Saída:
+-----
+Entre com uma semente:4
+Valor da semente: 4
+Valor inicial: 0
+gerador.GetRandomNumber(  0)=    1.96808e+09
+gerador.GetRandomNumber(  1)=    2.87724e+08
+gerador.GetRandomNumber(  2)=    4.10622e+08
+gerador.GetRandomNumber(  3)=    5.58519e+08
+gerador.GetRandomNumber(  4)=    4.60165e+08
+gerador.GetRandomNumber(  5)=    7.73441e+08
+gerador.GetRandomNumber(  6)=     9.0152e+08
+gerador.GetRandomNumber(  7)=    1.40462e+09
+gerador.GetRandomNumber(  8)=    4.17397e+08
+gerador.GetRandomNumber(  9)=    6.65131e+08
+gerador.GetRandomNumber( 10)=     1.0885e+09
+gerador.GetRandomNumber( 11)=    2.46244e+08
+gerador.GetRandomNumber( 12)=    1.22556e+09
+gerador.GetRandomNumber( 13)=     1.4392e+09
+gerador.GetRandomNumber( 14)=    1.99103e+09
+*/

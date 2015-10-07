@@ -1,0 +1,46 @@
+Na parte IV/
+estão incluídos os seguintes subdiretórios:
+
+biblioteca
+	Inclue um conjunto de arquivos de código *.h *.cpp 
+	e um arquivo makefile usado para compilar estes arquivos.
+	O makefile possibilita a criação do executável, 
+	de bibliotecas estáticas, e de biblioteca estática e dinâmica usando o libtool
+	(alguns ítens do makefile executam a instalação de programas e bibliotecas, 
+	para executá-los, deve-se logar como root).
+	Exemplos de uso:
+	make all    -> Cria executável
+	make alls   -> Cria biblioteca estática e executável
+	make clean  -> Limpa tudo
+	make libs_libtool -> Cria biblioteca usando pacote libtool.
+
+	O comando "make init_doc" cria arquivos de configuração para gerar a documentação, 
+	e o comando "make doc" gera a documentação nos diretório html e latex
+	(a documentação gerada é incompleta, pois o código ainda não foi documentado.
+	O objetivo é ilustrar o uso do makefile e do doxygem).
+
+biblioteca-Multiplataforma
+	Apresenta exemplos de criação de bibliotecas multiplataforma usando ferramentas da GNU.
+	normal  -> gera o executável sem usar biblioteca.
+	estatico-> gera o executável usando biblioteca estática
+	dinamico-> gera o executável usando biblioteca dinâmica
+
+cap46-ExemploMultiplataforma
+	Descreve a montagem de um programa usando o sistema multiplataforma da GNU passo a passo.
+	Apresenta-se os arquivos em 3 estágios:
+	teste1-Zerado.tar.gz  teste2-InclueMakefiles_am.tar.gz  teste3-Completo.tar.gz
+	Leia o arquivo SequenciaExecucao.txt
+
+cap47-cvs
+	Apresenta as listagens do capítulo 47.
+
+doc
+	Outro exemplo ilustrando a geração da documentação usando Javadoc e doxygen.
+	Leia os arquivos exemplo.cpp (com exemplo de documentação), 
+	e funcao.cpp (que inclue uso de fórmula embutida).
+	Para gerar a documentação execute:
+	doxygen doxygen.config
+
+rdl-exemplo
+	Uso de biblioteca dinâmica usando dlfcn.h 
+	(extraído da rdl-revista do linux e edaptado).	

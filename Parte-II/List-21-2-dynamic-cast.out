@@ -1,0 +1,8 @@
+/*Saída:
+-------
+[andre@mercurio Cap3-POOUsandoC++]$ ./a.out 
+Realiza um cast dinâmico (downcast) de  Base1 para Derivada.
+Tipo do ponteiro resultante =  P8Derivada
+Realiza um cast dinâmico (downcast) de  Base1 para Base2.
+Tipo do ponteiro resultante = P5Base2
+*/
